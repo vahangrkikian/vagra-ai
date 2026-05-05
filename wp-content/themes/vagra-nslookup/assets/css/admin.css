@@ -1,0 +1,47 @@
+/**
+ * Vagra NSLookup Admin Styles
+ *
+ * @package Vagra_NSLookup
+ */
+
+.vagra-admin-wrap {
+	max-width: 800px;
+}
+
+.vagra-admin-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #c3c4c7;
+}
+
+.vagra-admin-header h1 {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.vagra-admin-version {
+	color: #646970;
+	font-size: 13px;
+}
+
+.vagra-status--ok {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.vagra-status--warn {
+	color: #dba617;
+	font-weight: 600;
+}
+
+.vagra-dashboard-widget table {
+	margin-bottom: 12px;
+}
+
+.vagra-dashboard-widget__link {
+	text-align: right;
+}

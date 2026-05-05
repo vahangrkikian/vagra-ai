@@ -1,0 +1,75 @@
+# ===========================================
+# WordPress Core (not tracked - install fresh)
+# ===========================================
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# ===========================================
+# WordPress Config (contains secrets)
+# ===========================================
+wp-config.php
+
+# ===========================================
+# WordPress Content - Exclude defaults
+# ===========================================
+/wp-content/index.php
+/wp-content/plugins/akismet/
+/wp-content/plugins/hello.php
+/wp-content/plugins/index.php
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/uploads/
+
+# ===========================================
+# Reference Projects (fully excluded)
+# ===========================================
+/Carmaster/
+/nslookup/
+
+# ===========================================
+# Node modules (in any theme/subfolder)
+# ===========================================
+node_modules/
+package-lock.json
+
+# ===========================================
+# OS & IDE files
+# ===========================================
+.DS_Store
+__MACOSX/
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ===========================================
+# Claude Code local settings
+# ===========================================
+.claude/settings.local.json
+
+# ===========================================
+# Environment & secrets
+# ===========================================
+.env
+.env.*
+*.log
+error_log
+debug.log
+
+# ===========================================
+# Build artifacts
+# ===========================================
+*.map
+.next/
+test-results/
+tsconfig.tsbuildinfo

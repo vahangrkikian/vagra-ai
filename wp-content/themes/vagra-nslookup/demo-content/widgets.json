@@ -1,0 +1,26 @@
+[
+	{
+		"sidebar": "sidebar-1",
+		"widgets": [
+			{
+				"widget_type": "search",
+				"title": "Search"
+			},
+			{
+				"widget_type": "recent-posts",
+				"title": "Recent Posts",
+				"number": 5
+			}
+		]
+	},
+	{
+		"sidebar": "footer-1",
+		"widgets": [
+			{
+				"widget_type": "text",
+				"title": "About nslookup.am",
+				"text": "Free DNS lookup and propagation checking tool. Query 13 record types across 30+ global resolvers instantly."
+			}
+		]
+	}
+]

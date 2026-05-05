@@ -1,0 +1,268 @@
+/**
+ * Vagra NSLookup Chat Widget Styles
+ *
+ * Cinematic dark theme using --nsl-* design tokens.
+ *
+ * @package Vagra_NSLookup
+ */
+
+.vagra-chat {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	z-index: 9999;
+	font-family: var(--nsl-font-body, 'Inter', sans-serif);
+}
+
+/* Toggle Button */
+.vagra-chat__toggle {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: var(--nsl-primary, #6366f1);
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.vagra-chat__toggle:hover {
+	background: var(--nsl-accent, #22d3ee);
+	transform: scale(1.05);
+}
+
+.vagra-chat--open .vagra-chat__toggle {
+	display: none;
+}
+
+/* Chat Window */
+.vagra-chat__window {
+	display: none;
+	flex-direction: column;
+	width: 380px;
+	max-width: calc(100vw - 48px);
+	height: 520px;
+	max-height: calc(100vh - 100px);
+	background: #0f0f23;
+	border: 1px solid rgba(99, 102, 241, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	animation: vagra-chat-slide-up 0.25s ease-out;
+}
+
+.vagra-chat--open .vagra-chat__window {
+	display: flex;
+}
+
+@keyframes vagra-chat-slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Header */
+.vagra-chat__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 20px;
+	background: linear-gradient(135deg, var(--nsl-primary, #6366f1), #4f46e5);
+	color: #fff;
+	flex-shrink: 0;
+}
+
+.vagra-chat__title {
+	font-family: var(--nsl-font-heading, 'Inter', sans-serif);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.vagra-chat__close {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 0;
+	line-height: 1;
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+
+.vagra-chat__close:hover {
+	opacity: 1;
+}
+
+/* Messages Area */
+.vagra-chat__messages {
+	flex: 1;
+	overflow-y: auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background: #0a0a1a;
+}
+
+.vagra-chat__message {
+	max-width: 85%;
+	padding: 10px 14px;
+	border-radius: 12px;
+	font-size: 14px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.vagra-chat__message--user {
+	align-self: flex-end;
+	background: var(--nsl-primary, #6366f1);
+	color: #fff;
+	border-bottom-right-radius: 4px;
+}
+
+.vagra-chat__message--assistant {
+	align-self: flex-start;
+	background: rgba(255, 255, 255, 0.06);
+	color: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-bottom-left-radius: 4px;
+}
+
+/* Typing Indicator */
+.vagra-chat__message--typing {
+	align-self: flex-start;
+	background: rgba(255, 255, 255, 0.06);
+	padding: 14px 18px;
+	border-radius: 12px;
+	border-bottom-left-radius: 4px;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+
+.vagra-chat__dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--nsl-accent, #22d3ee);
+	animation: vagra-chat-bounce 1.2s infinite ease-in-out;
+}
+
+.vagra-chat__dot:nth-child(2) {
+	animation-delay: 0.15s;
+}
+
+.vagra-chat__dot:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+@keyframes vagra-chat-bounce {
+	0%, 60%, 100% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(-6px);
+	}
+}
+
+/* Input Form */
+.vagra-chat__input-form {
+	display: flex;
+	padding: 12px;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	background: #0f0f23;
+	flex-shrink: 0;
+}
+
+.vagra-chat__input {
+	flex: 1;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 12px;
+	padding: 10px 14px;
+	font-family: var(--nsl-font-body, 'Inter', sans-serif);
+	font-size: 14px;
+	outline: none;
+	background: rgba(255, 255, 255, 0.04);
+	color: #fff;
+	transition: border-color 0.2s;
+}
+
+.vagra-chat__input:focus {
+	border-color: var(--nsl-primary, #6366f1);
+}
+
+.vagra-chat__input::placeholder {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.vagra-chat__send {
+	width: 40px;
+	height: 40px;
+	margin-left: 8px;
+	border: none;
+	border-radius: 50%;
+	background: var(--nsl-primary, #6366f1);
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	transition: background 0.2s;
+}
+
+.vagra-chat__send:hover {
+	background: var(--nsl-accent, #22d3ee);
+}
+
+/* Scrollbar */
+.vagra-chat__messages::-webkit-scrollbar {
+	width: 6px;
+}
+
+.vagra-chat__messages::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.vagra-chat__messages::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.vagra-chat {
+		bottom: 16px;
+		right: 16px;
+	}
+
+	.vagra-chat__window {
+		width: calc(100vw - 32px);
+		height: calc(100vh - 80px);
+	}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.vagra-chat__window {
+		animation: none;
+	}
+
+	.vagra-chat__toggle {
+		transition: none;
+	}
+
+	.vagra-chat__dot {
+		animation: none;
+	}
+}

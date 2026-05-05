@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+    <title>Morrison &amp; Associates</title>
+    <link>http://vagraai.local</link>
+    <description>Experienced Legal Counsel You Can Trust</description>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>http://vagraai.local</wp:base_site_url>
+    <wp:base_blog_url>http://vagraai.local</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login>admin</wp:author_login>
+        <wp:author_email>admin@vagraai.local</wp:author_email>
+        <wp:author_display_name><![CDATA[Morrison & Associates]]></wp:author_display_name>
+    </wp:author>
+
+    <wp:category>
+        <wp:term_id>10</wp:term_id>
+        <wp:category_nicename>personal-injury</wp:category_nicename>
+        <wp:cat_name><![CDATA[Personal Injury]]></wp:cat_name>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>11</wp:term_id>
+        <wp:category_nicename>estate-planning</wp:category_nicename>
+        <wp:cat_name><![CDATA[Estate Planning]]></wp:cat_name>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>12</wp:term_id>
+        <wp:category_nicename>business-law</wp:category_nicename>
+        <wp:cat_name><![CDATA[Business Law]]></wp:cat_name>
+    </wp:category>
+
+    <!-- Front Page -->
+    <item>
+        <title>Home</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<!-- Uses front-page.php template -->]]></content:encoded>
+        <wp:post_id>100</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>home</wp:post_name>
+    </item>
+
+    <!-- Practice Area: Personal Injury -->
+    <item>
+        <title>Personal Injury</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Fighting for the Compensation You Deserve</h2>
+<p>When you've been injured due to someone else's negligence, the consequences can be devastating — physically, emotionally, and financially. At Morrison &amp; Associates, we fight aggressively to hold negligent parties accountable and secure the full compensation you're entitled to.</p>
+
+<h3>Cases We Handle</h3>
+<ul>
+<li>Car, truck, and motorcycle accidents</li>
+<li>Slip and fall injuries</li>
+<li>Medical malpractice</li>
+<li>Workplace injuries</li>
+<li>Product liability</li>
+<li>Wrongful death</li>
+</ul>
+
+<h3>Our Approach</h3>
+<p>Every personal injury case begins with a thorough investigation. We work with medical experts, accident reconstruction specialists, and economists to build the strongest possible case. We handle all communication with insurance companies so you can focus on recovery.</p>
+
+<h3>No Fee Unless We Win</h3>
+<p>We work on a contingency fee basis. You pay nothing unless we recover compensation for you. Your initial consultation is always free.</p>]]></content:encoded>
+        <wp:post_id>101</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>personal-injury</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Area: Family Law -->
+    <item>
+        <title>Family Law</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Protecting Your Family's Future</h2>
+<p>Family legal matters are among the most emotionally challenging experiences you may face. Our family law attorneys combine compassionate guidance with strategic advocacy to protect your interests and your children's well-being.</p>
+
+<h3>Services</h3>
+<ul>
+<li>Divorce and separation</li>
+<li>Child custody and visitation</li>
+<li>Child and spousal support</li>
+<li>Adoption</li>
+<li>Prenuptial and postnuptial agreements</li>
+<li>Domestic violence protective orders</li>
+</ul>
+
+<h3>Child-Centered Approach</h3>
+<p>In custody matters, the best interests of the child always come first. We work to achieve outcomes that support healthy co-parenting relationships whenever possible, while protecting your parental rights.</p>]]></content:encoded>
+        <wp:post_id>102</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>family-law</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Area: Criminal Defense -->
+    <item>
+        <title>Criminal Defense</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Defending Your Rights and Freedom</h2>
+<p>Being charged with a crime is one of the most serious situations you can face. The consequences — prison time, fines, a permanent record — can affect every aspect of your life. You deserve an attorney who will fight for you at every stage.</p>
+
+<h3>Cases We Defend</h3>
+<ul>
+<li>DUI / DWI</li>
+<li>Drug offenses</li>
+<li>Assault and battery</li>
+<li>Theft and property crimes</li>
+<li>White collar crimes</li>
+<li>Federal charges</li>
+</ul>
+
+<h3>Aggressive Defense Strategy</h3>
+<p>We investigate every aspect of the prosecution's case, challenge unlawful evidence, negotiate with prosecutors when it serves your interest, and take cases to trial when necessary. Every client gets a personalized defense strategy.</p>]]></content:encoded>
+        <wp:post_id>103</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>criminal-defense</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Area: Business Law -->
+    <item>
+        <title>Business Law</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Strategic Legal Counsel for Your Business</h2>
+<p>From startups to established companies, Morrison &amp; Associates provides the legal guidance businesses need to grow, protect their assets, and navigate disputes.</p>
+
+<h3>Services</h3>
+<ul>
+<li>Business formation (LLC, Corporation, Partnership)</li>
+<li>Contract drafting and review</li>
+<li>Commercial litigation</li>
+<li>Employment law</li>
+<li>Intellectual property protection</li>
+<li>Mergers and acquisitions</li>
+</ul>
+
+<h3>Proactive Legal Partnership</h3>
+<p>The best legal strategy prevents problems before they arise. We work as an extension of your team, providing ongoing counsel that helps you make informed business decisions and avoid costly disputes.</p>]]></content:encoded>
+        <wp:post_id>104</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>business-law</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Area: Immigration -->
+    <item>
+        <title>Immigration</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Navigating the Immigration System With You</h2>
+<p>Immigration law is complex and constantly evolving. Whether you're seeking a visa, applying for permanent residency, or facing deportation proceedings, our immigration attorneys guide you through every step.</p>
+
+<h3>Services</h3>
+<ul>
+<li>Family-based immigration</li>
+<li>Employment-based visas (H-1B, L-1, O-1)</li>
+<li>Green card applications</li>
+<li>Naturalization and citizenship</li>
+<li>Deportation defense</li>
+<li>Asylum applications</li>
+</ul>
+
+<h3>Multilingual Support</h3>
+<p>Our team serves clients in English, Spanish, and Mandarin. We understand the cultural dimensions of immigration cases and provide compassionate representation that respects your journey.</p>]]></content:encoded>
+        <wp:post_id>105</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>immigration</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Area: Estate Planning -->
+    <item>
+        <title>Estate Planning</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Protect Your Legacy and Your Loved Ones</h2>
+<p>Estate planning isn't just for the wealthy. Everyone needs a plan that ensures their wishes are carried out and their family is protected. We create comprehensive estate plans tailored to your unique situation.</p>
+
+<h3>Services</h3>
+<ul>
+<li>Wills and trusts</li>
+<li>Powers of attorney</li>
+<li>Healthcare directives</li>
+<li>Probate administration</li>
+<li>Trust administration</li>
+<li>Estate tax planning</li>
+</ul>
+
+<h3>Planning for Every Stage of Life</h3>
+<p>Your estate plan should evolve with your life. We recommend reviewing your plan after major life events — marriage, children, divorce, retirement — and we make updates straightforward and affordable.</p>]]></content:encoded>
+        <wp:post_id>106</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>estate-planning</wp:post_name>
+        <wp:post_parent>110</wp:post_parent>
+    </item>
+
+    <!-- Practice Areas Parent Page -->
+    <item>
+        <title>Practice Areas</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Morrison &amp; Associates provides comprehensive legal services across multiple practice areas. Select a practice area below to learn more.</p>]]></content:encoded>
+        <wp:post_id>110</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>practice-areas</wp:post_name>
+    </item>
+
+    <!-- About Page -->
+    <item>
+        <title>About Morrison &amp; Associates</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>A Tradition of Excellence Since 1998</h2>
+<p>Morrison &amp; Associates was founded by James Morrison with a commitment to providing accessible, high-quality legal representation. Over two decades later, we've grown into a respected mid-size firm serving clients across a wide range of practice areas.</p>
+
+<h3>Our Values</h3>
+<ul>
+<li><strong>Client First</strong> — Your goals and well-being drive every decision we make</li>
+<li><strong>Integrity</strong> — We are honest, transparent, and ethical in all we do</li>
+<li><strong>Excellence</strong> — We hold ourselves to the highest standards of legal practice</li>
+<li><strong>Accessibility</strong> — Quality legal representation should be available to everyone</li>
+</ul>
+
+<h3>Awards &amp; Recognition</h3>
+<ul>
+<li>Best Law Firms — U.S. News &amp; World Report (2020-2024)</li>
+<li>Super Lawyers — Multiple attorneys recognized annually</li>
+<li>AV Preeminent Rating — Martindale-Hubbell</li>
+<li>Pro Bono Service Award — State Bar Association</li>
+</ul>
+
+<h3>Community Involvement</h3>
+<p>We believe in giving back. Our attorneys volunteer with legal aid organizations, mentor law students, and sponsor community events throughout the year.</p>]]></content:encoded>
+        <wp:post_id>111</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>about</wp:post_name>
+    </item>
+
+    <!-- Contact Page -->
+    <item>
+        <title>Contact Us</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Schedule Your Free Consultation</h2>
+<p>Every case begins with a conversation. Contact us to discuss your situation — there's no cost and no obligation.</p>
+
+<h3>Main Office</h3>
+<p>456 Justice Boulevard, Suite 200<br>
+Denver, CO 80202</p>
+
+<h3>Satellite Office</h3>
+<p>789 Liberty Avenue, Suite 100<br>
+Colorado Springs, CO 80903</p>
+
+<h3>Office Hours</h3>
+<p>Monday - Friday: 8:30 AM - 5:30 PM MST<br>
+Saturday: By appointment only</p>
+
+<h3>Get in Touch</h3>
+<p>Phone: (555) 123-4567<br>
+Email: info@morrisonlaw.com</p>
+
+<p><em>Evening and weekend appointments available upon request.</em></p>]]></content:encoded>
+        <wp:post_id>112</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>contact</wp:post_name>
+    </item>
+
+    <!-- Blog Post 1 -->
+    <item>
+        <title>What to Do After a Car Accident: A Step-by-Step Guide</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>The moments after a car accident are disorienting and stressful. Knowing what steps to take can protect your health, your rights, and your ability to recover compensation.</p>
+
+<h3>At the Scene</h3>
+<ol>
+<li><strong>Check for injuries</strong> — Call 911 if anyone is hurt. Your health is the top priority.</li>
+<li><strong>Move to safety</strong> — If possible, move vehicles out of traffic. Turn on hazard lights.</li>
+<li><strong>Call the police</strong> — Even for minor accidents, a police report creates an official record.</li>
+<li><strong>Exchange information</strong> — Get names, insurance details, and contact information from all drivers involved.</li>
+<li><strong>Document everything</strong> — Take photos of all vehicles, road conditions, traffic signs, and any visible injuries.</li>
+<li><strong>Get witness information</strong> — If anyone saw the accident, get their name and number.</li>
+</ol>
+
+<h3>After the Scene</h3>
+<ol>
+<li><strong>Seek medical attention</strong> — See a doctor within 24-48 hours, even if you feel fine. Some injuries take days to manifest.</li>
+<li><strong>Notify your insurance company</strong> — Report the accident promptly, but stick to the facts.</li>
+<li><strong>Don't give recorded statements</strong> — The other driver's insurance company may contact you. You're not obligated to give them a recorded statement.</li>
+<li><strong>Keep records</strong> — Save all medical bills, repair estimates, and documentation of missed work.</li>
+<li><strong>Consult an attorney</strong> — Before accepting any settlement offer, speak with a personal injury attorney to understand the full value of your claim.</li>
+</ol>
+
+<h3>Common Mistakes to Avoid</h3>
+<ul>
+<li>Admitting fault at the scene (even saying "I'm sorry" can be used against you)</li>
+<li>Posting about the accident on social media</li>
+<li>Accepting an early settlement without legal advice</li>
+<li>Waiting too long to seek medical treatment</li>
+</ul>
+
+<p><em>Disclaimer: This article is for informational purposes only and does not constitute legal advice.</em></p>]]></content:encoded>
+        <wp:post_id>120</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>what-to-do-after-car-accident</wp:post_name>
+        <category domain="category" nicename="personal-injury"><![CDATA[Personal Injury]]></category>
+    </item>
+
+    <!-- Blog Post 2 -->
+    <item>
+        <title>Understanding Estate Planning: Why Everyone Needs a Will</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Many people assume estate planning is only for the wealthy. In reality, everyone over 18 should have at least a basic estate plan. Here's why — and what it should include.</p>
+
+<h3>What Happens Without a Will</h3>
+<p>If you die without a will (called dying "intestate"), state law decides who inherits your assets, who raises your children, and who manages your estate. The results may not match your wishes at all.</p>
+
+<h3>Essential Estate Planning Documents</h3>
+<ul>
+<li><strong>Last Will and Testament</strong> — Specifies how your assets are distributed, names guardians for minor children, and appoints an executor</li>
+<li><strong>Durable Power of Attorney</strong> — Designates someone to manage your finances if you become incapacitated</li>
+<li><strong>Healthcare Directive</strong> — Outlines your medical treatment preferences and names someone to make healthcare decisions for you</li>
+<li><strong>Beneficiary Designations</strong> — Ensure your retirement accounts, life insurance, and bank accounts have up-to-date beneficiary designations</li>
+</ul>
+
+<h3>When to Consider a Trust</h3>
+<p>Trusts aren't just for the ultra-wealthy. A revocable living trust can help you avoid probate, maintain privacy, and provide for a smoother transfer of assets. They're particularly valuable if you own property in multiple states or have a blended family.</p>
+
+<h3>When to Update Your Plan</h3>
+<p>Review your estate plan after any major life event: marriage, divorce, birth of a child, significant change in assets, or relocation to a new state.</p>
+
+<p><em>Disclaimer: This article is for informational purposes only and does not constitute legal advice.</em></p>]]></content:encoded>
+        <wp:post_id>121</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>understanding-estate-planning</wp:post_name>
+        <category domain="category" nicename="estate-planning"><![CDATA[Estate Planning]]></category>
+    </item>
+
+    <!-- Blog Post 3 -->
+    <item>
+        <title>Business Formation Guide: LLC vs. Corporation — Which Is Right for You?</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Choosing the right business structure is one of the most important decisions you'll make as an entrepreneur. The two most popular options — LLCs and Corporations — each have distinct advantages depending on your goals.</p>
+
+<h3>LLC (Limited Liability Company)</h3>
+<p><strong>Best for:</strong> Small businesses, freelancers, real estate investors, and businesses that want simplicity.</p>
+<ul>
+<li>Personal liability protection for members</li>
+<li>Pass-through taxation (profits taxed on personal returns)</li>
+<li>Flexible management structure</li>
+<li>Less paperwork and fewer formalities</li>
+<li>Can elect S-Corp or C-Corp tax treatment</li>
+</ul>
+
+<h3>Corporation (C-Corp)</h3>
+<p><strong>Best for:</strong> Businesses planning to seek investors, go public, or offer stock options.</p>
+<ul>
+<li>Unlimited number of shareholders</li>
+<li>Easier to attract venture capital and investors</li>
+<li>Stock options for employee compensation</li>
+<li>Perpetual existence regardless of ownership changes</li>
+<li>Subject to double taxation (corporate + dividend tax)</li>
+</ul>
+
+<h3>S-Corporation</h3>
+<p><strong>Best for:</strong> Small businesses wanting corporate structure with pass-through taxation.</p>
+<ul>
+<li>Limited to 100 shareholders, all must be U.S. citizens/residents</li>
+<li>Pass-through taxation (avoids double taxation)</li>
+<li>Can reduce self-employment taxes for owners</li>
+<li>More formalities than an LLC</li>
+</ul>
+
+<h3>Key Factors to Consider</h3>
+<ol>
+<li><strong>Liability protection</strong> — Both LLCs and corporations protect personal assets</li>
+<li><strong>Tax implications</strong> — Consult with a tax advisor alongside your attorney</li>
+<li><strong>Growth plans</strong> — If you plan to raise capital, a C-Corp may be necessary</li>
+<li><strong>State requirements</strong> — Rules vary by state; some states are more LLC-friendly than others</li>
+</ol>
+
+<p><em>Disclaimer: This article is for informational purposes only and does not constitute legal advice. Business formation decisions should be made in consultation with a qualified attorney and tax advisor.</em></p>]]></content:encoded>
+        <wp:post_id>122</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>business-formation-guide</wp:post_name>
+        <category domain="category" nicename="business-law"><![CDATA[Business Law]]></category>
+    </item>
+
+</channel>
+</rss>

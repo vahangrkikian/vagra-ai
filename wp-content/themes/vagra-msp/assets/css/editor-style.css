@@ -1,0 +1,23 @@
+/*
+ * Editor Styles for Vagra MSP Theme
+ *
+ * @package Vagra_MSP
+ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2B3674;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #2B3674;
+}
+
+a {
+    color: #3366FF;
+}

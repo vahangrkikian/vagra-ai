@@ -1,0 +1,515 @@
+# Copyright (C) 2026 vagra.ai
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vagra MSP Cybersecurity 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/vagra-msp\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-18T21:19:38+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: vagra-msp\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Vagra MSP Cybersecurity"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://vagra.ai"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A professional WordPress theme for MSP and Cybersecurity businesses, built with the MLP design system."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "vagra.ai"
+msgstr ""
+
+#: 404.php:14
+msgid "404 - Page Not Found"
+msgstr ""
+
+#: 404.php:15
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr ""
+
+#: 404.php:17
+msgid "Back to Home"
+msgstr ""
+
+#: archive.php:31
+#: search.php:35
+msgid "&laquo; Previous"
+msgstr ""
+
+#: archive.php:32
+#: search.php:36
+msgid "Next &raquo;"
+msgstr ""
+
+#: footer.php:12
+#: functions.php:40
+msgid "Footer Menu"
+msgstr ""
+
+#: footer.php:33
+msgid "All rights reserved."
+msgstr ""
+
+#: front-page.php:15
+msgid "Protect Your Business with Enterprise-Grade Cybersecurity"
+msgstr ""
+
+#: front-page.php:16
+msgid "Managed security services built for growing businesses. From email protection to 24/7 monitoring, we keep your data safe so you can focus on what matters."
+msgstr ""
+
+#: front-page.php:18
+msgid "Get a Free Security Assessment"
+msgstr ""
+
+#: front-page.php:36
+msgid "Our Security Services"
+msgstr ""
+
+#: front-page.php:37
+msgid "Comprehensive managed security solutions to protect every layer of your business."
+msgstr ""
+
+#: front-page.php:51
+msgid "DMARC / DKIM / SPF"
+msgstr ""
+
+#: front-page.php:52
+msgid "Stop email spoofing and phishing attacks with properly configured email authentication protocols."
+msgstr ""
+
+#: front-page.php:65
+msgid "Email Security"
+msgstr ""
+
+#: front-page.php:66
+msgid "Advanced email filtering, encryption, and threat detection to safeguard your business communications."
+msgstr ""
+
+#: front-page.php:76
+msgid "Endpoint Protection"
+msgstr ""
+
+#: front-page.php:77
+msgid "Next-gen antivirus and EDR solutions protecting every device on your network from malware and ransomware."
+msgstr ""
+
+#: front-page.php:89
+msgid "Network Monitoring"
+msgstr ""
+
+#: front-page.php:90
+msgid "24/7 network surveillance and real-time alerting to detect and respond to threats before they cause damage."
+msgstr ""
+
+#: front-page.php:101
+msgid "Incident Response"
+msgstr ""
+
+#: front-page.php:102
+msgid "Rapid response plans and expert remediation when security incidents occur. Minimize downtime and data loss."
+msgstr ""
+
+#: front-page.php:113
+msgid "Security Awareness Training"
+msgstr ""
+
+#: front-page.php:114
+msgid "Empower your team to recognize and prevent cyber threats with engaging, up-to-date security training programs."
+msgstr ""
+
+#: front-page.php:124
+msgid "Trusted by 200+ Businesses"
+msgstr ""
+
+#: front-page.php:127
+msgid "200+"
+msgstr ""
+
+#: front-page.php:128
+msgid "Clients Protected"
+msgstr ""
+
+#: front-page.php:131
+msgid "99.9%"
+msgstr ""
+
+#: front-page.php:132
+msgid "Uptime Guarantee"
+msgstr ""
+
+#: front-page.php:135
+msgid "24/7"
+msgstr ""
+
+#: front-page.php:136
+msgid "Security Monitoring"
+msgstr ""
+
+#: front-page.php:139
+msgid "<15min"
+msgstr ""
+
+#: front-page.php:140
+msgid "Avg. Response Time"
+msgstr ""
+
+#: front-page.php:150
+msgid "Ready to Secure Your Business?"
+msgstr ""
+
+#: front-page.php:151
+msgid "Get a free, no-obligation security assessment. Our experts will identify vulnerabilities and recommend a protection plan tailored to your business."
+msgstr ""
+
+#: front-page.php:153
+msgid "Schedule Your Free Assessment"
+msgstr ""
+
+#: functions.php:39
+#: header.php:24
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:81
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:83
+msgid "Main sidebar widget area."
+msgstr ""
+
+#: functions.php:91
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions.php:93
+msgid "Footer widget area."
+msgstr ""
+
+#: header.php:37
+msgid "Free Assessment"
+msgstr ""
+
+#: header.php:44
+msgid "Toggle Menu"
+msgstr ""
+
+#: inc/class-vagra-admin.php:40
+#: inc/class-vagra-admin.php:122
+msgid "Vagra MSP Settings"
+msgstr ""
+
+#: inc/class-vagra-admin.php:41
+msgid "Vagra MSP"
+msgstr ""
+
+#: inc/class-vagra-admin.php:57
+msgid "Company Information"
+msgstr ""
+
+#: inc/class-vagra-admin.php:58
+msgid "Company Name"
+msgstr ""
+
+#: inc/class-vagra-admin.php:59
+msgid "Phone Number"
+msgstr ""
+
+#: inc/class-vagra-admin.php:60
+msgid "Email Address"
+msgstr ""
+
+#: inc/class-vagra-admin.php:62
+msgid "Call to Action"
+msgstr ""
+
+#: inc/class-vagra-admin.php:63
+msgid "Button Text"
+msgstr ""
+
+#: inc/class-vagra-admin.php:64
+msgid "Button URL"
+msgstr ""
+
+#: inc/class-vagra-admin.php:66
+#: inc/customizer.php:151
+msgid "Footer"
+msgstr ""
+
+#: inc/class-vagra-admin.php:67
+msgid "Footer Text"
+msgstr ""
+
+#: inc/class-vagra-admin.php:69
+msgid "Features"
+msgstr ""
+
+#: inc/class-vagra-admin.php:70
+#: inc/class-vagra-admin.php:163
+msgid "AI Chat Widget"
+msgstr ""
+
+#: inc/class-vagra-admin.php:74
+msgid "Enter your MSP business details."
+msgstr ""
+
+#: inc/class-vagra-admin.php:78
+msgid "Configure the header CTA button."
+msgstr ""
+
+#: inc/class-vagra-admin.php:105
+#: inc/class-vagra-admin.php:110
+msgid "Enabled"
+msgstr ""
+
+#: inc/class-vagra-admin.php:110
+msgid "Disabled"
+msgstr ""
+
+#: inc/class-vagra-admin.php:112
+msgid "Configure in Customizer"
+msgstr ""
+
+#: inc/class-vagra-admin.php:123
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: inc/class-vagra-admin.php:130
+msgid "Save Settings"
+msgstr ""
+
+#: inc/class-vagra-admin.php:145
+msgid "Vagra MSP Theme Status"
+msgstr ""
+
+#: inc/class-vagra-admin.php:153
+msgid "Active"
+msgstr ""
+
+#: inc/class-vagra-admin.php:153
+msgid "Not loaded"
+msgstr ""
+
+#: inc/class-vagra-admin.php:159
+msgid "Theme Version"
+msgstr ""
+
+#: inc/class-vagra-admin.php:167
+msgid "Chat Enabled"
+msgstr ""
+
+#: inc/class-vagra-admin.php:168
+msgid "Yes"
+msgstr ""
+
+#: inc/class-vagra-admin.php:168
+msgid "No"
+msgstr ""
+
+#: inc/class-vagra-admin.php:171
+msgid "Company"
+msgstr ""
+
+#: inc/class-vagra-admin.php:175
+msgid "CTA Button"
+msgstr ""
+
+#: inc/class-vagra-admin.php:181
+msgid "Go to Settings"
+msgstr ""
+
+#: inc/class-vagra-chat.php:111
+#: inc/customizer.php:129
+msgid "Ask us anything"
+msgstr ""
+
+#: inc/class-vagra-chat.php:149
+msgid "Chat is currently disabled."
+msgstr ""
+
+#: inc/class-vagra-chat.php:154
+msgid "Chat is not configured. Please add an API key in the Customizer."
+msgstr ""
+
+#: inc/class-vagra-chat.php:158
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: inc/class-vagra-chat.php:165
+msgid "Message cannot be empty."
+msgstr ""
+
+#: inc/class-vagra-chat.php:208
+msgid "Could not connect to the AI service."
+msgstr ""
+
+#: inc/class-vagra-chat.php:214
+msgid "Received an unexpected response from the AI service."
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Vagra MSP Options"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Brand Colors"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Dark Color"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Muted Color"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php:72
+msgid "Heading Font Family"
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "Body Font Family"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "AI Chat"
+msgstr ""
+
+#: inc/customizer.php:112
+msgid "Enable AI Chat Widget"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Claude API Key"
+msgstr ""
+
+#: inc/customizer.php:123
+msgid "Enter your Anthropic API key."
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Chat Window Title"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "System Prompt Override"
+msgstr ""
+
+#: inc/customizer.php:144
+msgid "Leave empty to use the built-in MSP cybersecurity prompt."
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Footer Copyright Text"
+msgstr ""
+
+#. translators: %s: link to install One Click Demo Import plugin
+#: inc/demo-import.php:43
+#, php-format
+msgid "Vagra MSP Cybersecurity: Want to import demo content? Install the %s plugin, then go to Appearance > Import Demo Data."
+msgstr ""
+
+#: inc/demo-import.php:61
+msgid "ShieldNet MSP Demo"
+msgstr ""
+
+#: inc/demo-import.php:66
+msgid "This will import pages, posts, and settings for the ShieldNet MSP demo site."
+msgstr ""
+
+#. translators: %s: search query
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search&hellip;"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: single.php:20
+msgid "Previous"
+msgstr ""
+
+#: single.php:21
+msgid "Next"
+msgstr ""
+
+#: template-parts/ai-chat.php:34
+msgid "Open chat"
+msgstr ""
+
+#: template-parts/ai-chat.php:44
+msgid "Close chat"
+msgstr ""
+
+#: template-parts/ai-chat.php:49
+msgid "Type your question..."
+msgstr ""
+
+#: template-parts/ai-chat.php:50
+msgid "Send"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "No results found"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing here yet"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Sorry, no results matched your search. Please try again with different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid "It seems we can't find what you're looking for."
+msgstr ""
+
+#: template-parts/content-page.php:19
+#: template-parts/content-single.php:36
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:48
+msgid "Tags:"
+msgstr ""
+
+#: template-parts/content.php:33
+msgid "Read More"
+msgstr ""

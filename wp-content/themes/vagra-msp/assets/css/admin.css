@@ -1,0 +1,121 @@
+/**
+ * Vagra MSP Admin Styles
+ */
+
+.vagra-admin-wrap {
+    max-width: 800px;
+}
+
+.vagra-admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 10px;
+    border-bottom: 2px solid #3366FF;
+    margin-bottom: 24px;
+}
+
+.vagra-admin-header h1 {
+    color: #2B3674;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.vagra-admin-header h1 .dashicons {
+    color: #3366FF;
+    margin-right: 8px;
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+.vagra-admin-version {
+    color: #68769F;
+    font-size: 13px;
+    margin: 0;
+}
+
+.vagra-admin-form .form-table th {
+    color: #2B3674;
+    font-weight: 500;
+    padding: 16px 10px 16px 0;
+}
+
+.vagra-admin-form .form-table td {
+    padding: 12px 10px;
+}
+
+.vagra-admin-form h2 {
+    color: #2B3674;
+    font-size: 18px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-top: 32px;
+}
+
+.vagra-admin-form .regular-text {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 6px 12px;
+}
+
+.vagra-admin-form .regular-text:focus {
+    border-color: #3366FF;
+    box-shadow: 0 0 0 1px #3366FF;
+}
+
+.vagra-admin-form .large-text {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+}
+
+.vagra-admin-form .large-text:focus {
+    border-color: #3366FF;
+    box-shadow: 0 0 0 1px #3366FF;
+}
+
+.vagra-admin-form .button-primary {
+    background: #3366FF;
+    border-color: #3366FF;
+    border-radius: 8px;
+    padding: 4px 20px;
+    height: 36px;
+    font-size: 14px;
+}
+
+.vagra-admin-form .button-primary:hover,
+.vagra-admin-form .button-primary:focus {
+    background: #2B3674;
+    border-color: #2B3674;
+}
+
+/* Dashboard Widget */
+.vagra-dashboard-widget .widefat td {
+    padding: 8px 10px;
+}
+
+.vagra-status--ok {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+.vagra-status--warn {
+    color: #d97706;
+    font-weight: 500;
+}
+
+.vagra-dashboard-widget__link {
+    text-align: right;
+    margin: 10px 0 0;
+}
+
+.vagra-dashboard-widget__link a {
+    color: #3366FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.vagra-dashboard-widget__link a:hover {
+    color: #2B3674;
+}

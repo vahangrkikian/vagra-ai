@@ -1,0 +1,368 @@
+# Copyright (C) 2026 Vagra AI
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vagra NSLookup 1.0.0\n"
+"Report-Msgid-Bugs-To: https://nslookup.am/contact/\n"
+"POT-Creation-Date: 2026-04-28 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Vagra NSLookup Theme\n"
+"X-Domain: vagra-nslookup\n"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php
+msgid "Tools Menu"
+msgstr ""
+
+#: functions.php
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php
+msgid "Main sidebar widget area."
+msgstr ""
+
+#: functions.php
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions.php
+msgid "Footer widget area."
+msgstr ""
+
+#. translators: %d: number of minutes
+#: functions.php
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php
+msgid "nslookup.am Settings"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Brand Colors"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Primary Color (Indigo)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Accent Color (Cyan)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Heading Font Family"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Body Font Family"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Monospace Font Family"
+msgstr ""
+
+#: inc/customizer.php
+msgid "AI Chat"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Enable AI Chat Widget"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Claude API Key"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Enter your Anthropic API key."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Ask the DNS Assistant"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Chat Window Title"
+msgstr ""
+
+#: inc/customizer.php
+msgid "System Prompt Override"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Leave empty to use the built-in DNS assistant prompt."
+msgstr ""
+
+#: inc/customizer.php
+msgid "DNS Tool"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Default Resolver"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Authoritative"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Google (8.8.8.8)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Cloudflare (1.1.1.1)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Quad9 (9.9.9.9)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "OpenDNS (208.67.222.222)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Enable Parallel Queries"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Use parallel DNS queries for propagation checks (faster but uses more server resources)."
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "General Settings"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Configure your nslookup.am theme settings."
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Site Name"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Call to Action"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Button Text"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Button URL"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Footer"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Footer Text"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "API Keys"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Manage API keys for the AI chat feature. Keys are stored securely in wp_options."
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Enter API key"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "A key is already saved. Enter a new one to replace it, or leave blank to keep the current key."
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Features"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Enabled"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Disabled"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Configure in Customizer"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Save Settings"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "nslookup.am Theme Status"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Theme Version"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "AI Chat Widget"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Active"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Not loaded"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Chat Enabled"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Yes"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "No"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "DNS API"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Go to Settings"
+msgstr ""
+
+#: inc/class-vagra-nsl-admin.php
+msgid "Version %s"
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Chat is currently disabled."
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Chat is not configured. Please add an API key in the Customizer."
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Message cannot be empty."
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Could not connect to the AI service."
+msgstr ""
+
+#: inc/class-vagra-nsl-chat.php
+msgid "Received an unexpected response from the AI service."
+msgstr ""
+
+#: template-parts/ai-chat.php
+msgid "Open chat"
+msgstr ""
+
+#: template-parts/ai-chat.php
+msgid "Close chat"
+msgstr ""
+
+#: template-parts/ai-chat.php
+msgid "Ask about DNS..."
+msgstr ""
+
+#: template-parts/ai-chat.php
+msgid "Send"
+msgstr ""
+
+#: inc/demo-import.php
+msgid "nslookup.am Demo Content"
+msgstr ""
+
+#: inc/demo-import.php
+msgid "This will import demo pages, blog posts, menu items, and theme settings. Existing content will not be deleted."
+msgstr ""
+
+#: inc/demo-import.php
+msgid "To import nslookup.am demo content, install the \"One Click Demo Import\" plugin."
+msgstr ""
+
+#: inc/demo-import.php
+msgid "Install now"
+msgstr ""
+
+#: 404.php
+msgid "Status 404 · NXDOMAIN"
+msgstr ""
+
+#: 404.php
+msgid "Look up a domain instead&hellip;"
+msgstr ""
+
+#: 404.php
+msgid "Search"
+msgstr ""
+
+#: searchform.php
+msgid "Search&hellip;"
+msgstr ""
+
+#: header.php
+msgid "Primary navigation"
+msgstr ""
+
+#: header.php
+msgid "Toggle menu"
+msgstr ""
+
+#: header.php
+msgid "Check DNS"
+msgstr ""
+
+#: archive.php
+msgid "All posts"
+msgstr ""
+
+#: archive.php
+msgid "No posts found."
+msgstr ""
+
+#: single.php
+msgid "Author"
+msgstr ""
+
+#: single.php
+msgid "Category"
+msgstr ""
+
+#: single.php
+msgid "Tag"
+msgstr ""

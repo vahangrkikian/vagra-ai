@@ -1,0 +1,38 @@
+{
+    "footer-1": [
+        {
+            "widget": "text",
+            "settings": {
+                "title": "About the Firm",
+                "text": "Morrison & Associates has been providing trusted legal counsel since 1998. Our experienced attorneys are dedicated to achieving the best possible outcomes for our clients."
+            }
+        }
+    ],
+    "footer-2": [
+        {
+            "widget": "text",
+            "settings": {
+                "title": "Practice Areas",
+                "text": "<ul>\n<li><a href=\"/practice-areas/personal-injury/\">Personal Injury</a></li>\n<li><a href=\"/practice-areas/family-law/\">Family Law</a></li>\n<li><a href=\"/practice-areas/criminal-defense/\">Criminal Defense</a></li>\n<li><a href=\"/practice-areas/business-law/\">Business Law</a></li>\n<li><a href=\"/practice-areas/immigration/\">Immigration</a></li>\n<li><a href=\"/practice-areas/estate-planning/\">Estate Planning</a></li>\n</ul>"
+            }
+        }
+    ],
+    "footer-3": [
+        {
+            "widget": "text",
+            "settings": {
+                "title": "Contact Info",
+                "text": "456 Justice Boulevard, Suite 200\nDenver, CO 80202\n\nPhone: (555) 123-4567\nEmail: info@morrisonlaw.com"
+            }
+        }
+    ],
+    "footer-4": [
+        {
+            "widget": "text",
+            "settings": {
+                "title": "Office Hours",
+                "text": "Monday - Friday\n8:30 AM - 5:30 PM MST\n\nSaturday: By appointment\n\nFree consultations available"
+            }
+        }
+    ]
+}

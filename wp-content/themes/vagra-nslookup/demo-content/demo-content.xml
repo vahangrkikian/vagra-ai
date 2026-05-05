@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>nslookup.am</title>
+	<link>https://nslookup.am</link>
+	<description>Free DNS Lookup &amp; Propagation Checker</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://nslookup.am</wp:base_site_url>
+	<wp:base_blog_url>https://nslookup.am</wp:base_blog_url>
+
+	<wp:category>
+		<wp:term_id>1</wp:term_id>
+		<wp:category_nicename>dns-basics</wp:category_nicename>
+		<wp:category_parent></wp:category_parent>
+		<wp:cat_name><![CDATA[DNS Basics]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>2</wp:term_id>
+		<wp:category_nicename>tutorials</wp:category_nicename>
+		<wp:category_parent></wp:category_parent>
+		<wp:cat_name><![CDATA[Tutorials]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>3</wp:term_id>
+		<wp:category_nicename>troubleshooting</wp:category_nicename>
+		<wp:category_parent></wp:category_parent>
+		<wp:cat_name><![CDATA[Troubleshooting]]></wp:cat_name>
+	</wp:category>
+
+	<!-- ====== PAGES ====== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://nslookup.am/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- Homepage content is rendered by front-page.php template -->]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home</wp:post_name>
+		<wp:post_id>10</wp:post_id>
+	</item>
+
+	<item>
+		<title>NS Lookup</title>
+		<link>https://nslookup.am/ns-lookup/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Use our free NS Lookup tool to query DNS records for any domain. Check A, AAAA, CNAME, MX, NS, TXT, SRV, and more record types against multiple resolvers including Google, Cloudflare, Quad9, and OpenDNS.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>ns-lookup</wp:post_name>
+		<wp:post_id>11</wp:post_id>
+	</item>
+
+	<item>
+		<title>DNS Propagation Checker</title>
+		<link>https://nslookup.am/propagation/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Check DNS propagation across 30+ global resolvers. See which servers have updated to your new DNS records and which are still serving cached data. Monitor A, AAAA, CNAME, MX, NS, and TXT record propagation in real time.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>propagation</wp:post_name>
+		<wp:post_id>12</wp:post_id>
+	</item>
+
+	<item>
+		<title>Other DNS Tools</title>
+		<link>https://nslookup.am/tools/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<p>Explore our complete suite of DNS and email authentication tools. Each tool is designed to help you diagnose, verify, and troubleshoot specific aspects of your domain's DNS configuration.</p>
+
+<h2>DNS Record Tools</h2>
+<p><strong>A Record Lookup</strong> — Find the IPv4 address associated with a domain. Essential for verifying your domain points to the correct server.</p>
+<p><strong>AAAA Record Lookup</strong> — Find the IPv6 address for a domain. Important as more networks adopt IPv6.</p>
+<p><strong>CNAME Record Lookup</strong> — Check canonical name aliases. Useful for verifying CDN and subdomain configurations.</p>
+<p><strong>MX Record Lookup</strong> — Find mail exchange servers for a domain. Essential for email delivery troubleshooting.</p>
+<p><strong>NS Record Lookup</strong> — Identify the authoritative nameservers for a domain. First step in DNS troubleshooting.</p>
+<p><strong>TXT Record Lookup</strong> — View text records including SPF, DKIM, and DMARC policies.</p>
+<p><strong>SOA Record Lookup</strong> — Check the Start of Authority record with serial number, refresh intervals, and TTL values.</p>
+<p><strong>SRV Record Lookup</strong> — Find service location records used by VoIP, XMPP, and other protocols.</p>
+<p><strong>PTR Record Lookup</strong> — Perform reverse DNS lookups to find the hostname associated with an IP address.</p>
+<p><strong>CAA Record Lookup</strong> — Check Certificate Authority Authorization records that control which CAs can issue SSL certificates.</p>
+
+<h2>Email Authentication Tools</h2>
+<p><strong>SPF Checker</strong> — Validate your Sender Policy Framework records to prevent email spoofing.</p>
+<p><strong>DKIM Checker</strong> — Verify DomainKeys Identified Mail signatures for email authentication.</p>
+<p><strong>DMARC Checker</strong> — Analyze your Domain-based Message Authentication policy and reporting configuration.</p>
+<p><strong>BIMI Checker</strong> — Check Brand Indicators for Message Identification records for email logo display.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>tools</wp:post_name>
+		<wp:post_id>13</wp:post_id>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://nslookup.am/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<h2>Our Mission</h2>
+<p>nslookup.am exists to make DNS transparent. Every day, millions of domain changes propagate across the global DNS infrastructure — and when something goes wrong, the debugging experience is painful. We built nslookup.am to give developers, sysadmins, and domain owners instant visibility into their DNS configuration.</p>
+
+<h2>What We Believe</h2>
+<p><strong>DNS tools should be free.</strong> DNS is public infrastructure. The tools to inspect it should be too.</p>
+<p><strong>Speed matters.</strong> When your domain is down, every second counts. Our tools return results in milliseconds, not minutes.</p>
+<p><strong>Global perspective is essential.</strong> DNS propagation is inherently geographic. We query 30+ resolvers across 6 continents to give you the full picture.</p>
+<p><strong>Privacy is non-negotiable.</strong> We don't track your queries, sell your data, or require registration. Just type a domain and get answers.</p>
+
+<h2>The Technology</h2>
+<p>nslookup.am is built on WordPress with a React Islands architecture — server-rendered PHP templates for SEO and performance, with interactive React components for the tool panels. Our DNS backend queries real resolvers in real time using PHP's dns_get_record() with dig fallback.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about</wp:post_name>
+		<wp:post_id>14</wp:post_id>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>https://nslookup.am/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Have a question, found a bug, or want to suggest a feature? We'd love to hear from you. Use the form below or reach out directly.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>contact</wp:post_name>
+		<wp:post_id>15</wp:post_id>
+	</item>
+
+	<item>
+		<title>FAQ</title>
+		<link>https://nslookup.am/faq/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Find answers to commonly asked questions about DNS, our tools, and how to troubleshoot domain issues.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>faq</wp:post_name>
+		<wp:post_id>16</wp:post_id>
+	</item>
+
+	<item>
+		<title>Privacy Policy</title>
+		<link>https://nslookup.am/privacy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<h2>Information We Collect</h2>
+<p>nslookup.am is designed with privacy in mind. We collect minimal data necessary to operate the service:</p>
+<ul>
+<li><strong>DNS Queries:</strong> Domain names you look up are processed in real time and not stored permanently. We do not maintain query logs tied to individual users.</li>
+<li><strong>Rate Limiting:</strong> We temporarily store hashed IP addresses (using one-way MD5 hashing) in WordPress transients to enforce rate limits. This data expires automatically after one hour.</li>
+<li><strong>AI Chat:</strong> If you use the AI chat assistant, your messages are sent to the Anthropic API for processing. Chat history is stored only in your browser's session storage and is not sent to our servers.</li>
+</ul>
+
+<h2>Cookies</h2>
+<p>nslookup.am uses only essential WordPress cookies for site functionality. We do not use tracking cookies, analytics cookies, or advertising cookies.</p>
+
+<h2>Third-Party Services</h2>
+<ul>
+<li><strong>DNS Resolvers:</strong> When you perform a DNS lookup, your query domain is sent to public DNS resolvers (Google, Cloudflare, Quad9, OpenDNS, and others). These services have their own privacy policies.</li>
+<li><strong>Anthropic API:</strong> If the AI chat feature is enabled, chat messages are processed by Anthropic's Claude API. See Anthropic's privacy policy for details.</li>
+<li><strong>Google Fonts:</strong> We load Inter and JetBrains Mono fonts from Google Fonts. See Google's privacy policy for details.</li>
+</ul>
+
+<h2>Data Retention</h2>
+<p>We do not retain personal data. Rate limiting transients expire after one hour. Chat history exists only in your browser session and is cleared when you close the tab.</p>
+
+<h2>Your Rights</h2>
+<p>Since we don't collect or store personal data, there is generally nothing to delete or export. If you have concerns, contact us through our contact page.</p>
+
+<h2>Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+<p><em>Last updated: April 2026</em></p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>privacy</wp:post_name>
+		<wp:post_id>17</wp:post_id>
+	</item>
+
+	<item>
+		<title>Terms of Service</title>
+		<link>https://nslookup.am/terms/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<h2>Acceptance of Terms</h2>
+<p>By accessing and using nslookup.am, you agree to these Terms of Service. If you do not agree, please do not use the service.</p>
+
+<h2>Service Description</h2>
+<p>nslookup.am provides free DNS lookup and propagation checking tools. The service queries public DNS resolvers and displays the results. We also offer an optional AI chat assistant for DNS-related questions.</p>
+
+<h2>Acceptable Use</h2>
+<p>You agree to use nslookup.am only for lawful purposes. You may not:</p>
+<ul>
+<li>Use the service to perform denial-of-service attacks or abuse DNS infrastructure</li>
+<li>Attempt to circumvent rate limiting</li>
+<li>Use automated scripts to make excessive requests</li>
+<li>Attempt to reverse-engineer or interfere with the service</li>
+</ul>
+
+<h2>Rate Limiting</h2>
+<p>To ensure fair access, DNS lookup requests are limited to 60 per hour per IP address. AI chat requests are limited to 20 per hour per IP address.</p>
+
+<h2>Disclaimer</h2>
+<p>DNS lookup results are provided "as is" from public resolvers. We do not guarantee the accuracy, completeness, or timeliness of results. DNS data changes frequently and cached results may not reflect the most recent changes.</p>
+
+<h2>AI Chat Disclaimer</h2>
+<p>The AI chat assistant provides general information about DNS concepts. It is not a substitute for professional network administration advice. We are not responsible for actions taken based on AI-generated responses.</p>
+
+<h2>Limitation of Liability</h2>
+<p>nslookup.am is provided free of charge. We are not liable for any damages arising from your use of the service, including but not limited to incorrect DNS information or service interruptions.</p>
+
+<h2>Changes to Terms</h2>
+<p>We reserve the right to modify these terms at any time. Continued use of the service constitutes acceptance of updated terms.</p>
+
+<p><em>Last updated: April 2026</em></p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>terms</wp:post_name>
+		<wp:post_id>18</wp:post_id>
+	</item>
+
+	<!-- ====== BLOG POSTS ====== -->
+
+	<item>
+		<title>What Is DNS Propagation and Why Does It Take So Long?</title>
+		<link>https://nslookup.am/blog/what-is-dns-propagation/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="dns-basics"><![CDATA[DNS Basics]]></category>
+		<content:encoded><![CDATA[<p>You've just changed your domain's nameservers or updated an A record, and your hosting provider tells you to "wait for DNS propagation." But what does that actually mean, and why can it take up to 48 hours?</p>
+
+<h2>How DNS Resolution Works</h2>
+<p>When someone types your domain into a browser, their computer doesn't magically know which server to contact. Instead, it asks a series of DNS servers in a hierarchical chain: the recursive resolver (usually your ISP or a public resolver like Google's 8.8.8.8), the root nameservers, the TLD nameservers (.com, .org, etc.), and finally your domain's authoritative nameservers.</p>
+
+<h2>The Role of Caching</h2>
+<p>Every step in this chain caches the answer for a period defined by the TTL (Time to Live) value. If your A record has a TTL of 3600 seconds (1 hour), every resolver that looked up your domain will continue serving the old IP address for up to an hour — even after you've changed it.</p>
+
+<h2>Why It Takes So Long</h2>
+<p>The "48 hours" number comes from the fact that different resolvers around the world query your records at different times. Some will pick up the change quickly (especially if they don't have a cached copy), while others might hold onto the old record for the full TTL duration. Additionally, some ISP resolvers don't strictly honor TTL values and may cache records longer than specified.</p>
+
+<h2>How to Speed It Up</h2>
+<p>Before making a DNS change, lower the TTL on the affected records to 300 seconds (5 minutes) and wait for the old TTL to expire. Then make your change. This ensures most resolvers will check for updates within 5 minutes. After propagation is complete, raise the TTL back to a normal value like 3600 or 86400 for better performance.</p>
+
+<h2>Checking Propagation</h2>
+<p>Use our DNS Propagation Checker to see which resolvers around the world have picked up your new records. The tool queries 30+ public resolvers across 6 continents and shows you exactly where your changes have propagated and where they haven't.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>what-is-dns-propagation</wp:post_name>
+		<wp:post_id>101</wp:post_id>
+	</item>
+
+	<item>
+		<title>DNS Record Types Explained: A Complete Guide</title>
+		<link>https://nslookup.am/blog/dns-record-types-explained/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 04 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="dns-basics"><![CDATA[DNS Basics]]></category>
+		<content:encoded><![CDATA[<p>DNS uses different record types to store different kinds of information about a domain. Understanding these record types is essential for managing your domain's configuration. Here's a complete guide to every DNS record type you'll encounter.</p>
+
+<h2>A Record (Address)</h2>
+<p>The most fundamental record type. An A record maps a domain name to an IPv4 address (like 93.184.216.34). Every domain that serves a website needs at least one A record.</p>
+
+<h2>AAAA Record (IPv6 Address)</h2>
+<p>The IPv6 equivalent of an A record. Maps a domain to an IPv6 address (like 2606:2800:220:1:248:1893:25c8:1946). As IPv6 adoption grows, AAAA records are becoming increasingly important.</p>
+
+<h2>CNAME Record (Canonical Name)</h2>
+<p>Creates an alias from one domain name to another. For example, www.example.com might be a CNAME pointing to example.com. CNAME records cannot coexist with other record types on the same name.</p>
+
+<h2>MX Record (Mail Exchange)</h2>
+<p>Specifies which mail servers accept email for your domain, along with a priority value. Lower priority numbers indicate preferred servers. Essential for email delivery.</p>
+
+<h2>NS Record (Nameserver)</h2>
+<p>Identifies the authoritative nameservers for a domain. These are the servers that hold the master copy of your DNS records. Changing NS records effectively delegates control of your DNS to a different provider.</p>
+
+<h2>TXT Record (Text)</h2>
+<p>Stores arbitrary text data. Originally designed for human-readable notes, TXT records are now widely used for SPF (email authentication), DKIM (email signing), DMARC (email policy), domain verification, and other machine-readable purposes.</p>
+
+<h2>SOA Record (Start of Authority)</h2>
+<p>Contains administrative information about the zone: the primary nameserver, the responsible person's email, a serial number (used to detect changes), and timing parameters for zone transfers and caching.</p>
+
+<h2>SRV Record (Service)</h2>
+<p>Specifies the location of services like VoIP (SIP), instant messaging (XMPP), or other protocols. Includes priority, weight, port, and target hostname.</p>
+
+<h2>PTR Record (Pointer)</h2>
+<p>Used for reverse DNS lookups — mapping an IP address back to a hostname. Important for email deliverability, as many mail servers verify that the sending IP has a valid PTR record.</p>
+
+<h2>CAA Record (Certificate Authority Authorization)</h2>
+<p>Controls which Certificate Authorities (CAs) are allowed to issue SSL/TLS certificates for your domain. Helps prevent unauthorized certificate issuance.</p>
+
+<h2>Less Common Records</h2>
+<p><strong>DNSKEY and DS records</strong> are used for DNSSEC (DNS Security Extensions), which adds cryptographic signatures to DNS responses to prevent tampering. <strong>NAPTR records</strong> are used for URI and service rewriting, commonly in telephony applications.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>dns-record-types-explained</wp:post_name>
+		<wp:post_id>102</wp:post_id>
+	</item>
+
+	<item>
+		<title>How to Check If Your DNS Has Propagated</title>
+		<link>https://nslookup.am/blog/how-to-check-dns-propagation/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="tutorials"><![CDATA[Tutorials]]></category>
+		<content:encoded><![CDATA[<p>You've made a DNS change and now you need to know: has it propagated? Here are three methods to check, from the simplest to the most thorough.</p>
+
+<h2>Method 1: Use nslookup.am's Propagation Checker</h2>
+<p>The easiest approach. Go to our DNS Propagation Checker page, enter your domain and select the record type you changed. The tool will query 30+ resolvers worldwide and show you a map of which ones have the new record and which still serve the old one.</p>
+
+<h2>Method 2: Use nslookup from the Command Line</h2>
+<p>On Windows, open Command Prompt and run:</p>
+<pre><code>nslookup example.com 8.8.8.8</code></pre>
+<p>This queries Google's DNS resolver specifically. Replace 8.8.8.8 with other resolver IPs to check different locations:</p>
+<ul>
+<li>1.1.1.1 — Cloudflare</li>
+<li>9.9.9.9 — Quad9</li>
+<li>208.67.222.222 — OpenDNS</li>
+</ul>
+
+<h2>Method 3: Use dig for Detailed Output</h2>
+<p>On Linux/macOS, the <code>dig</code> command provides more detailed information:</p>
+<pre><code>dig @8.8.8.8 example.com A +short</code></pre>
+<p>The <code>+short</code> flag gives you just the answer. Remove it for full output including TTL values and authority information.</p>
+
+<h2>What to Look For</h2>
+<p>Compare the results from different resolvers. If they all show the same record, propagation is complete. If some show the old value and others the new one, propagation is still in progress. Pay attention to the TTL value — it tells you how much longer the cached record will be served before the resolver checks again.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>how-to-check-dns-propagation</wp:post_name>
+		<wp:post_id>103</wp:post_id>
+	</item>
+
+	<item>
+		<title>Understanding TTL: How Time to Live Affects Your DNS</title>
+		<link>https://nslookup.am/blog/understanding-ttl/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="dns-basics"><![CDATA[DNS Basics]]></category>
+		<content:encoded><![CDATA[<p>TTL (Time to Live) is one of the most important — and most misunderstood — concepts in DNS. It controls how long DNS resolvers cache your records before checking for updates. Getting it right can mean the difference between a seamless migration and hours of downtime.</p>
+
+<h2>What TTL Means</h2>
+<p>Every DNS record has a TTL value measured in seconds. When a resolver looks up your record, it caches the result for that many seconds. During that time, any subsequent queries for the same record get the cached answer without contacting your authoritative nameserver.</p>
+
+<h2>Common TTL Values</h2>
+<ul>
+<li><strong>300 (5 minutes)</strong> — Good for records you change frequently or before a migration</li>
+<li><strong>3600 (1 hour)</strong> — Standard default for most records</li>
+<li><strong>86400 (24 hours)</strong> — Good for stable records that rarely change</li>
+<li><strong>604800 (1 week)</strong> — Maximum recommended TTL for very stable records</li>
+</ul>
+
+<h2>The TTL Trade-off</h2>
+<p><strong>Lower TTL:</strong> Changes propagate faster, but your nameserver gets more queries (higher load) and users experience slightly slower resolution (more cache misses).</p>
+<p><strong>Higher TTL:</strong> Better performance and lower nameserver load, but changes take longer to propagate. If something goes wrong, you're stuck with bad data for longer.</p>
+
+<h2>TTL Strategy for Migrations</h2>
+<p>Planning to change hosting providers or IP addresses? Follow this sequence:</p>
+<ol>
+<li>48 hours before the change: Lower TTL to 300 seconds</li>
+<li>Wait for the old TTL to expire (so all resolvers honor the new low TTL)</li>
+<li>Make your DNS change</li>
+<li>Monitor propagation — most resolvers should update within 5-10 minutes</li>
+<li>Once verified, raise TTL back to 3600 or higher</li>
+</ol>
+
+<h2>Checking Current TTL</h2>
+<p>Use our NS Lookup tool to see the current TTL on any record. The TTL value appears in the response for each record type, showing how many seconds remain before the cache expires.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>understanding-ttl</wp:post_name>
+		<wp:post_id>104</wp:post_id>
+	</item>
+
+	<item>
+		<title>DNSSEC Explained: Why It Matters for Your Domain</title>
+		<link>https://nslookup.am/blog/dnssec-explained/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="dns-basics"><![CDATA[DNS Basics]]></category>
+		<content:encoded><![CDATA[<p>DNS was designed in the 1980s without built-in security. DNSSEC (DNS Security Extensions) fixes that by adding cryptographic signatures to DNS responses, ensuring that the answer you receive actually came from the authoritative source and wasn't tampered with in transit.</p>
+
+<h2>The Problem DNSSEC Solves</h2>
+<p>Without DNSSEC, a DNS response is just a UDP packet with no authentication. An attacker positioned between you and the resolver (via cache poisoning, man-in-the-middle, or BGP hijacking) could forge a DNS response and redirect your traffic to a malicious server. You'd have no way to detect this.</p>
+
+<h2>How DNSSEC Works</h2>
+<p>DNSSEC adds two main record types to DNS:</p>
+<ul>
+<li><strong>DNSKEY records</strong> — contain the public keys used to verify signatures</li>
+<li><strong>DS (Delegation Signer) records</strong> — published in the parent zone to establish a chain of trust</li>
+</ul>
+<p>When a DNSSEC-validating resolver receives a response, it checks the cryptographic signature (RRSIG record) against the DNSKEY. It then verifies that DNSKEY is authentic by checking the DS record in the parent zone. This chain of trust extends all the way up to the DNS root zone.</p>
+
+<h2>Should You Enable DNSSEC?</h2>
+<p>Yes, if your registrar and DNS provider support it. DNSSEC protects your domain's visitors from cache poisoning and ensures they reach the real server. Most major registrars and DNS providers now support DNSSEC with one-click setup.</p>
+
+<h2>Checking DNSSEC Status</h2>
+<p>Use our NS Lookup tool to query DNSKEY and DS records for any domain. If both exist and are properly configured, DNSSEC is active. Missing DS records at the registrar level is the most common cause of incomplete DNSSEC deployment.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>dnssec-explained</wp:post_name>
+		<wp:post_id>105</wp:post_id>
+	</item>
+
+	<item>
+		<title>Troubleshooting Common DNS Issues</title>
+		<link>https://nslookup.am/blog/troubleshooting-dns-issues/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2026 10:00:00 +0000</pubDate>
+		<category domain="category" nicename="troubleshooting"><![CDATA[Troubleshooting]]></category>
+		<content:encoded><![CDATA[<p>DNS issues can be frustrating because the symptoms are vague — "the site is down" could mean a dozen different things. Here's a systematic approach to diagnosing the most common DNS problems.</p>
+
+<h2>Problem: Domain Not Resolving at All</h2>
+<p><strong>Symptom:</strong> Browser shows "DNS_PROBE_FINISHED_NXDOMAIN" or "server not found."</p>
+<p><strong>Check:</strong> Use our NS Lookup tool to query the NS records. If no NS records exist, the domain may have expired or nameservers aren't set at the registrar. Check your registrar's control panel to verify the domain is active and nameservers are configured.</p>
+
+<h2>Problem: Domain Points to Wrong IP</h2>
+<p><strong>Symptom:</strong> Site loads but shows the wrong content, or shows a hosting provider's default page.</p>
+<p><strong>Check:</strong> Look up the A record and compare the returned IP with what you expect. If it's wrong, update the A record at your DNS provider. If the A record looks correct but the site is wrong, the issue may be on the server side (virtual host configuration).</p>
+
+<h2>Problem: Email Not Being Delivered</h2>
+<p><strong>Symptom:</strong> Emails sent to your domain bounce or go to spam.</p>
+<p><strong>Check:</strong> Verify MX records point to your email provider. Then check TXT records for SPF, DKIM, and DMARC. Missing or incorrect email authentication records are the number one cause of delivery issues. Use our sister tools (SPF Checker, DKIM Checker, DMARC Checker) for detailed validation.</p>
+
+<h2>Problem: DNS Changes Not Taking Effect</h2>
+<p><strong>Symptom:</strong> You changed a record but the old value still appears.</p>
+<p><strong>Check:</strong> Use the Propagation Checker to see which resolvers have the new value. If none do, verify the change was saved correctly at your DNS provider. If some have it and others don't, it's normal propagation delay — check the TTL to estimate when it will complete.</p>
+
+<h2>Problem: Subdomain Not Working</h2>
+<p><strong>Symptom:</strong> www.example.com works but app.example.com doesn't.</p>
+<p><strong>Check:</strong> Look up the A or CNAME record for the specific subdomain. Subdomains need their own DNS records — they don't automatically inherit the parent domain's A record. Add the missing record and wait for propagation.</p>
+
+<h2>Problem: Slow DNS Resolution</h2>
+<p><strong>Symptom:</strong> Pages take a long time to start loading.</p>
+<p><strong>Check:</strong> Use our tool to check response times from different resolvers. If your authoritative nameserver is slow, consider switching to a faster DNS provider. If only certain resolvers are slow, the issue may be geographic — your DNS provider might not have points of presence near those resolvers.</p>]]></content:encoded>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>troubleshooting-dns-issues</wp:post_name>
+		<wp:post_id>106</wp:post_id>
+	</item>
+
+</channel>
+</rss>

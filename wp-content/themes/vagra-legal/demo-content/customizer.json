@@ -1,0 +1,10 @@
+{
+    "vagra_legal_primary_color": "#1B3A5C",
+    "vagra_legal_accent_color": "#C9A84C",
+    "vagra_legal_dark_color": "#1A1A2E",
+    "vagra_legal_chat_enabled": true,
+    "vagra_legal_chat_title": "Ask us anything",
+    "vagra_legal_chat_disclaimer": "This is not legal advice. For legal counsel, please schedule a consultation.",
+    "vagra_legal_footer_text": "",
+    "vagra_legal_footer_disclaimer": "The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation."
+}

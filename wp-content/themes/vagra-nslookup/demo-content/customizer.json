@@ -1,0 +1,12 @@
+{
+	"vagra_nsl_primary_color": "#6366f1",
+	"vagra_nsl_accent_color": "#22d3ee",
+	"vagra_nsl_heading_font": "Inter",
+	"vagra_nsl_body_font": "Inter",
+	"vagra_nsl_mono_font": "JetBrains Mono",
+	"vagra_nsl_chat_enabled": true,
+	"vagra_nsl_chat_title": "Ask the DNS Assistant",
+	"vagra_nsl_chat_system_prompt": "",
+	"vagra_nsl_default_resolver": "authoritative",
+	"vagra_nsl_max_concurrent": true
+}

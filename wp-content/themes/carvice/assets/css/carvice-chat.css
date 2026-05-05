@@ -1,0 +1,277 @@
+/* ==========================================================================
+   Carvice AI Chat Widget
+   Uses Carvice design tokens from style.css :root
+   ========================================================================== */
+
+/* --- Toggle Button --- */
+.carvice-chat__toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: var(--carvice-radius-full);
+    background: var(--carvice-accent);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.carvice-chat__toggle:hover {
+    background: var(--carvice-accent-hover);
+    transform: scale(1.05);
+}
+
+.carvice-chat__toggle-icon {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hide toggle when chat is open */
+.carvice-chat--open .carvice-chat__toggle {
+    display: none;
+}
+
+/* --- Chat Window --- */
+.carvice-chat__window {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1001;
+    width: 380px;
+    max-height: 520px;
+    background: var(--carvice-surface);
+    border-radius: var(--carvice-radius-lg);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.carvice-chat--open .carvice-chat__window {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* --- Header --- */
+.carvice-chat__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: var(--carvice-accent);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.carvice-chat__title {
+    font-family: var(--carvice-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.carvice-chat__close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: var(--carvice-radius-sm);
+    transition: background 0.15s, color 0.15s;
+}
+
+.carvice-chat__close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* --- Quick Action Chips --- */
+.carvice-chat__chips {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--carvice-card-border);
+}
+
+.carvice-chat__chip {
+    white-space: nowrap;
+    padding: 6px 14px;
+    border: 1px solid var(--carvice-card-border);
+    border-radius: var(--carvice-radius-full);
+    background: var(--carvice-surface);
+    color: var(--carvice-primary);
+    font-family: var(--carvice-font);
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.carvice-chat__chip:hover {
+    background: var(--carvice-surface-hover);
+    border-color: var(--carvice-accent);
+}
+
+/* --- Messages --- */
+.carvice-chat__messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 200px;
+}
+
+.carvice-chat__message {
+    display: flex;
+}
+
+.carvice-chat__message--user {
+    justify-content: flex-end;
+}
+
+.carvice-chat__message--ai {
+    justify-content: flex-start;
+}
+
+.carvice-chat__bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: var(--carvice-radius-md);
+    font-family: var(--carvice-font);
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.carvice-chat__bubble--user {
+    background: var(--carvice-accent);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.carvice-chat__bubble--ai {
+    background: var(--carvice-background-alt);
+    color: var(--carvice-primary);
+    border-bottom-left-radius: 4px;
+}
+
+/* --- Typing Indicator --- */
+.carvice-chat__typing {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 16px 8px;
+}
+
+.carvice-chat__typing[hidden] {
+    display: none;
+}
+
+.carvice-chat__typing span {
+    width: 6px;
+    height: 6px;
+    background: var(--carvice-muted);
+    border-radius: 50%;
+    animation: carvice-typing 1.2s infinite ease-in-out;
+}
+
+.carvice-chat__typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.carvice-chat__typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes carvice-typing {
+    0%, 60%, 100% { opacity: 0.3; transform: scale(0.8); }
+    30% { opacity: 1; transform: scale(1); }
+}
+
+/* --- Input Form --- */
+.carvice-chat__input-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid var(--carvice-card-border);
+    flex-shrink: 0;
+}
+
+.carvice-chat__input {
+    flex: 1;
+    border: 1px solid var(--carvice-card-border);
+    border-radius: var(--carvice-radius-md);
+    padding: 8px 14px;
+    font-family: var(--carvice-font);
+    font-size: 14px;
+    color: var(--carvice-primary);
+    background: var(--carvice-surface);
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.carvice-chat__input::placeholder {
+    color: var(--carvice-muted);
+}
+
+.carvice-chat__input:focus {
+    border-color: var(--carvice-accent);
+}
+
+.carvice-chat__send {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--carvice-radius-md);
+    background: var(--carvice-accent);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.carvice-chat__send:hover {
+    background: var(--carvice-accent-hover);
+}
+
+.carvice-chat__send svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .carvice-chat__window {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100vh;
+        border-radius: var(--carvice-radius-lg) var(--carvice-radius-lg) 0 0;
+    }
+
+    .carvice-chat__toggle {
+        bottom: 16px;
+        right: 16px;
+    }
+}
