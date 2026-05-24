@@ -174,6 +174,42 @@
    RESPONSIVE
    ================================================================ */
 
+/* xs — 480px (small mobile) */
+@media (max-width: 479px) {
+  .tourvice-archive-hero {
+    padding: 2rem 0;
+  }
+
+  .tourvice-archive-hero__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tourvice-tour-listing {
+    padding: 2rem 0;
+  }
+
+  .tourvice-filters {
+    gap: 0.5rem;
+  }
+
+  .tourvice-filter-pill {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .tourvice-search-bar__input {
+    padding: 0.625rem 0.75rem 0.625rem 2.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .tourvice-tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   .tourvice-tour-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -181,6 +217,12 @@
 }
 
 @media (min-width: 1024px) {
+  .tourvice-tour-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
   .tourvice-tour-grid {
     grid-template-columns: repeat(4, 1fr);
   }

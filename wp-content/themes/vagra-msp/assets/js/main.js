@@ -30,6 +30,22 @@
                 burger.focus();
             }
         } );
+
+        // Close menu when a nav link is clicked (mobile).
+        nav.addEventListener( 'click', function ( e ) {
+            if ( e.target.closest( 'a' ) ) {
+                burger.setAttribute( 'aria-expanded', 'false' );
+                nav.classList.remove( 'is-open' );
+            }
+        } );
+
+        // Close menu on window resize past mobile breakpoint.
+        window.addEventListener( 'resize', function () {
+            if ( window.innerWidth > 980 && nav.classList.contains( 'is-open' ) ) {
+                burger.setAttribute( 'aria-expanded', 'false' );
+                nav.classList.remove( 'is-open' );
+            }
+        } );
     }
 
     /* ------------------------------------------------------------------

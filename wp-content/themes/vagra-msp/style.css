@@ -1750,6 +1750,12 @@ img {
     }
 }
 
+@media (max-width: 600px) {
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==========================================================================
    Contact Page — Layout
    ========================================================================== */
@@ -2480,4 +2486,331 @@ img {
     .vagra-about-story__grid { grid-template-columns: 1fr; }
     .vagra-about-values__grid { grid-template-columns: 1fr; }
     .vagra-contact__grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   Overflow Prevention
+   ========================================================================== */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Front Page — Container & Section Base
+   ========================================================================== */
+
+.vagra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--vagra-spacing-lg);
+}
+
+.vagra-section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto var(--vagra-spacing-2xl);
+}
+
+.vagra-section-header__title {
+    font-family: var(--vagra-font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--vagra-dark);
+    margin: 0 0 var(--vagra-spacing-md);
+}
+
+.vagra-section-header__desc {
+    font-size: 1.0625rem;
+    color: var(--vagra-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Front Page — Hero
+   ========================================================================== */
+
+.vagra-hero {
+    padding: 80px 0 60px;
+    background: var(--vagra-light-bg);
+}
+
+.vagra-hero .vagra-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--vagra-spacing-2xl);
+    align-items: center;
+}
+
+.vagra-hero__title {
+    font-family: var(--vagra-font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--vagra-dark);
+    margin: 0 0 var(--vagra-spacing-lg);
+    line-height: 1.2;
+}
+
+.vagra-hero__subtitle {
+    font-size: 1.0625rem;
+    color: var(--vagra-muted);
+    line-height: 1.7;
+    margin: 0 0 var(--vagra-spacing-xl);
+}
+
+.vagra-hero__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vagra-hero__shield svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================================================
+   Front Page — Buttons
+   ========================================================================== */
+
+.vagra-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-family: var(--vagra-font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--vagra-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.vagra-btn--primary {
+    background-color: var(--vagra-primary);
+    color: var(--vagra-white);
+}
+
+.vagra-btn--primary:hover {
+    background-color: var(--vagra-primary-hover);
+    color: var(--vagra-white);
+}
+
+.vagra-btn--cta {
+    background-color: var(--vagra-primary);
+    color: var(--vagra-white);
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.vagra-btn--cta:hover {
+    background-color: var(--vagra-primary-hover);
+    color: var(--vagra-white);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Front Page — Services Grid
+   ========================================================================== */
+
+.vagra-services {
+    padding: var(--vagra-spacing-3xl) 0;
+}
+
+.vagra-services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--vagra-spacing-lg);
+}
+
+.vagra-service-card {
+    padding: var(--vagra-spacing-xl);
+}
+
+.vagra-service-card__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--vagra-spacing-md);
+}
+
+.vagra-service-card__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.vagra-service-card__title {
+    font-family: var(--vagra-font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--vagra-dark);
+    margin: 0 0 var(--vagra-spacing-sm);
+}
+
+.vagra-service-card__desc {
+    font-size: 0.9375rem;
+    color: var(--vagra-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Front Page — Social Proof / Stats
+   ========================================================================== */
+
+.vagra-social-proof {
+    padding: var(--vagra-spacing-3xl) 0;
+    background: var(--vagra-dark);
+    color: var(--vagra-white);
+    text-align: center;
+}
+
+.vagra-social-proof__title {
+    font-family: var(--vagra-font-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--vagra-white);
+    margin: 0 0 var(--vagra-spacing-2xl);
+}
+
+.vagra-social-proof__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--vagra-spacing-lg);
+}
+
+.vagra-stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vagra-spacing-xs);
+}
+
+.vagra-stat__number {
+    font-family: var(--vagra-font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--vagra-white);
+    line-height: 1;
+}
+
+.vagra-stat__label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   Front Page — CTA Section
+   ========================================================================== */
+
+.vagra-cta {
+    padding: var(--vagra-spacing-3xl) 0;
+    text-align: center;
+    background: var(--vagra-light-bg);
+}
+
+.vagra-cta__content {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.vagra-cta__title {
+    font-family: var(--vagra-font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--vagra-dark);
+    margin: 0 0 var(--vagra-spacing-md);
+}
+
+.vagra-cta__desc {
+    font-size: 1.0625rem;
+    color: var(--vagra-muted);
+    line-height: 1.7;
+    margin: 0 0 var(--vagra-spacing-xl);
+}
+
+/* ==========================================================================
+   Responsive — Front Page Sections
+   ========================================================================== */
+
+@media (max-width: 980px) {
+    .vagra-hero .vagra-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .vagra-hero__visual {
+        order: -1;
+    }
+
+    .vagra-hero__shield svg {
+        width: 150px;
+        height: auto;
+    }
+
+    .vagra-services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vagra-social-proof__stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--vagra-spacing-xl);
+    }
+}
+
+@media (max-width: 600px) {
+    .vagra-hero {
+        padding: 60px 0 40px;
+    }
+
+    .vagra-services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vagra-social-proof__stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-stat__number {
+        font-size: 1.75rem;
+    }
+
+    .vagra-btn--cta {
+        width: 100%;
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    .vagra-container,
+    .site-container {
+        padding: 0 var(--vagra-spacing-md);
+    }
+
+    .vagra-hero__title {
+        font-size: 1.625rem;
+    }
+
+    .vagra-social-proof__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .vagra-service-card {
+        padding: var(--vagra-spacing-lg);
+    }
+
+    .site-footer__badges .badge {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
 }

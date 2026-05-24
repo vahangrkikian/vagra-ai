@@ -531,6 +531,113 @@
    RESPONSIVE
    ================================================================ */
 
+/* xs — 480px (small mobile) */
+@media (max-width: 479px) {
+  .tourvice-hero {
+    height: 100svh; /* safe viewport height for mobile browsers */
+  }
+
+  .tourvice-hero__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .tourvice-hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tourvice-hero__stats {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .tourvice-hero__stat {
+    padding: 0.75rem;
+  }
+
+  .tourvice-hero__stat-value {
+    font-size: 1.5rem;
+  }
+
+  .tourvice-hero__dots {
+    bottom: 3.5rem;
+  }
+
+  .tourvice-featured,
+  .tourvice-discounts {
+    padding: 3rem 0;
+  }
+
+  .tourvice-featured__header,
+  .tourvice-discounts__header,
+  .tourvice-testimonials__header {
+    margin-bottom: 2rem;
+  }
+
+  .tourvice-featured__title,
+  .tourvice-discounts__title,
+  .tourvice-testimonials__title,
+  .tourvice-newsletter__title {
+    font-size: 1.75rem;
+  }
+
+  .tourvice-featured__desc,
+  .tourvice-discounts__desc,
+  .tourvice-testimonials__desc,
+  .tourvice-newsletter__desc {
+    font-size: 0.9375rem;
+  }
+
+  .tourvice-testimonials {
+    padding: 4rem 0;
+    background-attachment: scroll; /* fix parallax on mobile */
+  }
+
+  .tourvice-testimonial-card {
+    padding: 1.25rem;
+  }
+
+  .tourvice-newsletter {
+    padding: 3rem 0;
+  }
+
+  .tourvice-discount-tier {
+    padding: 1.25rem;
+  }
+
+  .tourvice-discount-tier__value {
+    font-size: 2.25rem;
+  }
+}
+
+/* Small phones: hero stats as 3-col but smaller text */
+@media (min-width: 480px) and (max-width: 639px) {
+  .tourvice-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .tourvice-hero__stat-value {
+    font-size: 1.5rem;
+  }
+
+  .tourvice-hero__stat {
+    padding: 1rem 0.75rem;
+  }
+
+  .tourvice-featured__title,
+  .tourvice-discounts__title,
+  .tourvice-testimonials__title,
+  .tourvice-newsletter__title {
+    font-size: 2rem;
+  }
+
+  .tourvice-testimonials {
+    background-attachment: scroll;
+  }
+}
+
 @media (min-width: 640px) {
   .tourvice-hero__actions {
     flex-direction: row;
@@ -538,6 +645,14 @@
 
   .tourvice-newsletter__form {
     flex-direction: row;
+  }
+
+  .tourvice-discounts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tourvice-featured__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

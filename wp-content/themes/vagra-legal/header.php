@@ -30,6 +30,12 @@
                     'fallback_cb'    => false,
                 ) );
                 ?>
+                <div class="vagra-header__mobile-extras">
+                    <span class="vagra-header__phone"><?php esc_html_e( '(555) 123-4567', 'vagra-legal' ); ?></span>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="vagra-btn vagra-btn--primary vagra-btn--sm">
+                        <?php esc_html_e( 'Free Consultation', 'vagra-legal' ); ?>
+                    </a>
+                </div>
             </nav>
 
             <div class="vagra-header__right">

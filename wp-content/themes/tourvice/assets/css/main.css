@@ -217,7 +217,7 @@ input, textarea, select {
   color: var(--earth-700);
 }
 
-/* Nav links */
+/* Nav links — hidden on mobile, shown at 768px+ */
 .tourvice-header__nav {
   display: none;
   gap: 2rem;
@@ -235,15 +235,20 @@ input, textarea, select {
   list-style: none;
 }
 
-/* Actions (lang/currency switchers) */
+/* Actions (lang/currency switchers + hamburger) */
 .tourvice-header__actions {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+/* Hide lang/currency on mobile, show only hamburger */
+.tourvice-header__lang,
+.tourvice-header__currency {
+  display: none;
+}
+
 .tourvice-header__lang {
-  display: flex;
   align-items: center;
   gap: 0.25rem;
 }
@@ -444,12 +449,17 @@ input, textarea, select {
 /* Hamburger */
 .tourvice-header__hamburger {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   color: white;
   transition: color var(--transition-base);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .tourvice-header--scrolled .tourvice-header__hamburger {
@@ -459,6 +469,20 @@ input, textarea, select {
 .tourvice-header__hamburger svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+/* Hamburger bar lines (when no SVG) */
+.tourvice-header__hamburger span {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-base);
+}
+
+.tourvice-header__hamburger span + span {
+  margin-top: 4px;
 }
 
 /* Mobile menu */
@@ -666,6 +690,10 @@ input, textarea, select {
   text-align: center;
   color: var(--earth-400);
   font-size: 0.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* ================================================================
@@ -1128,8 +1156,8 @@ input, textarea, select {
   position: absolute;
   bottom: 4.5rem;
   right: 0;
-  width: 380px;
-  max-height: 520px;
+  width: min(380px, calc(100vw - 2rem));
+  max-height: min(520px, 70vh);
   background: white;
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-2xl);
@@ -1400,6 +1428,84 @@ form.tourvice-chat__input input[type="text"]:focus {
    RESPONSIVE BREAKPOINTS
    ================================================================ */
 
+/* xs — 480px (small mobile) */
+@media (max-width: 479px) {
+  .tourvice-container,
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .tourvice-header__inner {
+    padding: 0.75rem;
+  }
+
+  .tourvice-header__logo {
+    font-size: 1.25rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+
+  .tourvice-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .tourvice-section--sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .tourvice-section-title {
+    font-size: 1.75rem;
+  }
+
+  .tourvice-section-desc {
+    font-size: 1rem;
+  }
+
+  .tourvice-footer__grid {
+    gap: 1.5rem;
+  }
+
+  .tourvice-footer__inner {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .tourvice-footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tourvice-card__image-wrap {
+    height: 12rem;
+  }
+
+  .tourvice-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .tourvice-btn--hero {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Chat panel full-width on small phones */
+  .tourvice-chat__panel {
+    width: calc(100vw - 1.5rem);
+    right: -0.5rem;
+    max-height: 70vh;
+  }
+
+  .tourvice-chat {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
 /* sm — 640px */
 @media (min-width: 640px) {
   .tourvice-container {
@@ -1420,6 +1526,10 @@ form.tourvice-chat__input input[type="text"]:focus {
   .tourvice-grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .tourvice-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* md — 768px */
@@ -1428,7 +1538,11 @@ form.tourvice-chat__input input[type="text"]:focus {
     display: flex;
   }
 
-  .tourvice-header__actions {
+  .tourvice-header__lang {
+    display: flex;
+  }
+
+  .tourvice-header__currency {
     display: flex;
   }
 
@@ -1498,4 +1612,53 @@ body.admin-bar .tourvice-header {
 
 body.tourvice-no-scroll {
   overflow: hidden;
+}
+
+/* ================================================================
+   PREVENT HORIZONTAL OVERFLOW
+   ================================================================ */
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ================================================================
+   MOBILE MENU: LANG & CURRENCY
+   ================================================================ */
+
+.tourvice-header__mobile-lang,
+.tourvice-header__mobile-currency {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--earth-100);
+}
+
+.tourvice-header__mobile-lang button,
+.tourvice-header__mobile-currency button {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--earth-200);
+  color: var(--earth-600);
+  background: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.tourvice-header__mobile-lang button:hover,
+.tourvice-header__mobile-currency button:hover {
+  border-color: var(--sage-400);
+  color: var(--sage-600);
+}
+
+.tourvice-header__mobile-lang button.active,
+.tourvice-header__mobile-currency button.selected {
+  background-color: var(--sage-600);
+  color: white;
+  border-color: var(--sage-600);
 }

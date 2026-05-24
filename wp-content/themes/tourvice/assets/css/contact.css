@@ -203,6 +203,44 @@
    RESPONSIVE
    ================================================================ */
 
+/* xs — 480px (small mobile) */
+@media (max-width: 479px) {
+  .tourvice-contact-hero {
+    padding: 2rem 0;
+  }
+
+  .tourvice-contact-hero__title {
+    font-size: 1.75rem;
+  }
+
+  .tourvice-contact-hero__desc {
+    font-size: 1rem;
+  }
+
+  .tourvice-contact-form-wrap {
+    padding: 1.25rem;
+  }
+
+  .tourvice-contact-form-wrap__title {
+    font-size: 1.5rem;
+  }
+
+  .tourvice-contact-cards {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .tourvice-contact-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .tourvice-contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 1024px) {
   .tourvice-contact-cards {
     grid-template-columns: repeat(3, 1fr);

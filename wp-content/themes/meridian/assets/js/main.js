@@ -213,6 +213,20 @@
       if (e.key === 'ArrowLeft') navigate(-1);
       if (e.key === 'ArrowRight') navigate(1);
     });
+
+    // Touch swipe support for gallery lightbox
+    var galleryStartX = 0;
+    document.addEventListener('touchstart', function (e) {
+      if (!lightbox || lightbox.style.display === 'none') return;
+      galleryStartX = e.touches[0].clientX;
+    }, { passive: true });
+    document.addEventListener('touchend', function (e) {
+      if (!lightbox || lightbox.style.display === 'none') return;
+      var diff = e.changedTouches[0].clientX - galleryStartX;
+      if (Math.abs(diff) > 50) {
+        navigate(diff > 0 ? -1 : 1);
+      }
+    }, { passive: true });
   }
 
   /* ==================== ROOM DETAIL GALLERY ==================== */
@@ -288,8 +302,64 @@
           roomLightbox.style.display = 'none';
           document.body.style.overflow = '';
         }
+        if (e.key === 'ArrowLeft') {
+          activeThumb = (activeThumb - 1 + roomImages.length) % roomImages.length;
+          var lbImg = document.getElementById('room-lightbox-img');
+          if (lbImg) lbImg.src = roomImages[activeThumb];
+          roomHero.src = roomImages[activeThumb];
+          thumbs.forEach(function (t) { t.classList.remove('thumb--active'); });
+          if (thumbs[activeThumb]) thumbs[activeThumb].classList.add('thumb--active');
+        }
+        if (e.key === 'ArrowRight') {
+          activeThumb = (activeThumb + 1) % roomImages.length;
+          var lbImg = document.getElementById('room-lightbox-img');
+          if (lbImg) lbImg.src = roomImages[activeThumb];
+          roomHero.src = roomImages[activeThumb];
+          thumbs.forEach(function (t) { t.classList.remove('thumb--active'); });
+          if (thumbs[activeThumb]) thumbs[activeThumb].classList.add('thumb--active');
+        }
       });
+
+      // Touch swipe support for room lightbox
+      (function () {
+        var startX = 0;
+        var threshold = 50;
+        roomLightbox.addEventListener('touchstart', function (e) {
+          startX = e.touches[0].clientX;
+        }, { passive: true });
+        roomLightbox.addEventListener('touchend', function (e) {
+          var diff = e.changedTouches[0].clientX - startX;
+          if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+              roomLightbox.querySelector('.lightbox__nav--prev').click();
+            } else {
+              roomLightbox.querySelector('.lightbox__nav--next').click();
+            }
+          }
+        }, { passive: true });
+      })();
     }
+
+    // Touch swipe for room hero image (cycle thumbs)
+    (function () {
+      var heroEl = document.getElementById('room-hero-image');
+      if (!heroEl) return;
+      var startX = 0;
+      var threshold = 50;
+      heroEl.addEventListener('touchstart', function (e) {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+      heroEl.addEventListener('touchend', function (e) {
+        var diff = e.changedTouches[0].clientX - startX;
+        if (Math.abs(diff) > threshold) {
+          var dir = diff > 0 ? -1 : 1;
+          activeThumb = (activeThumb + dir + roomImages.length) % roomImages.length;
+          roomHero.src = roomImages[activeThumb];
+          thumbs.forEach(function (t) { t.classList.remove('thumb--active'); });
+          if (thumbs[activeThumb]) thumbs[activeThumb].classList.add('thumb--active');
+        }
+      }, { passive: true });
+    })();
   }
 
   /* ==================== NEWSLETTER FORM ==================== */

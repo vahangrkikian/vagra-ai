@@ -414,7 +414,7 @@ body.home .nsl-nav:not(.is-scrolled) .nsl-logo svg rect { fill: rgba(255,255,255
   color: var(--nsl-ink-2); cursor: pointer;
 }
 .nsl-nav-mobile {
-  display: flex; flex-direction: column; padding: 12px 24px 20px; gap: 4px;
+  display: none; flex-direction: column; padding: 12px 24px 20px; gap: 4px;
   border-top: 1px solid var(--nsl-border);
 }
 .nsl-nav-mobile a { padding: 12px 8px; font-weight: 500; color: var(--nsl-ink); }
@@ -939,6 +939,13 @@ body.home .nsl-nav:not(.is-scrolled) .nsl-logo svg rect { fill: rgba(255,255,255
 .nsl-legal-body h2 { margin: 36px 0 10px; font-size: var(--fs-24); }
 .nsl-legal-body p, .nsl-legal-body ul { margin: 12px 0; }
 .nsl-legal-body ul { padding-left: 22px; }
+
+/* --- Table horizontal scroll wrapper for mobile --- */
+.nsl-table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+@media (max-width: 600px) {
+  .faq-body table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
 
 /* ==========================================================================
    Cinematic Layer (from nslookup/project/shared/cinematic.css)
@@ -1467,4 +1474,174 @@ body.home .nsl-nav:not(.is-scrolled) .nsl-logo svg rect { fill: rgba(255,255,255
 ::selection {
   background: var(--nsl-primary-500);
   color: #fff;
+}
+
+/* ==========================================================================
+   Responsive Patches — Small tablets and phones (480px and below)
+   ========================================================================== */
+
+/* --- 768px: cinematic section padding --- */
+@media (max-width: 768px) {
+  .cine-section { padding: 80px 0; }
+  .cine-final { padding: 100px 0; }
+  .cine-head-wrap { padding: 0 20px; }
+  .cine-big-head { font-size: clamp(28px, 5vw, 48px); }
+  .cine-features { margin-top: 48px; }
+  .cine-stats { margin-top: 48px; }
+  .cine-hero-inner { padding: 64px 0 48px; }
+}
+
+/* --- 600px: tool forms full-width, result rows simplified --- */
+@media (max-width: 600px) {
+  .nsl-tool-form { flex-direction: column; }
+  .nsl-tool-form .input,
+  .nsl-tool-form .select,
+  .nsl-tool-form .btn { width: 100%; }
+
+  .cine-tool-form { flex-direction: column; }
+  .cine-tool-input, .cine-tool-select { flex: 1 1 100%; }
+  .cine-tool-go { width: 100%; text-align: center; justify-content: center; display: flex; }
+
+  .cine-result-row {
+    grid-template-columns: 16px 1fr auto;
+    gap: 8px;
+    font-size: 11px;
+  }
+  .cine-result-ip { display: none; }
+
+  .nsl-row {
+    grid-template-columns: 14px 1fr auto;
+    gap: 8px;
+    font-size: var(--fs-12);
+  }
+  .nsl-row-ip { display: none; }
+
+  /* Blog grid single column */
+  .nsl-blog-grid { grid-template-columns: 1fr !important; }
+
+  /* Record types grid */
+  .nsl-types { grid-template-columns: 1fr 1fr; }
+
+  /* Tool actions wrap */
+  .nsl-tool-actions { gap: 6px; }
+  .nsl-tool-actions .badge { font-size: 10px; padding: 0 8px; height: 24px; }
+}
+
+/* --- 480px: tighter spacing, single columns --- */
+@media (max-width: 480px) {
+  :root { --container-pad: 16px; }
+
+  .cine-section { padding: 56px 0; }
+  .cine-final { padding: 72px 0; }
+  .cine-head-wrap { padding: 0 16px; }
+
+  h1 { font-size: var(--fs-36); }
+  .cine-h1 { font-size: clamp(32px, 9vw, 48px); }
+  .cine-final-h { font-size: clamp(36px, 10vw, 64px); }
+  .cine-lede { font-size: 15px; }
+
+  /* Hero tool 3D perspective disabled to prevent overflow */
+  .cine-tool { transform: none; }
+  .cine-tool:hover { transform: none; }
+  .cine-tool-inner { padding: 16px 14px 14px; }
+
+  /* Floating chips hidden on small mobile (overflow risk) */
+  .cine-chip-float { display: none; }
+
+  /* Pills horizontal scroll */
+  .cine-pills { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+
+  /* Stats: 1 column on very small */
+  .cine-stats { grid-template-columns: 1fr; }
+  .cine-stat { border-right: none; padding: 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .cine-stat:last-child { border-bottom: none; }
+
+  /* Feature cards tighter */
+  .cine-feature { padding: 24px 20px 28px; }
+  .cine-feature h3 { font-size: 20px; }
+
+  /* CTA buttons stack */
+  .cine-cta-row { flex-direction: column; }
+  .cine-cta-row .cine-btn { width: 100%; justify-content: center; text-align: center; }
+
+  /* Record types: single column */
+  .nsl-types { grid-template-columns: 1fr; }
+
+  /* Nav inner */
+  .nsl-nav-inner { height: 56px; }
+  .nsl-logo { font-size: var(--fs-16); }
+
+  /* FAQ summary text */
+  .faq-item summary { font-size: var(--fs-16); padding: 16px 0; }
+
+  /* Explainer single column */
+  .nsl-explainer { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .nsl-footer { padding: 48px 0 24px; }
+  .nsl-footer-bottom { flex-direction: column; text-align: center; }
+
+  /* 404 code */
+  .nsl-404-code { font-size: 80px; }
+
+  /* Blog card image */
+  .nsl-blog-thumb { aspect-ratio: 16 / 8; }
+
+  /* Mobile menu padding */
+  .nsl-nav-mobile { padding: 12px 16px 16px; }
+
+  /* Marquee text smaller */
+  .cine-marquee-item { font-size: 11px; letter-spacing: 0.08em; }
+}
+
+/* --- 375px: extreme small mobile (iPhone SE, etc.) --- */
+@media (max-width: 375px) {
+  :root { --container-pad: 12px; }
+
+  .cine-head-wrap { padding: 0 12px; }
+  .cine-section { padding: 44px 0; }
+  .cine-final { padding: 56px 0; }
+
+  .cine-h1 { font-size: 28px; }
+  .cine-final-h { font-size: 32px; }
+  .cine-lede { font-size: 14px; }
+  .cine-big-head { font-size: 24px; }
+
+  .cine-btn { padding: 14px 18px; font-size: 14px; }
+
+  .cine-trust { font-size: 10px; gap: 10px; }
+  .cine-trust .cine-sep { display: none; }
+
+  .nsl-nav-inner { gap: 12px; }
+
+  /* Tool panel even tighter */
+  .cine-tool-inner { padding: 12px 10px 10px; border-radius: 14px; }
+  .cine-tool { border-radius: 16px; padding: 4px; }
+  .cine-tool-head { font-size: 10px; padding-bottom: 10px; margin-bottom: 12px; }
+  .cine-tool-input, .cine-tool-select { padding: 10px 12px; font-size: 13px; }
+  .cine-tool-go { padding: 10px 14px; font-size: 13px; }
+
+  .cine-pill { font-size: 10px; padding: 4px 8px; }
+  .cine-result-row { padding: 8px 8px; gap: 6px; }
+
+  /* Stat numbers */
+  .cine-stat-num { font-size: clamp(28px, 8vw, 40px); }
+  .cine-stat { padding: 18px 16px; }
+
+  /* Feature cards */
+  .cine-feature { padding: 20px 16px 24px; border-radius: 14px; }
+
+  /* Footer */
+  .nsl-footer-grid { gap: 32px; }
+
+  /* FAQ */
+  .faq-item summary { font-size: var(--fs-14); gap: 12px; }
+  .faq-body { font-size: var(--fs-14); }
+
+  /* Touch targets: ensure min 44px height for interactive elements */
+  .btn, .cine-btn, .cine-tool-go, .nsl-pill, .cine-pill { min-height: 44px; }
+  .nsl-nav-burger { width: 44px; height: 44px; }
+
+  /* Prevent any horizontal overflow */
+  .nsl-home, .nsl-page-ns, .nsl-page-propagation { overflow-x: hidden; }
 }

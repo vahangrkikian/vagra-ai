@@ -1508,6 +1508,348 @@ body.vagra-loaded {
     }
 }
 
+/* ===========================
+   Responsive Gap Fixes
+   =========================== */
+
+/* --- Prevent horizontal overflow globally --- */
+html, body {
+    overflow-x: hidden;
+}
+
+/* --- Mobile extras in nav (hidden on desktop) --- */
+.vagra-header__mobile-extras {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .vagra-header__mobile-extras {
+        display: flex;
+        flex-direction: column;
+        gap: var(--vagra-spacing-md);
+        padding-top: var(--vagra-spacing-md);
+        border-top: 1px solid rgba(26, 26, 46, 0.08);
+        margin-top: var(--vagra-spacing-md);
+    }
+
+    .vagra-header__mobile-extras .vagra-btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* --- 1200px: Large tablets / small desktops --- */
+@media (max-width: 1200px) {
+    .vagra-header__right {
+        gap: var(--vagra-spacing-md);
+    }
+
+    .vagra-nav {
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-hero__title {
+        font-size: 38px;
+    }
+
+    .vagra-contact__grid {
+        grid-template-columns: 1fr 320px;
+        gap: 32px;
+    }
+}
+
+/* --- 1024px: Tablets landscape --- */
+@media (max-width: 1024px) {
+    .vagra-attorneys__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vagra-attorneys-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vagra-footer__widgets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vagra-hero {
+        min-height: auto;
+        padding: 72px 0 56px;
+    }
+
+    .vagra-hero__title {
+        font-size: 34px;
+    }
+
+    .vagra-case-results__stats {
+        gap: var(--vagra-spacing-2xl);
+    }
+
+    .vagra-about-story__grid {
+        gap: 32px;
+    }
+
+    .vagra-contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vagra-attorney-profile__grid {
+        grid-template-columns: 220px 1fr;
+        gap: 32px;
+    }
+}
+
+/* --- 768px additions --- */
+@media (max-width: 768px) {
+    .vagra-hero {
+        min-height: auto;
+        padding: 56px 0 40px;
+    }
+
+    .vagra-hero__cta {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .vagra-section-header__title {
+        font-size: 28px;
+    }
+
+    .vagra-cta__title {
+        font-size: 28px;
+    }
+
+    .vagra-cta__desc {
+        font-size: 16px;
+    }
+
+    .vagra-case-results__title {
+        font-size: 20px;
+    }
+
+    .vagra-case-results__stats {
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-practice-areas,
+    .vagra-attorneys,
+    .vagra-testimonials,
+    .vagra-cta {
+        padding: var(--vagra-spacing-2xl) 0;
+    }
+
+    .vagra-page-hero {
+        padding: 40px 0 32px;
+    }
+
+    .vagra-page-hero__title {
+        font-size: 26px;
+    }
+
+    .vagra-practice-areas-detail {
+        padding: 40px 0;
+    }
+
+    .vagra-about-story,
+    .vagra-about-values,
+    .vagra-about-stats {
+        padding: 40px 0;
+    }
+
+    .vagra-contact {
+        padding: 40px 0;
+    }
+
+    .vagra-footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--vagra-spacing-md);
+    }
+}
+
+/* --- About page stats grid (missing styles) --- */
+.vagra-case-results__grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--vagra-spacing-3xl);
+    flex-wrap: wrap;
+}
+
+.vagra-case-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vagra-case-result__number {
+    font-family: var(--vagra-font-body);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--vagra-accent);
+    line-height: 1;
+}
+
+.vagra-case-result__label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: var(--vagra-spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- 480px: Small phones --- */
+@media (max-width: 480px) {
+    .vagra-container {
+        padding: 0 var(--vagra-spacing-sm);
+    }
+
+    .vagra-hero__title {
+        font-size: 26px;
+    }
+
+    .vagra-hero__subtitle {
+        font-size: 15px;
+    }
+
+    .vagra-section-header__title {
+        font-size: 24px;
+    }
+
+    .vagra-section-header__desc {
+        font-size: 16px;
+    }
+
+    .vagra-cta__title {
+        font-size: 24px;
+    }
+
+    .vagra-case-stat__number {
+        font-size: 28px;
+    }
+
+    .vagra-case-result__number {
+        font-size: 28px;
+    }
+
+    .vagra-case-results__stats {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-case-results__grid {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-testimonial {
+        padding: var(--vagra-spacing-md);
+    }
+
+    .vagra-practice-card {
+        padding: var(--vagra-spacing-md);
+    }
+
+    .vagra-attorney-card {
+        padding: var(--vagra-spacing-md);
+    }
+
+    .vagra-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .vagra-hero__cta {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .vagra-btn--cta {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .vagra-footer__widgets {
+        gap: var(--vagra-spacing-lg);
+    }
+
+    .vagra-practice-detail__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .vagra-practice-detail__content h2 {
+        font-size: 20px;
+    }
+
+    .vagra-about-story__text h2 {
+        font-size: 26px;
+    }
+
+    .vagra-contact__form-area h2 {
+        font-size: 22px;
+    }
+}
+
+/* --- 375px: Very small phones (iPhone SE, etc.) --- */
+@media (max-width: 375px) {
+    .vagra-hero__title {
+        font-size: 22px;
+    }
+
+    .vagra-hero__subtitle {
+        font-size: 14px;
+    }
+
+    .vagra-section-header__title {
+        font-size: 22px;
+    }
+
+    .vagra-cta__title {
+        font-size: 22px;
+    }
+
+    .vagra-page-hero__title {
+        font-size: 22px;
+    }
+
+    .vagra-case-stat__number {
+        font-size: 24px;
+    }
+
+    .vagra-case-result__number {
+        font-size: 24px;
+    }
+
+    .vagra-attorney-card__photo {
+        width: 90px;
+        height: 90px;
+        font-size: 28px;
+    }
+
+    .vagra-header__site-title {
+        font-size: 18px;
+    }
+
+    .vagra-footer__disclaimer {
+        font-size: 11px;
+    }
+
+    .vagra-testimonial__text {
+        font-size: 14px;
+    }
+
+    .vagra-practice-card__desc {
+        font-size: 14px;
+    }
+
+    .vagra-about-values__grid .vagra-card {
+        padding: var(--vagra-spacing-md);
+    }
+}
+
 /* --- Reduced Motion Preference --- */
 @media (prefers-reduced-motion: reduce) {
     *,
