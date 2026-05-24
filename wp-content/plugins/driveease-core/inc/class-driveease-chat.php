@@ -279,7 +279,7 @@ class DriveEase_Chat {
 	 * Enqueue chat widget assets on the frontend.
 	 */
 	public static function enqueue_assets() {
-		if ( is_admin() ) {
+		if ( is_admin() || 'driveease' !== get_template() ) {
 			return;
 		}
 

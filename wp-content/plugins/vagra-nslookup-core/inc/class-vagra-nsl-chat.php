@@ -44,7 +44,7 @@ class Vagra_NSL_Chat {
 	 * Enqueue chat assets if enabled.
 	 */
 	public function enqueue_assets() {
-		if ( ! $this->is_enabled() ) {
+		if ( 'vagra-nslookup' !== get_template() || ! $this->is_enabled() ) {
 			return;
 		}
 

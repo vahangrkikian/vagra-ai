@@ -43,7 +43,7 @@ class Vagra_Legal_Chat {
      * Enqueue chat assets if enabled.
      */
     public function enqueue_assets() {
-        if ( ! $this->is_enabled() ) {
+        if ( 'vagra-legal' !== get_template() || ! $this->is_enabled() ) {
             return;
         }
 
