@@ -34,6 +34,11 @@ function tourvice_register_required_plugins() {
 			'required' => false,
 		),
 		array(
+			'name'     => 'Elementor',
+			'slug'     => 'elementor',
+			'required' => false,
+		),
+		array(
 			'name'     => 'One Click Demo Import',
 			'slug'     => 'one-click-demo-import',
 			'required' => false,

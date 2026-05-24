@@ -91,22 +91,32 @@ add_action( 'admin_enqueue_scripts', 'tourvice_demo_notice_script' );
  *
  * @return array Demo import configurations.
  */
-function tourvice_ocdi_import_files() {
-	return array(
-		array(
-			'import_file_name'             => esc_html__( 'TourVice Demo', 'tourvice' ),
+function tourvice_ocdi_import_files( $demos = array() ) {
+	$demos[] = array(
+		'import_file_name'             => esc_html__( 'Classic — PHP Templates', 'tourvice' ),
+		'local_import_file'            => TOURVICE_DIR . '/demo-content/demo-content.xml',
+		'local_import_customizer_file' => TOURVICE_DIR . '/demo-content/customizer.json',
+		'import_notice'                => esc_html__( 'Standard import using theme PHP templates. Works without any page builder.', 'tourvice' ),
+	);
+
+	// Add Elementor demo only when Elementor is active.
+	if ( did_action( 'elementor/loaded' ) ) {
+		$demos[] = array(
+			'import_file_name'             => esc_html__( 'Elementor — Visual Builder', 'tourvice' ),
 			'local_import_file'            => TOURVICE_DIR . '/demo-content/demo-content.xml',
 			'local_import_customizer_file' => TOURVICE_DIR . '/demo-content/customizer.json',
-			'import_notice'                => esc_html__( 'This will import tours, destinations, pages, blog posts, menus, and sample testimonials for the TourVice demo site.', 'tourvice' ),
-		),
-	);
+			'import_notice'                => esc_html__( 'Imports the same pages, then converts Home and Contact to Elementor with custom TourVice widgets. All sections become editable in the visual builder.', 'tourvice' ),
+		);
+	}
+
+	return $demos;
 }
 add_filter( 'ocdi/import_files', 'tourvice_ocdi_import_files' );
 
 /**
  * After-import setup: assign front page, blog page, primary + footer menus.
  */
-function tourvice_ocdi_after_import() {
+function tourvice_ocdi_after_import( $selected_import ) {
 	// Set static front page and blog page.
 	$front_page = get_page_by_path( 'home' );
 	if ( $front_page ) {
@@ -133,5 +143,40 @@ function tourvice_ocdi_after_import() {
 	}
 
 	set_theme_mod( 'nav_menu_locations', $locations );
+
+	// Handle Elementor import: inject Elementor data from JSON files.
+	$import_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+	if ( stripos( $import_name, 'Elementor' ) !== false && did_action( 'elementor/loaded' ) ) {
+		$elementor_dir   = get_template_directory() . '/demo-content/elementor/';
+		$elementor_pages = array(
+			'Home'    => 'home.json',
+			'Contact' => 'contact.json',
+		);
+		$elementor_ver = defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : '3.0.0';
+
+		foreach ( $elementor_pages as $title => $json_file ) {
+			$page = get_page_by_title( $title );
+			$file = $elementor_dir . $json_file;
+			if ( $page && file_exists( $file ) ) {
+				$raw     = file_get_contents( $file );
+				$decoded = json_decode( $raw, true );
+				if ( is_array( $decoded ) ) {
+					$compact = wp_json_encode( $decoded );
+					update_post_meta( $page->ID, '_elementor_data', wp_slash( $compact ) );
+					update_post_meta( $page->ID, '_elementor_edit_mode', 'builder' );
+					update_post_meta( $page->ID, '_wp_page_template', 'elementor_header_footer' );
+					update_post_meta( $page->ID, '_elementor_version', $elementor_ver );
+					update_post_meta( $page->ID, '_elementor_css', '' );
+				}
+			}
+		}
+
+		// Clear Elementor CSS cache.
+		if ( class_exists( '\Elementor\Plugin' ) ) {
+			\Elementor\Plugin::$instance->files_manager->clear_cache();
+		}
+	}
+
+	flush_rewrite_rules();
 }
 add_action( 'ocdi/after_import', 'tourvice_ocdi_after_import' );

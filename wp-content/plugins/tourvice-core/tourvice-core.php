@@ -68,6 +68,12 @@ require_once TOURVICE_CORE_DIR . 'inc/class-tourvice-rest.php';
 require_once TOURVICE_CORE_DIR . 'inc/class-tourvice-reviews.php';
 
 /* ------------------------------------------------------------------
+ * Elementor Integration
+ * ----------------------------------------------------------------*/
+require_once TOURVICE_CORE_DIR . 'inc/class-tourvice-elementor.php';
+TourVice_Elementor::instance();
+
+/* ------------------------------------------------------------------
  * Tour archive: 12 tours per page
  * ----------------------------------------------------------------*/
 function tourvice_archive_per_page( $query ) {

@@ -1,0 +1,26 @@
+/* TourVice — Elementor Editor & Frontend Overrides */
+
+/* Remove Elementor default section/column spacing so theme CSS controls layout */
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 100%;
+}
+.elementor-section .elementor-container {
+    padding: 0;
+}
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 0;
+}
+.elementor-element .tourvice-hero,
+.elementor-element .tourvice-featured-tours,
+.elementor-element .tourvice-why,
+.elementor-element .tourvice-testimonials,
+.elementor-element .tourvice-cta {
+    pointer-events: none;
+}
+.elementor-element .tourvice-hero *,
+.elementor-element .tourvice-featured-tours *,
+.elementor-element .tourvice-why *,
+.elementor-element .tourvice-testimonials *,
+.elementor-element .tourvice-cta * {
+    pointer-events: auto;
+}

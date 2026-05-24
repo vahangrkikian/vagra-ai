@@ -1,0 +1,28 @@
+[
+  {
+    "id": "tvc-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tvc-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tvc-hero-w", "elType": "widget", "widgetType": "tourvice_hero", "settings": {
+        "title": "Get In Touch",
+        "subtitle": "We'd love to hear from you. Reach out to plan your perfect Armenian adventure.",
+        "cta_text": "Call Now: +1 (555) 123-4567",
+        "cta_url": {"url": "tel:15551234567"}
+      }}
+    ]}]
+  },
+  {
+    "id": "tvc-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tvc-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tvc-cta-w", "elType": "widget", "widgetType": "tourvice_cta", "settings": {
+        "heading": "Visit Our Office",
+        "description": "TourVice Travel, 123 Travel Street, Adventure City, AC 12345. Monday-Friday 9:00 AM - 6:00 PM.",
+        "cta_text": "Book Your Tour",
+        "cta_url": {"url": "#"}
+      }}
+    ]}]
+  }
+]

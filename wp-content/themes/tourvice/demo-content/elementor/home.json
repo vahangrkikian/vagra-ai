@@ -1,0 +1,73 @@
+[
+  {
+    "id": "tv-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tv-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tv-hero-w", "elType": "widget", "widgetType": "tourvice_hero", "settings": {
+        "title": "Discover the Beauty of Armenia",
+        "subtitle": "Experience breathtaking landscapes, ancient monasteries, and vibrant culture with our expertly crafted luxury tours.",
+        "cta_text": "Explore Tours",
+        "cta_url": {"url": "#tours"}
+      }}
+    ]}]
+  },
+  {
+    "id": "tv-tours",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tv-tours-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tv-tours-w", "elType": "widget", "widgetType": "tourvice_featured_tours", "settings": {
+        "heading": "Featured Tours",
+        "description": "Handpicked journeys through Armenia's most spectacular destinations.",
+        "count": 6,
+        "cta_text": "View All Tours",
+        "cta_url": {"url": "/tour/"}
+      }}
+    ]}]
+  },
+  {
+    "id": "tv-why",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tv-why-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tv-why-w", "elType": "widget", "widgetType": "tourvice_why", "settings": {
+        "heading": "Why Choose TourVice",
+        "reasons": [
+          {"icon_name": "guide", "title": "Expert Local Guides", "desc": "Our guides are passionate locals who bring Armenia's history and culture to life."},
+          {"icon_name": "luxury", "title": "Luxury Accommodations", "desc": "Stay in handpicked boutique hotels and luxury resorts throughout your journey."},
+          {"icon_name": "custom", "title": "Custom Itineraries", "desc": "Every tour is tailored to your preferences, pace, and interests."},
+          {"icon_name": "safety", "title": "Safety First", "desc": "Comprehensive safety protocols and insurance for complete peace of mind."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "tv-testimonials",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tv-test-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tv-test-w", "elType": "widget", "widgetType": "tourvice_testimonials", "settings": {
+        "heading": "What Our Travelers Say",
+        "testimonials": [
+          {"quote": "An unforgettable journey through Armenia. The guides were incredibly knowledgeable and every detail was perfectly planned.", "name": "Sarah M.", "role": "New York, USA", "stars": 5},
+          {"quote": "The luxury accommodations exceeded our expectations. From Yerevan to Lake Sevan, every moment was magical.", "name": "James L.", "role": "London, UK", "stars": 5},
+          {"quote": "TourVice made our honeymoon in Armenia absolutely perfect. The personalized itinerary was exactly what we wanted.", "name": "Elena & Marco", "role": "Milan, Italy", "stars": 5}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "tv-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "tv-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "tv-cta-w", "elType": "widget", "widgetType": "tourvice_cta", "settings": {
+        "heading": "Ready for Your Armenian Adventure?",
+        "description": "Book your luxury tour today and experience the magic of Armenia with expert local guides.",
+        "cta_text": "Book Your Tour",
+        "cta_url": {"url": "/contact/"}
+      }}
+    ]}]
+  }
+]
