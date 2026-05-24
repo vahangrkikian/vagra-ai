@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>The Meridian</title>
+	<link>https://meridian.vagra.ai</link>
+	<description>A luxury hotel WordPress theme demo</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://meridian.vagra.ai</wp:base_site_url>
+	<wp:base_blog_url>https://meridian.vagra.ai</wp:base_blog_url>
+
+	<!-- TAXONOMY TERMS -->
+	<wp:term>
+		<wp:term_taxonomy>meridian_room_cat</wp:term_taxonomy>
+		<wp:term_slug>standard</wp:term_slug>
+		<wp:term_name><![CDATA[Standard]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>meridian_room_cat</wp:term_taxonomy>
+		<wp:term_slug>deluxe</wp:term_slug>
+		<wp:term_name><![CDATA[Deluxe]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>meridian_room_cat</wp:term_taxonomy>
+		<wp:term_slug>suite</wp:term_slug>
+		<wp:term_name><![CDATA[Suite]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>meridian_room_cat</wp:term_taxonomy>
+		<wp:term_slug>family</wp:term_slug>
+		<wp:term_name><![CDATA[Family]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>meridian_room_cat</wp:term_taxonomy>
+		<wp:term_slug>penthouse</wp:term_slug>
+		<wp:term_name><![CDATA[Penthouse]]></wp:term_name>
+	</wp:term>
+
+	<!-- NAV MENU TERMS -->
+	<wp:term>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug>primary</wp:term_slug>
+		<wp:term_name><![CDATA[Primary]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug>footer</wp:term_slug>
+		<wp:term_name><![CDATA[Footer]]></wp:term_name>
+	</wp:term>
+
+	<!-- ===================== PAGES ===================== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://meridian.vagra.ai/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home</wp:post_name>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://meridian.vagra.ai/about/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:postmeta><wp:meta_key>_wp_page_template</wp:meta_key><wp:meta_value>page-about.php</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Gallery</title>
+		<link>https://meridian.vagra.ai/gallery/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>gallery</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:postmeta><wp:meta_key>_wp_page_template</wp:meta_key><wp:meta_value>page-gallery.php</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Location</title>
+		<link>https://meridian.vagra.ai/location/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>location</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:postmeta><wp:meta_key>_wp_page_template</wp:meta_key><wp:meta_value>page-location.php</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Long Stays</title>
+		<link>https://meridian.vagra.ai/long-stays/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Extended Stay Program</h2>
+<p>For stays of 14 nights or more, The Meridian offers a dedicated long-stay program with preferential rates, weekly housekeeping customization, and access to our resident lounge on the 18th floor.</p>
+<h3>What's included</h3>
+<ul>
+<li>15% discount on published room rates</li>
+<li>Complimentary laundry service (weekly)</li>
+<li>Access to the resident lounge and pantry kitchen</li>
+<li>Dedicated point of contact on the front desk</li>
+<li>Flexible housekeeping schedule</li>
+</ul>
+<p>Contact our reservations team to discuss availability and rates for your dates.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>long-stays</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Offers</title>
+		<link>https://meridian.vagra.ai/offers/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Current Offers</h2>
+<h3>Weekend Escape</h3>
+<p>Book a Friday and Saturday night and receive Sunday complimentary. Includes breakfast for two at The Grill Room. Available through September 2026.</p>
+<h3>Early Bird Rate</h3>
+<p>Reserve 30 days in advance and save 20% on any room category. Non-refundable, but the savings are substantial.</p>
+<h3>Suite Upgrade</h3>
+<p>Book any Deluxe room for three or more nights and receive a complimentary upgrade to a Suite, subject to availability at check-in.</p>
+<p>All offers are subject to availability. Contact reservations or use our online booking system.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>offers</wp:post_name>
+		<wp:menu_order>5</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Gift Cards</title>
+		<link>https://meridian.vagra.ai/gift-cards/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Meridian Gift Cards</h2>
+<p>Give the gift of a stay at The Meridian. Our gift cards are available in any denomination from $100 to $5,000 and can be applied to room reservations, dining, spa treatments, or any hotel service.</p>
+<h3>How it works</h3>
+<ul>
+<li>Choose your amount</li>
+<li>Add a personal message</li>
+<li>Receive a beautifully designed digital card or a physical card mailed to you</li>
+<li>Cards never expire</li>
+</ul>
+<p>To purchase, please contact our front desk at +1 (212) 555-0199 or email stay@themeridian.example.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>gift-cards</wp:post_name>
+		<wp:menu_order>6</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Careers</title>
+		<link>https://meridian.vagra.ai/careers/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Work at The Meridian</h2>
+<p>We are a team of 220 people who believe that hospitality is a craft, not a script. Most of our staff have been with us for more than five years. We promote from within and invest in training.</p>
+<h3>Current Openings</h3>
+<ul>
+<li><strong>Front Desk Associate</strong> — Full-time, rotating shifts</li>
+<li><strong>Housekeeping Supervisor</strong> — Full-time, mornings</li>
+<li><strong>Line Cook, The Grill Room</strong> — Full-time, evenings</li>
+<li><strong>Spa Therapist</strong> — Part-time, flexible hours</li>
+</ul>
+<p>To apply, send your CV and a short note about why you are interested to careers@themeridian.example.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>careers</wp:post_name>
+		<wp:menu_order>7</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Privacy Policy</title>
+		<link>https://meridian.vagra.ai/privacy/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Privacy Policy</h2>
+<p>The Meridian Hotel ("we", "us", "our") respects the privacy of our guests and website visitors. This policy explains how we collect, use, and protect personal information.</p>
+<h3>Information We Collect</h3>
+<p>When you make a reservation or inquiry, we collect your name, email, phone number, and payment details. We also collect browsing data through cookies to improve our website experience.</p>
+<h3>How We Use Your Data</h3>
+<p>We use your data to process reservations, communicate about your stay, and improve our services. We do not sell personal data to third parties.</p>
+<h3>Contact</h3>
+<p>For privacy-related inquiries, contact us at privacy@themeridian.example.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>privacy</wp:post_name>
+		<wp:menu_order>10</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Terms &amp; Conditions</title>
+		<link>https://meridian.vagra.ai/terms/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Terms &amp; Conditions</h2>
+<h3>Reservations</h3>
+<p>All reservations are subject to availability. A valid credit card is required at the time of booking. Cancellations must be made at least 48 hours before the check-in date to avoid charges.</p>
+<h3>Check-in / Check-out</h3>
+<p>Check-in time is 3:00 PM. Check-out time is 11:00 AM. Early check-in and late check-out may be arranged subject to availability.</p>
+<h3>Resort Fee</h3>
+<p>A daily resort fee of $35 applies to all reservations. This includes Wi-Fi, fitness center access, and local phone calls.</p>
+<h3>Liability</h3>
+<p>The hotel is not responsible for loss or damage to personal belongings. A safe is provided in each room for valuables.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>terms</wp:post_name>
+		<wp:menu_order>11</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Accessibility</title>
+		<link>https://meridian.vagra.ai/accessibility/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Accessibility</h2>
+<p>The Meridian is committed to providing an accessible experience for all guests.</p>
+<h3>Property Features</h3>
+<ul>
+<li>Wheelchair-accessible entrance and lobby</li>
+<li>Elevators to all floors with braille signage</li>
+<li>Accessible rooms with roll-in showers, grab bars, and lowered fixtures</li>
+<li>Hearing-accessible rooms with visual alerts and TTY phones</li>
+<li>Service animals welcome throughout the property</li>
+</ul>
+<h3>Website Accessibility</h3>
+<p>We aim to conform to WCAG 2.1 Level AA standards. If you encounter any accessibility barriers on our website, please contact us at accessibility@themeridian.example.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>accessibility</wp:post_name>
+		<wp:menu_order>12</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Modern Slavery Statement</title>
+		<link>https://meridian.vagra.ai/modern-slavery/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[<h2>Modern Slavery Statement</h2>
+<p>The Meridian Hotel is committed to preventing modern slavery and human trafficking in our business and supply chains. We conduct due diligence on all suppliers, ensure fair wages and working conditions for all staff, and provide training to management on identifying and reporting concerns.</p>
+<p>This statement is reviewed annually by the hotel's leadership team.</p>
+<p>If you have concerns about modern slavery in connection with our operations, please contact ethics@themeridian.example.</p>]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>modern-slavery</wp:post_name>
+		<wp:menu_order>13</wp:menu_order>
+	</item>
+
+	<!-- ===================== ROOMS ===================== -->
+
+	<!-- ROOM 1: Classic City Room -->
+	<item>
+		<title>Classic City Room</title>
+		<link>https://meridian.vagra.ai/room/classic-city-room/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Our signature entry-level room balances quiet comfort with thoughtful design. Custom millwork, a hand-tufted headboard and curated lighting give the room a residential feel — every detail considered.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>classic-city-room</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="standard"><![CDATA[Standard]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>149</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>28</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>King</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>City View</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>A refined urban retreat with floor-to-ceiling views of the Midtown skyline.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>600-thread Egyptian cotton
+Nespresso bar
+55" 4K television
+Marble rain shower
+Smart climate control
+Black-out drapery</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#1a365d,#2d3748,#d4af37</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ROOM 2: Deluxe Panorama Suite -->
+	<item>
+		<title>Deluxe Panorama Suite</title>
+		<link>https://meridian.vagra.ai/room/deluxe-panorama-suite/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[A wraparound view, a curved velvet lounge, and a soaking tub set against the city — the Deluxe Panorama is a study in calm. Best at golden hour.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>deluxe-panorama-suite</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="suite"><![CDATA[Suite]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>249</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>45</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>King</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>Skyline Panorama</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value>Most Popular</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>Corner suite with two walls of glass overlooking Bryant Park and beyond.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>Soaking tub with view
+Separate lounge
+Walk-in closet
+Bose surround
+Welcome champagne
+Daily turndown</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#1f2c4a,#3a3320,#d4af37</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ROOM 3: Executive Studio -->
+	<item>
+		<title>Executive Studio</title>
+		<link>https://meridian.vagra.ai/room/executive-studio/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[A dedicated workspace with a leather-topped desk, ergonomic chair, and acoustic paneling. Sliding doors separate work from sleep so you can close the laptop and the day in one motion.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>executive-studio</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="standard"><![CDATA[Standard]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>199</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>38</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>King</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>City View</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value>For Business</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>A working studio designed for the focused traveler — without sacrificing rest.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>Dedicated workspace
+Ergonomic seating
+1Gbps wired ethernet
+Printer access
+Acoustic paneling
+Espresso bar</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#2d3748,#4a5568,#d4af37</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ROOM 4: Premium Family Suite -->
+	<item>
+		<title>Premium Family Suite</title>
+		<link>https://meridian.vagra.ai/room/premium-family-suite/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[A genuinely livable suite for families and small groups. The primary bedroom is fully partitioned from the children's room; both share a generous central lounge and a kitchenette stocked on request.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>premium-family-suite</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="family"><![CDATA[Family]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>329</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>4</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>68</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>1 King + 2 Twin</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>Park View</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value>Family</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>Two bedrooms, one living room, and quiet for everyone — even the parents.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>Two bedrooms
+Kitchenette
+Connecting doors
+Family welcome kit
+Cribs available
+Childproofing on request</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#1a365d,#5a4830,#e8c97a</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ROOM 5: Meridian Penthouse -->
+	<item>
+		<title>Meridian Penthouse</title>
+		<link>https://meridian.vagra.ai/room/meridian-penthouse/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Our flagship: a duplex penthouse with a private elevator entrance, two bedrooms, a dining room for ten, and a terrace that wraps the entire crown of the building.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>meridian-penthouse</wp:post_name>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="penthouse"><![CDATA[Penthouse]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>1290</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>4</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>180</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>2 King</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>Private Terrace, 360°</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value>Penthouse</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>The top floor. A private terrace. The city, arranged around you.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>Private elevator
+Terrace with firepit
+Butler service
+Dining for 10
+Steinway piano
+Outdoor soaking tub</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#0f1e3a,#3a2e15,#e8c97a</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ROOM 6: Deluxe King Room -->
+	<item>
+		<title>Deluxe King Room</title>
+		<link>https://meridian.vagra.ai/room/deluxe-king-room/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[A step up from the Classic City Room — larger footprint, sitting area, and an enhanced bath with double vanity and separate rain shower.]]></content:encoded>
+		<wp:post_type>meridian_room</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>deluxe-king-room</wp:post_name>
+		<wp:menu_order>6</wp:menu_order>
+		<category domain="meridian_room_cat" nicename="deluxe"><![CDATA[Deluxe]]></category>
+		<wp:postmeta><wp:meta_key>_meridian_price</wp:meta_key><wp:meta_value>219</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_guests</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_size_sqm</wp:meta_key><wp:meta_value>36</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_bed_type</wp:meta_key><wp:meta_value>King</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_view</wp:meta_key><wp:meta_value>City View</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_badge</wp:meta_key><wp:meta_value></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_tagline</wp:meta_key><wp:meta_value>Generously sized king room with a sitting area and the full Meridian comfort kit.</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_amenities</wp:meta_key><wp:meta_value>Sitting area
+Double vanity
+Separate rain shower
+Pillow menu
+Welcome amenity
+Daily turndown</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_meridian_color_palette</wp:meta_key><wp:meta_value>#26334d,#3a3320,#d4af37</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ===================== PRIMARY MENU ===================== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://meridian.vagra.ai/home-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home-menu</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rooms</title>
+		<link>https://meridian.vagra.ai/rooms-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>rooms-menu</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/room/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://meridian.vagra.ai/about-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about-menu</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/about/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Gallery</title>
+		<link>https://meridian.vagra.ai/gallery-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>gallery-menu</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/gallery/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Location</title>
+		<link>https://meridian.vagra.ai/location-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>location-menu</wp:post_name>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/location/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ===================== FOOTER MENU ===================== -->
+
+	<item>
+		<title>About</title>
+		<link>https://meridian.vagra.ai/about-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about-footer-menu</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/about/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Gallery</title>
+		<link>https://meridian.vagra.ai/gallery-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>gallery-footer-menu</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/gallery/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Location</title>
+		<link>https://meridian.vagra.ai/location-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>location-footer-menu</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/location/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Careers</title>
+		<link>https://meridian.vagra.ai/careers-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>careers-footer-menu</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/careers/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+</channel>
+</rss>

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Meridian Admin — Meta Box & Form Styles
+   ========================================================================== */
+
+.meridian-meta-box .form-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.meridian-meta-box .form-table th {
+    padding: 12px 10px 12px 0;
+    text-align: left;
+    font-weight: 600;
+    vertical-align: top;
+    width: 180px;
+}
+
+.meridian-meta-box .form-table td {
+    padding: 12px 0;
+}
+
+.meridian-meta-box .form-table input[type="text"],
+.meridian-meta-box .form-table input[type="url"],
+.meridian-meta-box .form-table input[type="number"],
+.meridian-meta-box .form-table input[type="email"],
+.meridian-meta-box .form-table textarea,
+.meridian-meta-box .form-table select {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px 10px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.meridian-meta-box .form-table textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.meridian-meta-box .form-table input:focus,
+.meridian-meta-box .form-table textarea:focus,
+.meridian-meta-box .form-table select:focus {
+    border-color: #0b1530;
+    box-shadow: 0 0 0 1px #0b1530;
+    outline: none;
+}
+
+.meridian-meta-box .description {
+    color: #666;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Gallery thumbnails in meta box */
+.meridian-meta-box .gallery-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.meridian-meta-box .gallery-thumbs img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ccd0d4;
+}

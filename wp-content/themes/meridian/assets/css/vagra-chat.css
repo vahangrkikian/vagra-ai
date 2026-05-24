@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Meridian AI Chat Widget
+   Uses Meridian design tokens from style.css :root (navy/gold palette)
+   ========================================================================== */
+
+/* --- Toggle Button --- */
+.meridian-chat__toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background: var(--gold, #d4af37);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.meridian-chat__toggle:hover {
+    background: var(--gold-dark, #b8960e);
+    transform: scale(1.05);
+}
+
+.meridian-chat__toggle-icon {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hide toggle when chat is open */
+.meridian-chat--open .meridian-chat__toggle {
+    display: none;
+}
+
+/* --- Chat Window --- */
+.meridian-chat__window {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1001;
+    width: 380px;
+    max-height: 520px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.meridian-chat--open .meridian-chat__window {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* --- Header --- */
+.meridian-chat__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: var(--navy-900, #0b1530);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.meridian-chat__title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.meridian-chat__close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.meridian-chat__close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* --- Quick Action Chips --- */
+.meridian-chat__chips {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--gray-200, #e2e8f0);
+}
+
+.meridian-chat__chip {
+    white-space: nowrap;
+    padding: 6px 14px;
+    border: 1px solid var(--gray-200, #e2e8f0);
+    border-radius: 20px;
+    background: #fff;
+    color: var(--navy-900, #0b1530);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.meridian-chat__chip:hover {
+    background: var(--gray-50, #f7fafc);
+    border-color: var(--gold, #d4af37);
+}
+
+/* --- Messages --- */
+.meridian-chat__messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 200px;
+}
+
+.meridian-chat__message {
+    display: flex;
+}
+
+.meridian-chat__message--user {
+    justify-content: flex-end;
+}
+
+.meridian-chat__message--ai {
+    justify-content: flex-start;
+}
+
+.meridian-chat__bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.meridian-chat__bubble--user {
+    background: var(--navy-900, #0b1530);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.meridian-chat__bubble--ai {
+    background: var(--cream, #f6f1e6);
+    color: var(--navy-900, #0b1530);
+    border-bottom-left-radius: 4px;
+}
+
+/* --- Typing Indicator --- */
+.meridian-chat__typing {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 16px 8px;
+}
+
+.meridian-chat__typing[hidden] {
+    display: none;
+}
+
+.meridian-chat__typing span {
+    width: 6px;
+    height: 6px;
+    background: var(--gray-500, #718096);
+    border-radius: 50%;
+    animation: meridian-typing 1.2s infinite ease-in-out;
+}
+
+.meridian-chat__typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.meridian-chat__typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes meridian-typing {
+    0%, 60%, 100% { opacity: 0.3; transform: scale(0.8); }
+    30% { opacity: 1; transform: scale(1); }
+}
+
+/* --- Input Form --- */
+.meridian-chat__input-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid var(--gray-200, #e2e8f0);
+    flex-shrink: 0;
+}
+
+.meridian-chat__input {
+    flex: 1;
+    border: 1px solid var(--gray-200, #e2e8f0);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--navy-900, #0b1530);
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.meridian-chat__input::placeholder {
+    color: var(--gray-500, #718096);
+}
+
+.meridian-chat__input:focus {
+    border-color: var(--gold, #d4af37);
+}
+
+.meridian-chat__send {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: var(--gold, #d4af37);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.meridian-chat__send:hover {
+    background: var(--gold-dark, #b8960e);
+}
+
+.meridian-chat__send svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .meridian-chat__window {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100vh;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .meridian-chat__toggle {
+        bottom: 16px;
+        right: 16px;
+    }
+}
