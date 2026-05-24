@@ -77,7 +77,7 @@
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           grid.querySelectorAll('[data-reveal]').forEach(function (el) {
-            el.setAttribute('data-visible', 'true');
+            el.classList.add('is-visible');
           });
         });
       });
