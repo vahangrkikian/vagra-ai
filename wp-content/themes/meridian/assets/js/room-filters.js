@@ -73,9 +73,13 @@
 
       grid.innerHTML = html;
 
-      // Re-trigger scroll reveals
-      grid.querySelectorAll('[data-reveal]').forEach(function (el) {
-        el.setAttribute('data-visible', 'true');
+      // Re-trigger scroll reveals after browser paints the opacity:0 state
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          grid.querySelectorAll('[data-reveal]').forEach(function (el) {
+            el.setAttribute('data-visible', 'true');
+          });
+        });
       });
     })
     .catch(function () {
