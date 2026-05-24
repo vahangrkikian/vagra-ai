@@ -1,0 +1,29 @@
+[
+  {
+    "id": "dec-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "dec-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "dec-hero-w", "elType": "widget", "widgetType": "driveease_hero", "settings": {
+        "badge": "",
+        "title": "Get in Touch",
+        "subtitle": "Have a question or need help with your reservation? Our team is here for you 24/7.",
+        "cta_text": "Call Now: +1 (555) 123-4567",
+        "cta_url": {"url": "tel:15551234567"}
+      }}
+    ]}]
+  },
+  {
+    "id": "dec-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "dec-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "dec-cta-w", "elType": "widget", "widgetType": "driveease_cta", "settings": {
+        "heading": "Visit Our Main Office",
+        "description": "123 Rental Avenue, City Center. Open Monday-Saturday, 8AM-8PM. Call us at +1 (555) 123-4567.",
+        "cta_text": "Get Directions",
+        "cta_url": {"url": "#"}
+      }}
+    ]}]
+  }
+]

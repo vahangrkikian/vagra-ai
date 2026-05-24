@@ -1,0 +1,91 @@
+[
+  {
+    "id": "de-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-hero-w", "elType": "widget", "widgetType": "driveease_hero", "settings": {
+        "badge": "#1 Rated Car Rental Service",
+        "title": "Find Your Perfect Ride for Any Journey",
+        "subtitle": "Premium vehicles, unbeatable rates, and seamless booking — wherever your destination takes you.",
+        "cta_text": "Browse Fleet",
+        "cta_url": {"url": "#fleet"}
+      }}
+    ]}]
+  },
+  {
+    "id": "de-fleet",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-fleet-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-fleet-w", "elType": "widget", "widgetType": "driveease_fleet", "settings": {
+        "label": "Our Vehicles",
+        "heading": "Choose Your Vehicle",
+        "count": 12,
+        "show_filters": "yes"
+      }}
+    ]}]
+  },
+  {
+    "id": "de-why",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-why-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-why-w", "elType": "widget", "widgetType": "driveease_why", "settings": {
+        "label": "Why DriveEase",
+        "heading": "Everything You Need,\nNothing You Don't",
+        "items": [
+          {"icon": "fa-solid fa-rotate-left", "title": "Free Cancellation", "description": "Plans change. Cancel up to 24 hours before pick-up at no cost, no questions asked."},
+          {"icon": "fa-solid fa-headset", "title": "24/7 Support", "description": "Our team is available around the clock via phone, chat, or email whenever you need us."},
+          {"icon": "fa-solid fa-location-crosshairs", "title": "GPS Included", "description": "Every vehicle comes equipped with a built-in GPS navigation system at no extra charge."},
+          {"icon": "fa-solid fa-shield-halved", "title": "Full Insurance", "description": "Comprehensive insurance coverage included with every rental — drive with complete peace of mind."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "de-how",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-how-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-how-w", "elType": "widget", "widgetType": "driveease_how_it_works", "settings": {
+        "label": "Simple Process",
+        "heading": "On the Road in 3 Steps",
+        "steps": [
+          {"icon": "fa-solid fa-magnifying-glass", "title": "Search", "description": "Enter your pick-up location, dates, and preferred vehicle class to browse availability."},
+          {"icon": "fa-regular fa-credit-card", "title": "Book", "description": "Select your car, add any extras, and confirm your booking in under two minutes."},
+          {"icon": "fa-solid fa-car-side", "title": "Drive", "description": "Pick up the keys at your chosen branch and hit the road — it's that simple."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "de-testimonials",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-test-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-test-w", "elType": "widget", "widgetType": "driveease_testimonials", "settings": {
+        "label": "Customer Reviews",
+        "heading": "What Our Customers Say",
+        "testimonials": [
+          {"quote": "Booking was seamless and the car was in perfect condition. Pick-up at the airport branch took less than five minutes. Will definitely use again on my next trip.", "name": "A. Johnson", "role": "Business Traveller", "stars": 5},
+          {"quote": "We rented an SUV for a family road trip. Spacious, clean, and the GPS saved us countless times. The free cancellation policy gave us peace of mind.", "name": "M. Fernandez", "role": "Family Traveller", "stars": 5},
+          {"quote": "Great selection of vehicles and very transparent pricing. The 24/7 support team helped me sort out a minor issue within minutes. Highly recommend.", "name": "S. Nakamura", "role": "Frequent Renter", "stars": 4}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "de-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "de-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "de-cta-w", "elType": "widget", "widgetType": "driveease_cta", "settings": {
+        "heading": "Ready to Hit the Road?",
+        "description": "Browse our fleet of premium vehicles and book your perfect ride in under two minutes.",
+        "cta_text": "Browse Fleet",
+        "cta_url": {"url": "#fleet"}
+      }}
+    ]}]
+  }
+]

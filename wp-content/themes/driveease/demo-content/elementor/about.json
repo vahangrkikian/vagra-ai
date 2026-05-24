@@ -1,0 +1,46 @@
+[
+  {
+    "id": "dea-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "dea-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "dea-hero-w", "elType": "widget", "widgetType": "driveease_hero", "settings": {
+        "badge": "",
+        "title": "About DriveEase",
+        "subtitle": "Making every journey memorable with premium vehicles, transparent pricing, and world-class service.",
+        "cta_text": "Our Values",
+        "cta_url": {"url": "#why"}
+      }}
+    ]}]
+  },
+  {
+    "id": "dea-why",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "dea-why-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "dea-why-w", "elType": "widget", "widgetType": "driveease_why", "settings": {
+        "label": "Our Values",
+        "heading": "What Drives Us Forward",
+        "items": [
+          {"icon": "fa-solid fa-shield-halved", "title": "Safety First", "description": "Every vehicle undergoes rigorous maintenance checks and comes with comprehensive insurance coverage."},
+          {"icon": "fa-solid fa-hand-holding-dollar", "title": "Transparent Pricing", "description": "No hidden fees, no surprises. What you see is what you pay — clear and honest pricing every time."},
+          {"icon": "fa-solid fa-heart", "title": "Customer Obsessed", "description": "Your satisfaction drives everything we do. From booking to return, we're here to make it seamless."},
+          {"icon": "fa-solid fa-leaf", "title": "Eco Conscious", "description": "Our growing fleet of hybrid and electric vehicles reflects our commitment to a greener future."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "dea-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "dea-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "dea-cta-w", "elType": "widget", "widgetType": "driveease_cta", "settings": {
+        "heading": "Ready to Hit the Road?",
+        "description": "Browse our fleet and find the perfect vehicle for your next journey.",
+        "cta_text": "View Fleet",
+        "cta_url": {"url": "/"}
+      }}
+    ]}]
+  }
+]

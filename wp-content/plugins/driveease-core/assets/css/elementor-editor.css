@@ -1,0 +1,28 @@
+/* DriveEase — Elementor Editor & Frontend Overrides */
+
+/* Remove Elementor default section/column spacing so theme CSS controls layout */
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 100%;
+}
+.elementor-section .elementor-container {
+    padding: 0;
+}
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 0;
+}
+.elementor-element #hero,
+.elementor-element #fleet,
+.elementor-element #why,
+.elementor-element #how,
+.elementor-element #testimonials,
+.elementor-element .driveease-cta {
+    pointer-events: none;
+}
+.elementor-element #hero *,
+.elementor-element #fleet *,
+.elementor-element #why *,
+.elementor-element #how *,
+.elementor-element #testimonials *,
+.elementor-element .driveease-cta * {
+    pointer-events: auto;
+}

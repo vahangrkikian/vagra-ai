@@ -57,6 +57,12 @@ require_once DRIVEEASE_CORE_DIR . 'inc/class-driveease-chat.php';
 require_once DRIVEEASE_CORE_DIR . 'inc/class-driveease-contact.php';
 
 /* ------------------------------------------------------------------
+ * Elementor integration (loaded when Elementor is active)
+ * ----------------------------------------------------------------*/
+require_once DRIVEEASE_CORE_DIR . 'inc/class-driveease-elementor.php';
+DriveEase_Elementor::instance();
+
+/* ------------------------------------------------------------------
  * Admin meta boxes (loaded only in admin)
  * ----------------------------------------------------------------*/
 if ( is_admin() ) {
