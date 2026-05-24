@@ -47,6 +47,46 @@ class CTA extends Meridian_Widget_Base {
         ] );
 
         $this->end_controls_section();
+
+        /* ── Style tab ─────────────────────────────────────────── */
+        $this->start_controls_section( 'style_section', [
+            'label' => __( 'Style', 'meridian' ),
+            'tab'   => Controls_Manager::TAB_STYLE,
+        ] );
+
+        $this->add_responsive_control( 'section_padding', [
+            'label'      => __( 'Section Padding', 'meridian' ),
+            'type'       => Controls_Manager::DIMENSIONS,
+            'size_units' => [ 'px', 'em', '%' ],
+            'selectors'  => [
+                '{{WRAPPER}} .section--dark' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+            ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'meridian' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [
+                '{{WRAPPER}} .display' => 'font-size: {{SIZE}}{{UNIT}};',
+            ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'meridian' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'meridian' ),   'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'meridian' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'meridian' ),  'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [
+                '{{WRAPPER}} .section--dark' => 'text-align: {{VALUE}};',
+            ],
+        ] );
+
+        $this->end_controls_section();
     }
 
     protected function render() {

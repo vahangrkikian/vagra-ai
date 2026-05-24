@@ -67,6 +67,56 @@ class Categories extends Carvice_Widget_Base {
         ] );
 
         $this->end_controls_section();
+
+        /* ── Style ── */
+        $this->start_controls_section( 'style_section', [
+            'label' => __( 'Style', 'carvice' ),
+            'tab'   => Controls_Manager::TAB_STYLE,
+        ] );
+
+        $this->add_responsive_control( 'section_padding', [
+            'label'      => __( 'Section Padding', 'carvice' ),
+            'type'       => Controls_Manager::DIMENSIONS,
+            'size_units' => [ 'px', 'em', '%' ],
+            'selectors'  => [ '{{WRAPPER}} .carvice-categories' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'carvice' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [ '{{WRAPPER}} .carvice-category-card__name' => 'font-size: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'carvice' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'carvice' ),   'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'carvice' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'carvice' ),  'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [ '{{WRAPPER}} .carvice-categories' => 'text-align: {{VALUE}};' ],
+        ] );
+
+        $this->add_responsive_control( 'grid_columns', [
+            'label'   => __( 'Columns', 'carvice' ),
+            'type'    => Controls_Manager::SELECT,
+            'default' => '3',
+            'options' => [ '1' => '1', '2' => '2', '3' => '3', '4' => '4' ],
+            'selectors' => [ '{{WRAPPER}} .carvice-categories__grid' => 'grid-template-columns: repeat({{VALUE}}, 1fr);' ],
+        ] );
+
+        $this->add_responsive_control( 'grid_gap', [
+            'label'      => __( 'Grid Gap', 'carvice' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em' ],
+            'range'      => [ 'px' => [ 'min' => 0, 'max' => 60 ] ],
+            'selectors'  => [ '{{WRAPPER}} .carvice-categories__grid' => 'gap: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->end_controls_section();
     }
 
     protected function render() {

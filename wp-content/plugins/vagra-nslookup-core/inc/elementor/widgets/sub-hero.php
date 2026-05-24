@@ -121,12 +121,31 @@ class Sub_Hero extends NSL_Widget_Base {
             'selectors' => [ '{{WRAPPER}} .nsl-crumb, {{WRAPPER}} .nsl-crumb a' => 'color: {{VALUE}}' ],
         ] );
 
-        $this->add_control( 'hero_padding', [
+        $this->add_responsive_control( 'hero_padding', [
             'label'      => __( 'Section Padding', 'vagra-nslookup' ),
             'type'       => Controls_Manager::DIMENSIONS,
-            'size_units' => [ 'px' ],
+            'size_units' => [ 'px', 'em', '%' ],
             'default'    => [ 'top' => '120', 'right' => '0', 'bottom' => '72', 'left' => '0', 'unit' => 'px', 'isLinked' => false ],
             'selectors'  => [ '{{WRAPPER}} .cine-hero' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'vagra-nslookup' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [ '{{WRAPPER}} .cine-h1' => 'font-size: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'vagra-nslookup' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'vagra-nslookup' ),   'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'vagra-nslookup' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'vagra-nslookup' ),  'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [ '{{WRAPPER}} .cine-hero' => 'text-align: {{VALUE}};' ],
         ] );
 
         $this->end_controls_section();

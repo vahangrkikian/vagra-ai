@@ -73,6 +73,56 @@ class Services extends MSP_Widget_Base {
         ] );
 
         $this->end_controls_section();
+
+        /* ── Style ─────────────────────────────────────────── */
+        $this->start_controls_section( 'style_section', [
+            'label' => __( 'Style', 'vagra-msp' ),
+            'tab'   => Controls_Manager::TAB_STYLE,
+        ] );
+
+        $this->add_responsive_control( 'section_padding', [
+            'label'      => __( 'Section Padding', 'vagra-msp' ),
+            'type'       => Controls_Manager::DIMENSIONS,
+            'size_units' => [ 'px', 'em', '%' ],
+            'selectors'  => [ '{{WRAPPER}} .vagra-services' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'vagra-msp' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [ '{{WRAPPER}} .vagra-section-header__title' => 'font-size: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'vagra-msp' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'vagra-msp' ), 'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'vagra-msp' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'vagra-msp' ), 'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [ '{{WRAPPER}} .vagra-services' => 'text-align: {{VALUE}};' ],
+        ] );
+
+        $this->add_responsive_control( 'columns', [
+            'label'   => __( 'Columns', 'vagra-msp' ),
+            'type'    => Controls_Manager::SELECT,
+            'default' => '3',
+            'options' => [ '1' => '1', '2' => '2', '3' => '3', '4' => '4' ],
+            'selectors' => [ '{{WRAPPER}} .vagra-services__grid' => 'grid-template-columns: repeat({{VALUE}}, 1fr);' ],
+        ] );
+
+        $this->add_responsive_control( 'grid_gap', [
+            'label'      => __( 'Grid Gap', 'vagra-msp' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em' ],
+            'range'      => [ 'px' => [ 'min' => 0, 'max' => 60 ] ],
+            'selectors'  => [ '{{WRAPPER}} .vagra-services__grid' => 'gap: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->end_controls_section();
     }
 
     protected function render() {

@@ -46,6 +46,40 @@ class Hero extends MSP_Widget_Base {
         ] );
 
         $this->end_controls_section();
+
+        /* ── Style ─────────────────────────────────────────── */
+        $this->start_controls_section( 'style_section', [
+            'label' => __( 'Style', 'vagra-msp' ),
+            'tab'   => Controls_Manager::TAB_STYLE,
+        ] );
+
+        $this->add_responsive_control( 'section_padding', [
+            'label'      => __( 'Section Padding', 'vagra-msp' ),
+            'type'       => Controls_Manager::DIMENSIONS,
+            'size_units' => [ 'px', 'em', '%' ],
+            'selectors'  => [ '{{WRAPPER}} .vagra-hero' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'vagra-msp' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [ '{{WRAPPER}} .vagra-hero__title' => 'font-size: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'vagra-msp' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'vagra-msp' ), 'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'vagra-msp' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'vagra-msp' ), 'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [ '{{WRAPPER}} .vagra-hero' => 'text-align: {{VALUE}};' ],
+        ] );
+
+        $this->end_controls_section();
     }
 
     protected function render() {

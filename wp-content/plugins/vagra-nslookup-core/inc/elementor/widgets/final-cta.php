@@ -96,12 +96,31 @@ class Final_CTA extends NSL_Widget_Base {
             'selectors' => [ '{{WRAPPER}} .cine-btn-primary' => 'background-color: {{VALUE}}; border-color: {{VALUE}};' ],
         ] );
 
-        $this->add_control( 'cta_padding', [
+        $this->add_responsive_control( 'cta_padding', [
             'label'      => __( 'Section Padding', 'vagra-nslookup' ),
             'type'       => Controls_Manager::DIMENSIONS,
-            'size_units' => [ 'px', 'em' ],
+            'size_units' => [ 'px', 'em', '%' ],
             'default'    => [ 'top' => '96', 'right' => '24', 'bottom' => '96', 'left' => '24', 'unit' => 'px', 'isLinked' => false ],
             'selectors'  => [ '{{WRAPPER}} .cine-final' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'title_size', [
+            'label'      => __( 'Title Font Size', 'vagra-nslookup' ),
+            'type'       => Controls_Manager::SLIDER,
+            'size_units' => [ 'px', 'em', 'rem' ],
+            'range'      => [ 'px' => [ 'min' => 16, 'max' => 80 ] ],
+            'selectors'  => [ '{{WRAPPER}} .cine-final-h' => 'font-size: {{SIZE}}{{UNIT}};' ],
+        ] );
+
+        $this->add_responsive_control( 'content_align', [
+            'label'   => __( 'Alignment', 'vagra-nslookup' ),
+            'type'    => Controls_Manager::CHOOSE,
+            'options' => [
+                'left'   => [ 'title' => __( 'Left', 'vagra-nslookup' ),   'icon' => 'eicon-text-align-left' ],
+                'center' => [ 'title' => __( 'Center', 'vagra-nslookup' ), 'icon' => 'eicon-text-align-center' ],
+                'right'  => [ 'title' => __( 'Right', 'vagra-nslookup' ),  'icon' => 'eicon-text-align-right' ],
+            ],
+            'selectors' => [ '{{WRAPPER}} .cine-final' => 'text-align: {{VALUE}};' ],
         ] );
 
         $this->add_control( 'bg_image', [
