@@ -71,7 +71,11 @@ require_once TOURVICE_CORE_DIR . 'inc/class-tourvice-reviews.php';
  * Elementor Integration
  * ----------------------------------------------------------------*/
 require_once TOURVICE_CORE_DIR . 'inc/class-tourvice-elementor.php';
-TourVice_Elementor::instance();
+add_action( 'plugins_loaded', function () {
+	if ( did_action( 'elementor/loaded' ) ) {
+		TourVice_Elementor::instance();
+	}
+} );
 
 /* ------------------------------------------------------------------
  * Tour archive: 12 tours per page

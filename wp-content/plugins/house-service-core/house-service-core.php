@@ -428,7 +428,11 @@ require_once HS_CORE_PATH . 'inc/class-hs-rest.php';
  * --------------------------------------------------------------------- */
 
 require_once HS_CORE_PATH . 'inc/class-hs-elementor.php';
-HS_Elementor::instance();
+add_action( 'plugins_loaded', function () {
+	if ( did_action( 'elementor/loaded' ) ) {
+		HS_Elementor::instance();
+	}
+} );
 
 /**
  * Register REST API routes.

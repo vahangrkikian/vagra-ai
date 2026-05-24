@@ -42,7 +42,11 @@ new Meridian_Chat();
  * Elementor integration
  * ----------------------------------------------------------------*/
 require_once MERIDIAN_CORE_DIR . 'inc/class-meridian-elementor.php';
-Meridian_Elementor::instance();
+add_action( 'plugins_loaded', function () {
+	if ( did_action( 'elementor/loaded' ) ) {
+		Meridian_Elementor::instance();
+	}
+} );
 
 /* ------------------------------------------------------------------
  * Custom Post Type: meridian_room
