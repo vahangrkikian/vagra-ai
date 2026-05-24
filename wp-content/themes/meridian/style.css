@@ -221,6 +221,9 @@ p { margin: 0; }
 .section--dark .display { color: var(--white); }
 .section--dark .section__lede { color: rgba(255,255,255,0.7); }
 .section--cream { background: var(--cream); }
+.section--cream .amenity__title { color: var(--navy-900); }
+.section--cream .amenity__body { color: var(--navy-700); }
+.section--cream .amenity__icon { color: var(--gold); }
 .section__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 64px; }
 .section__head--centered { flex-direction: column; align-items: center; text-align: center; }
 .section__head--centered .display { text-align: center; max-width: 20ch; }
