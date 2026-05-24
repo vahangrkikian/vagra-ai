@@ -90,22 +90,32 @@ add_action( 'admin_enqueue_scripts', 'carvice_demo_notice_script' );
  *
  * @return array Demo import configurations.
  */
-function carvice_ocdi_import_files() {
-	return array(
-		array(
-			'import_file_name'             => esc_html__( 'Carvice Demo', 'carvice' ),
+function carvice_ocdi_import_files( $demos = array() ) {
+	$demos[] = array(
+		'import_file_name'             => __( 'Classic — PHP Templates', 'carvice' ),
+		'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
+		'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
+		'import_notice'                => __( 'Standard import using theme PHP templates. Works without any page builder.', 'carvice' ),
+	);
+
+	// Add Elementor demo only when Elementor is active.
+	if ( did_action( 'elementor/loaded' ) ) {
+		$demos[] = array(
+			'import_file_name'             => __( 'Elementor — Visual Builder', 'carvice' ),
 			'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
 			'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
-			'import_notice'                => esc_html__( 'This will import providers, pages, menus, and sample data for the Carvice demo site.', 'carvice' ),
-		),
-	);
+			'import_notice'                => __( 'Imports the same pages, then converts Home to Elementor with custom Carvice widgets. All sections become editable in the visual builder.', 'carvice' ),
+		);
+	}
+
+	return $demos;
 }
 add_filter( 'ocdi/import_files', 'carvice_ocdi_import_files' );
 
 /**
  * After-import setup: assign front page and menus.
  */
-function carvice_ocdi_after_import() {
+function carvice_ocdi_after_import( $selected_import ) {
 	// Set static front page.
 	$front_page = get_page_by_path( 'home' );
 	if ( $front_page ) {
@@ -127,5 +137,39 @@ function carvice_ocdi_after_import() {
 	}
 
 	set_theme_mod( 'nav_menu_locations', $locations );
+
+	// Handle Elementor import: inject Elementor data from JSON files.
+	$import_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+	if ( stripos( $import_name, 'Elementor' ) !== false && did_action( 'elementor/loaded' ) ) {
+		$elementor_dir   = get_template_directory() . '/demo-content/elementor/';
+		$elementor_pages = array(
+			'Home' => 'home.json',
+		);
+		$elementor_ver = defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : '3.0.0';
+
+		foreach ( $elementor_pages as $title => $json_file ) {
+			$page = get_page_by_title( $title );
+			$file = $elementor_dir . $json_file;
+			if ( $page && file_exists( $file ) ) {
+				$raw     = file_get_contents( $file );
+				$decoded = json_decode( $raw, true );
+				if ( is_array( $decoded ) ) {
+					$compact = wp_json_encode( $decoded );
+					update_post_meta( $page->ID, '_elementor_data', wp_slash( $compact ) );
+					update_post_meta( $page->ID, '_elementor_edit_mode', 'builder' );
+					update_post_meta( $page->ID, '_wp_page_template', 'elementor_header_footer' );
+					update_post_meta( $page->ID, '_elementor_version', $elementor_ver );
+					update_post_meta( $page->ID, '_elementor_css', '' );
+				}
+			}
+		}
+
+		// Clear Elementor CSS cache.
+		if ( class_exists( '\Elementor\Plugin' ) ) {
+			\Elementor\Plugin::$instance->files_manager->clear_cache();
+		}
+	}
+
+	flush_rewrite_rules();
 }
 add_action( 'ocdi/after_import', 'carvice_ocdi_after_import' );

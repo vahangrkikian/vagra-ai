@@ -1,0 +1,24 @@
+/* Carvice — Elementor Editor & Frontend Overrides */
+
+/* Remove Elementor default section/column spacing so theme CSS controls layout */
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 100%;
+}
+.elementor-section .elementor-container {
+    padding: 0;
+}
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 0;
+}
+.elementor-element .carvice-hero,
+.elementor-element .carvice-categories,
+.elementor-element .carvice-providers-section,
+.elementor-element .carvice-cta {
+    pointer-events: none;
+}
+.elementor-element .carvice-hero *,
+.elementor-element .carvice-categories *,
+.elementor-element .carvice-providers-section *,
+.elementor-element .carvice-cta * {
+    pointer-events: auto;
+}

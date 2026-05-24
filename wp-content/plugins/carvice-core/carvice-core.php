@@ -23,6 +23,12 @@ define( 'CARVICE_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CARVICE_CORE_URL', plugin_dir_url( __FILE__ ) );
 
 /* ------------------------------------------------------------------
+ * Elementor Integration
+ * ----------------------------------------------------------------*/
+require_once CARVICE_CORE_DIR . 'inc/class-carvice-elementor.php';
+Carvice_Elementor::instance();
+
+/* ------------------------------------------------------------------
  * REST API endpoints
  * ----------------------------------------------------------------*/
 require_once CARVICE_CORE_DIR . 'inc/class-carvice-rest.php';

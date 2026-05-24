@@ -1,0 +1,73 @@
+[
+  {
+    "id": "cv-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "cv-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "cv-hero-w", "elType": "widget", "widgetType": "carvice_hero", "settings": {
+        "title": "Don't know who to turn to?",
+        "description": "Describe your car problem and Carvice AI will find the right specialist for you.",
+        "search_placeholder": "Ask everything to Carvice AI",
+        "background_image": {"url": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1440&h=500&fit=crop"}
+      }}
+    ]}]
+  },
+  {
+    "id": "cv-categories",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "cv-cat-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "cv-cat-w", "elType": "widget", "widgetType": "carvice_categories", "settings": {
+        "categories": [
+          {"title": "Car Body", "description": "Body repair / dent fixing", "icon_name": "body-repair", "count": 0},
+          {"title": "Engine", "description": "Motor specialist", "icon_name": "engine", "count": 0},
+          {"title": "Electrical", "description": "Diagnostics / electrician", "icon_name": "electrical", "count": 0},
+          {"title": "Chassis", "description": "Body / chassis", "icon_name": "chassis", "count": 0},
+          {"title": "Wheels / Tires", "description": "Vulcanization / tire service", "icon_name": "wheels", "count": 0},
+          {"title": "Interior", "description": "Cabin servicing", "icon_name": "interior", "count": 0}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "cv-centers",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "cv-centers-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "cv-centers-w", "elType": "widget", "widgetType": "carvice_providers", "settings": {
+        "title": "Top Service Centers",
+        "description": "Certified service centers and official dealers with top ratings.",
+        "provider_type": "center",
+        "count": 10,
+        "see_more_url": {"url": "/search/?type=company"}
+      }}
+    ]}]
+  },
+  {
+    "id": "cv-specialists",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "cv-spec-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "cv-spec-w", "elType": "widget", "widgetType": "carvice_providers", "settings": {
+        "title": "Top Individual Specialists",
+        "description": "Independent car experts with verified reviews.",
+        "provider_type": "individual",
+        "count": 10,
+        "see_more_url": {"url": "/search/?type=individual"}
+      }}
+    ]}]
+  },
+  {
+    "id": "cv-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "cv-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "cv-cta-w", "elType": "widget", "widgetType": "carvice_cta", "settings": {
+        "title": "Need Help with Your Car?",
+        "description": "Describe your issue and let Carvice AI find the perfect specialist for you.",
+        "button_text": "Find a Specialist",
+        "button_url": {"url": "/search/"}
+      }}
+    ]}]
+  }
+]
