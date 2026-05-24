@@ -169,7 +169,7 @@ function DemosApp() {
                   <div className="device-screen">
                     <iframe
                       key={`${theme.id}-${pageId}-${device}`}
-                      src={`${theme.url}${pageId}`}
+                      src={`${theme.url}${pageId}?hide_admin_bar=1`}
                       title={`${theme.name} — ${pages.find(p => p.id === pageId)?.label || "Home"}`}
                       className="demo-iframe"
                       sandbox="allow-scripts allow-same-origin"
