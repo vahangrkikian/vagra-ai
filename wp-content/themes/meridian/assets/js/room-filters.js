@@ -23,7 +23,7 @@
   });
 
   function fetchRooms() {
-    var url = config.restUrl + 'meridian/v1/rooms?sort=' + encodeURIComponent(activeSort);
+    var url = config.restUrl + 'rooms?sort=' + encodeURIComponent(activeSort);
     if (activeCat) url += '&room_cat=' + encodeURIComponent(activeCat);
 
     grid.style.opacity = '0.5';
@@ -57,7 +57,8 @@
         }
         html += '</div>';
         html += '<div class="room-card__body">';
-        if (room.category) html += '<div class="eyebrow">' + escHtml(room.category) + '</div>';
+        var catLabel = Array.isArray(room.category) ? room.category.join(', ') : room.category;
+        if (catLabel) html += '<div class="eyebrow">' + escHtml(catLabel) + '</div>';
         html += '<h3 class="room-card__name">' + escHtml(room.title) + '</h3>';
         if (room.tagline) html += '<p class="room-card__tag">' + escHtml(room.tagline) + '</p>';
         html += '<div class="room-card__specs">';
@@ -74,7 +75,7 @@
 
       // Re-trigger scroll reveals
       grid.querySelectorAll('[data-reveal]').forEach(function (el) {
-        el.classList.add('is-visible');
+        el.setAttribute('data-visible', 'true');
       });
     })
     .catch(function () {
