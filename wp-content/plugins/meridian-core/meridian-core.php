@@ -39,6 +39,12 @@ require_once MERIDIAN_CORE_DIR . 'inc/class-meridian-chat.php';
 new Meridian_Chat();
 
 /* ------------------------------------------------------------------
+ * Elementor integration
+ * ----------------------------------------------------------------*/
+require_once MERIDIAN_CORE_DIR . 'inc/class-meridian-elementor.php';
+Meridian_Elementor::instance();
+
+/* ------------------------------------------------------------------
  * Custom Post Type: meridian_room
  * ----------------------------------------------------------------*/
 

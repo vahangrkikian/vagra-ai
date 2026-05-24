@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mera-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mera-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mera-hero-w", "elType": "widget", "widgetType": "meridian_hero", "settings": {
+        "eyebrow": "Since 1928",
+        "title": "About The Meridian",
+        "subtitle": "A hotel that has always preferred understatement to spectacle.",
+        "show_booking": ""
+      }}
+    ]}]
+  },
+  {
+    "id": "mera-amenities",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mera-amen-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mera-amen-w", "elType": "widget", "widgetType": "meridian_amenities", "settings": {
+        "eyebrow": "Our principles",
+        "heading": "What we believe in.",
+        "description": "",
+        "dark_section": "",
+        "amenities": [
+          {"icon_name": "bell", "title": "Genuine Service",  "desc": "We hire for warmth and train for skill. Our staff knows your name by the second visit \u2014 because they want to, not because a system told them to."},
+          {"icon_name": "bed",  "title": "Quiet Luxury",     "desc": "No marble lobbies, no chandeliers, no gold leaf. Just excellent materials, considered design, and rooms that feel like home."},
+          {"icon_name": "star", "title": "Consistency",       "desc": "The same high standard on a Tuesday in February as a Saturday in June. Every room, every floor, every time."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "mera-testimonials",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mera-test-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mera-test-w", "elType": "widget", "widgetType": "meridian_testimonials", "settings": {
+        "eyebrow": "Guests",
+        "heading": "What people say.",
+        "testimonials": [
+          {"quote": "The Meridian is the only hotel in Manhattan that gets the small things right.", "name": "Eleanor Whitfield", "role": "Returning guest, London", "rating": 5},
+          {"quote": "Booked the Executive Studio for a four-night sprint. The desk is real, the chair is real, and the wifi is faster than my office.", "name": "Marcus Tan", "role": "Business traveler, Singapore", "rating": 5}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "mera-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mera-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mera-cta-w", "elType": "widget", "widgetType": "meridian_cta", "settings": {
+        "heading": "Experience The Meridian",
+        "description": "Book your stay and discover why guests keep coming back.",
+        "phone": "+1 (212) 555-0199",
+        "cta_text": "Reserve a Room",
+        "cta_url": {"url": "#booking"}
+      }}
+    ]}]
+  }
+]

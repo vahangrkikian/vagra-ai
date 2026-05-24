@@ -38,6 +38,11 @@ function meridian_register_required_plugins() {
             'slug'     => 'one-click-demo-import',
             'required' => false,
         ),
+        array(
+            'name'     => 'Elementor',
+            'slug'     => 'elementor',
+            'required' => false,
+        ),
     );
 
     tgmpa( $plugins, array(

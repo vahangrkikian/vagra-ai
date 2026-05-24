@@ -1,0 +1,41 @@
+[
+  {
+    "id": "merg-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "merg-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "merg-hero-w", "elType": "widget", "widgetType": "meridian_hero", "settings": {
+        "eyebrow": "The Meridian",
+        "title": "Gallery",
+        "subtitle": "A look inside \u2014 the rooms, the lobby, the rooftop, the details.",
+        "show_booking": ""
+      }}
+    ]}]
+  },
+  {
+    "id": "merg-gallery",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "merg-gal-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "merg-gal-w", "elType": "widget", "widgetType": "meridian_gallery", "settings": {
+        "eyebrow": "Rooms & suites",
+        "heading": "Where you will stay.",
+        "description": ""
+      }}
+    ]}]
+  },
+  {
+    "id": "merg-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "merg-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "merg-cta-w", "elType": "widget", "widgetType": "meridian_cta", "settings": {
+        "heading": "Like what you see?",
+        "description": "Book your stay at The Meridian today.",
+        "phone": "+1 (212) 555-0199",
+        "cta_text": "Book Now",
+        "cta_url": {"url": "#booking"}
+      }}
+    ]}]
+  }
+]

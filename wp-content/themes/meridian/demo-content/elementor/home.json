@@ -1,0 +1,91 @@
+[
+  {
+    "id": "mer-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-hero-w", "elType": "widget", "widgetType": "meridian_hero", "settings": {
+        "eyebrow": "Midtown Manhattan \u00b7 Est. 1928",
+        "title": "Where comfort meets the city.",
+        "subtitle": "A 5-star urban retreat above the streets of Midtown \u2014 quiet rooms, considered service, and a view that has not gotten old in ninety-eight years.",
+        "show_booking": "yes"
+      }}
+    ]}]
+  },
+  {
+    "id": "mer-rooms",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-rooms-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-rooms-w", "elType": "widget", "widgetType": "meridian_rooms", "settings": {
+        "eyebrow": "Featured rooms",
+        "heading": "Four ways to stay.",
+        "count": 4,
+        "link_text": "View all rooms"
+      }}
+    ]}]
+  },
+  {
+    "id": "mer-amenities",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-amen-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-amen-w", "elType": "widget", "widgetType": "meridian_amenities", "settings": {
+        "eyebrow": "The essentials",
+        "heading": "What you can expect, every time.",
+        "description": "No upsells. No surprises. Everything below is included with every reservation, in every room.",
+        "dark_section": "yes",
+        "amenities": [
+          {"icon_name": "pin",  "title": "Prime Midtown Location", "desc": "Two blocks from Bryant Park, six from Times Square, a short walk to Central Park."},
+          {"icon_name": "bell", "title": "24/7 Concierge",         "desc": "Reservations, theater, transportation \u2014 handled before you think to ask."},
+          {"icon_name": "bed",  "title": "Egyptian Cotton Linens",  "desc": "600-thread-count sheets, down pillows, and a curated pillow menu in every room."},
+          {"icon_name": "wifi", "title": "1 Gbps Wi-Fi",           "desc": "Symmetric fiber across the property \u2014 fast enough for the largest team call."},
+          {"icon_name": "pool", "title": "Rooftop Lounge & Pool",  "desc": "A heated infinity pool, a quiet bar, and the best view of the skyline at sunset."},
+          {"icon_name": "spa",  "title": "Spa & Fitness",           "desc": "A full Technogym floor, two studios, and a six-treatment spa one level below."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "mer-gallery",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-gal-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-gal-w", "elType": "widget", "widgetType": "meridian_gallery", "settings": {
+        "eyebrow": "Gallery",
+        "heading": "Inside the building.",
+        "description": "A look at the spaces \u2014 the lobby, the rooftop, the rooms, the bar."
+      }}
+    ]}]
+  },
+  {
+    "id": "mer-testimonials",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-test-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-test-w", "elType": "widget", "widgetType": "meridian_testimonials", "settings": {
+        "eyebrow": "Guests",
+        "heading": "What people say.",
+        "testimonials": [
+          {"quote": "The Meridian is the only hotel in Manhattan that gets the small things right. Quiet rooms, real coffee, and a front desk that remembers your name on the second visit.", "name": "Eleanor Whitfield", "role": "Returning guest, London", "rating": 5},
+          {"quote": "Booked the Executive Studio for a four-night sprint. The desk is real, the chair is real, and the wifi is faster than my office. I extended by two days.", "name": "Marcus Tan", "role": "Business traveler, Singapore", "rating": 5},
+          {"quote": "We travel with three kids under ten. The Family Suite was the first hotel room that didn\u2019t feel like a compromise. The kids had their own door. We had ours.", "name": "The Alvarez Family", "role": "Family suite guests, Madrid", "rating": 5}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "mer-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "mer-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "mer-cta-w", "elType": "widget", "widgetType": "meridian_cta", "settings": {
+        "heading": "Ready to book your stay?",
+        "description": "Whether it is one night or one week, every stay at The Meridian begins with a conversation. Reach out \u2014 we will take care of the rest.",
+        "phone": "+1 (212) 555-0199",
+        "cta_text": "Book a Room",
+        "cta_url": {"url": "#booking"}
+      }}
+    ]}]
+  }
+]
