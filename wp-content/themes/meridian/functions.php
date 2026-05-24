@@ -118,16 +118,14 @@ function meridian_enqueue_assets() {
         MERIDIAN_VERSION
     );
 
-    // Front page: main.js for hero animations, scroll reveal, etc.
-    if ( is_front_page() ) {
-        wp_enqueue_script(
-            'meridian-main',
-            MERIDIAN_URI . '/assets/js/main.js',
-            array(),
-            MERIDIAN_VERSION,
-            true
-        );
-    }
+    // Site-wide: main.js for scroll reveal, nav toggle, gallery lightbox.
+    wp_enqueue_script(
+        'meridian-main',
+        MERIDIAN_URI . '/assets/js/main.js',
+        array(),
+        MERIDIAN_VERSION,
+        true
+    );
 
     // Room archive / room category taxonomy: room-filters.js with localized data.
     if ( is_post_type_archive( 'meridian_room' ) || is_tax( 'meridian_room_cat' ) ) {
@@ -144,16 +142,8 @@ function meridian_enqueue_assets() {
         ) );
     }
 
-    // Single room: main.js + booking.js with localized data.
+    // Single room: booking.js with localized data.
     if ( is_singular( 'meridian_room' ) ) {
-        wp_enqueue_script(
-            'meridian-main',
-            MERIDIAN_URI . '/assets/js/main.js',
-            array(),
-            MERIDIAN_VERSION,
-            true
-        );
-
         wp_enqueue_script(
             'meridian-booking',
             MERIDIAN_URI . '/assets/js/booking.js',
