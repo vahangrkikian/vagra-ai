@@ -13,6 +13,7 @@ const THEMES = [
     tagline: "Security services that sell themselves.",
     ai: "Security Advisor",
     url: "http://msp.vagraai.local/",
+    elementor: true,
     persona: { initials: "SN", name: "ShieldNet MSP", role: "Security advisor • shieldnet.com" },
     preview: "shield",
     chat: [
@@ -69,6 +70,7 @@ const THEMES = [
     tagline: "The auto-repair marketplace.",
     ai: "Auto Advisor",
     url: "http://carvice.vagraai.local/",
+    elementor: true,
     persona: { initials: "CV", name: "Carvice", role: "Auto advisor • EN · RU · HY" },
     preview: "wrench",
     chat: [
@@ -87,6 +89,7 @@ const THEMES = [
     tagline: "Rentals without the counter.",
     ai: "Rental Agent",
     url: "http://driveease.vagraai.local/",
+    elementor: true,
     persona: { initials: "DE", name: "DriveEase", role: "Rental agent • online check-in" },
     preview: "wheel",
     chat: [
@@ -105,6 +108,7 @@ const THEMES = [
     tagline: "Armenia, on its own terms.",
     ai: "Travel Guide",
     url: "http://tourvice.vagraai.local/",
+    elementor: true,
     persona: { initials: "TV", name: "TourVice", role: "Travel guide • Armenia" },
     preview: "mountain",
     chat: [
@@ -123,6 +127,7 @@ const THEMES = [
     tagline: "The five-star booking experience.",
     ai: "Hotel Concierge",
     url: "http://meridian.vagraai.local/",
+    elementor: true,
     persona: { initials: "MR", name: "The Meridian", role: "Concierge • 5★ • Manhattan" },
     preview: "skyline",
     chat: [
@@ -141,6 +146,7 @@ const THEMES = [
     tagline: "Trusted pros at your doorstep.",
     ai: "Service Advisor",
     url: "http://houseservice.vagraai.local/",
+    elementor: true,
     persona: { initials: "HS", name: "House Service", role: "Service advisor • quotes in 60s" },
     preview: "house",
     chat: [
