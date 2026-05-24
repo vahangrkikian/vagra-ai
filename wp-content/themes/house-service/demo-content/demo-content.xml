@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>House Service</title>
+	<link>https://houseservice.vagra.ai</link>
+	<description>A home services marketplace WordPress theme demo</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://houseservice.vagra.ai</wp:base_site_url>
+	<wp:base_blog_url>https://houseservice.vagra.ai</wp:base_blog_url>
+
+	<!-- TAXONOMY TERMS -->
+	<wp:term>
+		<wp:term_taxonomy>hs_service_cat</wp:term_taxonomy>
+		<wp:term_slug>cleaning</wp:term_slug>
+		<wp:term_name><![CDATA[Cleaning]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>hs_service_cat</wp:term_taxonomy>
+		<wp:term_slug>moving</wp:term_slug>
+		<wp:term_name><![CDATA[Moving]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>hs_service_cat</wp:term_taxonomy>
+		<wp:term_slug>repair</wp:term_slug>
+		<wp:term_name><![CDATA[Repair]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>hs_service_cat</wp:term_taxonomy>
+		<wp:term_slug>assembly</wp:term_slug>
+		<wp:term_name><![CDATA[Assembly]]></wp:term_name>
+	</wp:term>
+
+	<!-- NAV MENU TERMS -->
+	<wp:term>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug>primary-menu</wp:term_slug>
+		<wp:term_name><![CDATA[Primary Menu]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug>footer-menu</wp:term_slug>
+		<wp:term_name><![CDATA[Footer Menu]]></wp:term_name>
+	</wp:term>
+
+	<!-- ===================== PAGES ===================== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://houseservice.vagra.ai/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home</wp:post_name>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://houseservice.vagra.ai/about/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[House Service connects homeowners with verified local service providers. From deep cleaning to furniture assembly, we make it easy to find reliable help.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Categories</title>
+		<link>https://houseservice.vagra.ai/categories/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Browse our service categories to find the right professional for your needs.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>categories</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>https://houseservice.vagra.ai/contact/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Have a question? Get in touch with our support team.]]></content:encoded>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>contact</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+	</item>
+
+	<!-- ===================== PROVIDERS ===================== -->
+
+	<!-- Provider 1: CleanCo -->
+	<item>
+		<title>CleanCo</title>
+		<link>https://houseservice.vagra.ai/provider/cleanco/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[CleanCo delivers meticulous residential and commercial cleaning across Brooklyn, Queens, and Manhattan. Eco-friendly products, bonded teams, and same-day availability for regular clients.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Eco-friendly residential & commercial cleaning]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>cleanco</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="hs_service_cat" nicename="cleaning"><![CDATA[Cleaning]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.9</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>612</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Top rated</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~1 hr</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>1,840 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Brooklyn &middot; Queens &middot; Manhattan</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2014</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Eco-friendly, Insured, Same-day</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>CC</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#cfe0f4</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#dde9f8</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 2: MoveFast -->
+	<item>
+		<title>MoveFast</title>
+		<link>https://houseservice.vagra.ai/provider/movefast/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[MoveFast provides full-service local and long-distance moving. Licensed crews, padded trucks, and a no-damage guarantee. Packing, unpacking, and short-term storage included.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Full-service local & long-distance movers]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>movefast</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="hs_service_cat" nicename="moving"><![CDATA[Moving]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.8</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>438</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Insured</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~2 hrs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>2,210 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Manhattan &middot; Bronx &middot; Westchester</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2011</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Local, Long-distance, Packing, Storage</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>MF</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#d4edda</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#e2f0e6</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 3: RepairHub -->
+	<item>
+		<title>RepairHub</title>
+		<link>https://houseservice.vagra.ai/provider/repairhub/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[RepairHub handles plumbing, electrical, HVAC, and general handyman work. Certified technicians arrive with fully stocked vans — most repairs done in one visit with a 90-day guarantee.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Licensed plumbing, electrical & handyman services]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>repairhub</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="hs_service_cat" nicename="repair"><![CDATA[Repair]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.7</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>527</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Licensed</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~1 hr</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>3,150 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Queens &middot; Long Island &middot; Staten Island</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2009</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Plumbing, Electrical, HVAC, Emergency</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>RH</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#fde8d0</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#fdf0e2</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 4: SetupPro -->
+	<item>
+		<title>SetupPro</title>
+		<link>https://houseservice.vagra.ai/provider/setuppro/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[SetupPro assembles anything flat-pack: IKEA, Wayfair, Amazon. TV mounting, shelf installation, and playground sets too. Satisfaction guaranteed with free re-visit if anything loosens.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Flat-pack assembly, mounting & installation]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>setuppro</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="hs_service_cat" nicename="assembly"><![CDATA[Assembly]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.9</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>305</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>1</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Budget pick</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~30 min</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>1,420 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Manhattan &middot; Brooklyn &middot; Jersey City</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2017</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>IKEA, TV Mount, Shelving, Same-day</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>SP</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#e8daef</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#f0e6f6</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 5: SparkleSpace -->
+	<item>
+		<title>SparkleSpace</title>
+		<link>https://houseservice.vagra.ai/provider/sparklespace/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[SparkleSpace specializes in move-in/move-out deep cleans and post-construction cleanup. Green-certified products and allergy-safe protocols for families with young children or pets.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Move-in/out deep cleans & post-construction]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>sparklespace</wp:post_name>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="hs_service_cat" nicename="cleaning"><![CDATA[Cleaning]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.8</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>289</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Insured</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~2 hrs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>920 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Hoboken &middot; Jersey City &middot; Newark</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2018</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Move-out, Green-certified, Pet-safe</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>SS</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#d0f0fd</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#e0f4fd</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 6: Hauloway -->
+	<item>
+		<title>Hauloway</title>
+		<link>https://houseservice.vagra.ai/provider/hauloway/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Hauloway handles junk removal, estate cleanouts, and donation pickups. Transparent pricing by truck volume — no hidden fees. Same-day service available across the tri-state area.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Junk removal, cleanouts & donation pickup]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>hauloway</wp:post_name>
+		<wp:menu_order>6</wp:menu_order>
+		<category domain="hs_service_cat" nicename="moving"><![CDATA[Moving]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.6</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>194</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>1</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Affordable</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~1 hr</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>760 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Tri-state area</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2019</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Junk removal, Estate, Donation, Same-day</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>HW</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#d5f5e3</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#e8faf0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 7: PipeWorks -->
+	<item>
+		<title>PipeWorks</title>
+		<link>https://houseservice.vagra.ai/provider/pipeworks/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[PipeWorks is a licensed master-plumber operation covering everything from dripping faucets to full bathroom renovations. 24/7 emergency service with no overtime charges on weekends.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Master plumber — emergency & renovation]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>pipeworks</wp:post_name>
+		<wp:menu_order>7</wp:menu_order>
+		<category domain="hs_service_cat" nicename="repair"><![CDATA[Repair]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.8</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>411</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Premium</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~45 min</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>2,680 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Manhattan &middot; Brooklyn &middot; Queens</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2006</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Plumbing, Emergency, Renovation, 24/7</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>PW</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#fce4d6</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#fdf0e8</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Provider 8: Bolt & Bench -->
+	<item>
+		<title>Bolt &amp; Bench</title>
+		<link>https://houseservice.vagra.ai/provider/bolt-bench/</link>
+		<dc:creator>admin</dc:creator>
+		<content:encoded><![CDATA[Bolt & Bench specializes in custom carpentry, built-in shelving, and furniture assembly for high-end residences. Precision work with a focus on clean finishes and minimal disruption.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Custom carpentry & premium furniture assembly]]></excerpt:encoded>
+		<wp:post_type>hs_provider</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>bolt-bench</wp:post_name>
+		<wp:menu_order>8</wp:menu_order>
+		<category domain="hs_service_cat" nicename="assembly"><![CDATA[Assembly]]></category>
+		<wp:postmeta><wp:meta_key>_hs_rating</wp:meta_key><wp:meta_value>4.9</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_reviews</wp:meta_key><wp:meta_value>178</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_price_level</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_badge</wp:meta_key><wp:meta_value>Specialist</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_response_time</wp:meta_key><wp:meta_value>~3 hrs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_completed_jobs</wp:meta_key><wp:meta_value>540 jobs</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_serving_area</wp:meta_key><wp:meta_value>Upper East Side &middot; Tribeca &middot; SoHo</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_founded</wp:meta_key><wp:meta_value>2015</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_tags</wp:meta_key><wp:meta_value>Custom, Carpentry, Built-in, Premium</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_initial</wp:meta_key><wp:meta_value>BB</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_a</wp:meta_key><wp:meta_value>#f5e6cc</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_hs_bg_color_b</wp:meta_key><wp:meta_value>#faf0e0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ===================== PRIMARY MENU ===================== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://houseservice.vagra.ai/home-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home-menu</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Browse</title>
+		<link>https://houseservice.vagra.ai/browse-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>browse-menu</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/provider/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Categories</title>
+		<link>https://houseservice.vagra.ai/categories-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>categories-menu</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/categories/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>https://houseservice.vagra.ai/contact-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>contact-menu</wp:post_name>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/contact/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ===================== FOOTER MENU ===================== -->
+
+	<item>
+		<title>Home</title>
+		<link>https://houseservice.vagra.ai/home-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home-footer-menu</wp:post_name>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://houseservice.vagra.ai/about-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about-footer-menu</wp:post_name>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/about/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Categories</title>
+		<link>https://houseservice.vagra.ai/categories-footer-menu/</link>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>categories-footer-menu</wp:post_name>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="footer-menu"><![CDATA[Footer Menu]]></category>
+		<wp:postmeta><wp:meta_key>_menu_item_type</wp:meta_key><wp:meta_value>custom</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_url</wp:meta_key><wp:meta_value>/categories/</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_menu_item_menu_item_parent</wp:meta_key><wp:meta_value>0</wp:meta_value></wp:postmeta>
+	</item>
+
+</channel>
+</rss>

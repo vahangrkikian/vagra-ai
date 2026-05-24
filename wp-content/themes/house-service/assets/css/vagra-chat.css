@@ -1,0 +1,12 @@
+/**
+ * House Service — AI Chat Widget Styles
+ *
+ * Additional chat styles beyond what's in style.css.
+ * Kept separate for modularity across vagra.ai themes.
+ *
+ * @package House_Service
+ */
+
+/* Chat widget is primarily styled in style.css.
+   This file exists for the vagra-chat.css enqueue pattern
+   used across all vagra.ai themes and can hold overrides. */
