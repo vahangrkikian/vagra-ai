@@ -146,9 +146,24 @@
 	}
 
 	/* -------------------------------------------------------
+	 * 6. Sticky Nav Scroll State
+	 * ------------------------------------------------------- */
+	function initNavScroll() {
+		var nav = document.querySelector('.nsl-nav');
+		if (!nav) return;
+
+		function onScroll() {
+			nav.classList.toggle('is-scrolled', window.scrollY > 40);
+		}
+		window.addEventListener('scroll', onScroll, { passive: true });
+		onScroll();
+	}
+
+	/* -------------------------------------------------------
 	 * Init
 	 * ------------------------------------------------------- */
 	initScrollReveal();
 	initMobileMenu();
 	initMouseGlow();
+	initNavScroll();
 })();

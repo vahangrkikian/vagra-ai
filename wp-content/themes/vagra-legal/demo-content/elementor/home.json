@@ -1,0 +1,95 @@
+[
+  {
+    "id": "vl-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-hero-w", "elType": "widget", "widgetType": "vagra_legal_hero", "settings": {
+        "title": "Experienced Legal Counsel You Can Trust",
+        "subtitle": "Dedicated attorneys fighting for your rights. From personal injury to business law, we provide the skilled representation you deserve.",
+        "cta_text": "Schedule a Free Consultation",
+        "cta_url": {"url": "#contact"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vl-practice",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-practice-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-practice-w", "elType": "widget", "widgetType": "vagra_legal_practice_areas", "settings": {
+        "heading": "Our Practice Areas",
+        "description": "We offer comprehensive legal services across multiple practice areas to meet your needs.",
+        "areas": [
+          {"title": "Personal Injury", "desc": "Aggressive representation for accident victims. We fight to get you the compensation you deserve.", "icon_name": "injury"},
+          {"title": "Family Law", "desc": "Compassionate guidance through divorce, custody, and family matters.", "icon_name": "family"},
+          {"title": "Criminal Defense", "desc": "Protecting your rights and your future with strategic defense.", "icon_name": "criminal"},
+          {"title": "Business Law", "desc": "Strategic counsel for businesses of all sizes — formation, contracts, disputes.", "icon_name": "business"},
+          {"title": "Immigration", "desc": "Navigating the path to a new beginning with experienced counsel.", "icon_name": "immigration"},
+          {"title": "Estate Planning", "desc": "Securing your legacy and your family's future with proper planning.", "icon_name": "estate"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vl-stats",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-stats-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-stats-w", "elType": "widget", "widgetType": "vagra_legal_stats", "settings": {
+        "stats": [
+          {"value": "500+", "label": "Cases Won"},
+          {"value": "25+", "label": "Years Experience"},
+          {"value": "98%", "label": "Client Satisfaction"},
+          {"value": "$50M+", "label": "Recovered"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vl-attorneys",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-att-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-att-w", "elType": "widget", "widgetType": "vagra_legal_attorneys", "settings": {
+        "heading": "Meet Our Attorneys",
+        "description": "Our team of experienced attorneys is dedicated to providing exceptional legal representation.",
+        "attorneys": [
+          {"name": "Robert Morrison", "role": "Senior Partner", "initials": "RM", "specialty": "Personal Injury"},
+          {"name": "Sarah Chen", "role": "Partner", "initials": "SC", "specialty": "Family Law"},
+          {"name": "James Okafor", "role": "Senior Associate", "initials": "JO", "specialty": "Criminal Defense"},
+          {"name": "Elena Vasquez", "role": "Associate", "initials": "EV", "specialty": "Immigration"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vl-testimonials",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-test-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-test-w", "elType": "widget", "widgetType": "vagra_legal_testimonials", "settings": {
+        "heading": "What Our Clients Say",
+        "testimonials": [
+          {"quote": "Morrison & Associates fought tirelessly for my case. They secured a settlement that covered all my medical bills and more.", "name": "Michael R.", "case_type": "Personal Injury", "stars": 5},
+          {"quote": "Professional, compassionate, and effective. They guided us through a difficult custody case with genuine care.", "name": "Jennifer T.", "case_type": "Family Law", "stars": 5},
+          {"quote": "Their business law team helped us structure our LLC perfectly. Clear advice, no unnecessary jargon.", "name": "David K.", "case_type": "Business Law", "stars": 5}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vl-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vl-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vl-cta-w", "elType": "widget", "widgetType": "vagra_legal_cta", "settings": {
+        "heading": "Ready to Discuss Your Case?",
+        "description": "Schedule a free, no-obligation consultation with one of our experienced attorneys today.",
+        "phone": "(555) 123-4567",
+        "cta_text": "Schedule Consultation",
+        "cta_url": {"url": "/contact/"}
+      }}
+    ]}]
+  }
+]

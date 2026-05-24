@@ -1,0 +1,29 @@
+[
+  {
+    "id": "vlc-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vlc-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vlc-hero-w", "elType": "widget", "widgetType": "vagra_legal_hero", "settings": {
+        "title": "Contact Us",
+        "subtitle": "We are here to help. Reach out for a free, no-obligation consultation about your legal matter.",
+        "cta_text": "Call Now: (555) 123-4567",
+        "cta_url": {"url": "tel:5551234567"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vlc-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vlc-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vlc-cta-w", "elType": "widget", "widgetType": "vagra_legal_cta", "settings": {
+        "heading": "Visit Our Office",
+        "description": "Morrison & Associates, 1234 Justice Avenue, Suite 500, New York, NY 10001. Monday-Friday 9:00 AM - 6:00 PM.",
+        "phone": "(555) 123-4567",
+        "cta_text": "Schedule Consultation",
+        "cta_url": {"url": "#"}
+      }}
+    ]}]
+  }
+]

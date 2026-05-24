@@ -11,7 +11,7 @@ Requires PHP: 8.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: vagra-msp
-Tags: cybersecurity, msp, business, custom-colors, custom-logo, featured-images, threaded-comments, translation-ready
+Tags: cybersecurity, msp, business, custom-colors, custom-logo, featured-images, threaded-comments, translation-ready, accessibility-ready
 */
 
 /* ==========================================================================
@@ -43,10 +43,104 @@ Tags: cybersecurity, msp, business, custom-colors, custom-logo, featured-images,
     --vagra-spacing-2xl: 48px;
     --vagra-spacing-3xl: 64px;
 
+    /* Extra Colors */
+    --vagra-light: #F4F7FE;
+    --vagra-success: #2E7D5B;
+    --vagra-warning: #D4A030;
+    --vagra-danger: #C0392B;
+    --vagra-accent: #3366FF;
+
     /* Shadows */
     --vagra-shadow-sm: 0 1px 2px rgba(43, 54, 116, 0.06);
     --vagra-shadow-md: 0 4px 12px rgba(43, 54, 116, 0.08);
     --vagra-shadow-lg: 0 8px 24px rgba(43, 54, 116, 0.12);
+}
+
+/* ==========================================================================
+   Screen Reader Text (WordPress a11y pattern)
+   ========================================================================== */
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: var(--vagra-light-bg);
+    clip: auto !important;
+    clip-path: none;
+    color: var(--vagra-dark);
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+/* ==========================================================================
+   Focus-Visible — Accessible keyboard focus indicators
+   ========================================================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[tabindex]:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.vagra-button:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(51, 102, 255, 0.2);
+}
+
+.main-navigation a:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: 2px;
+    background: var(--vagra-light-bg);
+}
+
+.site-header__burger:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: 2px;
+}
+
+.faq-page__question:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: -2px;
+}
+
+.vagra-toc__toggle:focus-visible {
+    outline: 2px solid var(--vagra-primary);
+    outline-offset: 2px;
+}
+
+.vagra-share__btn:focus-visible {
+    outline: 2px solid var(--vagra-white);
+    outline-offset: 2px;
 }
 
 /* ==========================================================================
@@ -2200,4 +2294,190 @@ img {
     .vagra-share {
         flex-wrap: wrap;
     }
+}
+
+/* ==========================================================================
+   Page Hero (About, Contact, Services inner pages)
+   ========================================================================== */
+.vagra-page-hero {
+    background: linear-gradient(135deg, var(--vagra-dark) 0%, var(--vagra-primary) 100%);
+    color: var(--vagra-white);
+    padding: var(--vagra-spacing-3xl) 0 var(--vagra-spacing-2xl);
+    text-align: center;
+}
+.vagra-page-hero__title {
+    font-family: var(--vagra-font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 var(--vagra-spacing-md);
+}
+.vagra-page-hero__desc {
+    font-size: 1.0625rem;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.vagra-about-story {
+    padding: var(--vagra-spacing-3xl) 0;
+}
+.vagra-about-story__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--vagra-spacing-2xl);
+    align-items: center;
+}
+.vagra-about-story__text h2 {
+    font-family: var(--vagra-font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--vagra-dark);
+    margin-bottom: var(--vagra-spacing-md);
+}
+.vagra-about-story__text p {
+    color: var(--vagra-muted);
+    line-height: 1.7;
+    margin-bottom: var(--vagra-spacing-md);
+}
+.vagra-about-story__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vagra-about-story__placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--vagra-light-bg);
+    border-radius: var(--vagra-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vagra-about-story__placeholder svg {
+    opacity: 0.3;
+}
+
+.vagra-about-values {
+    padding: var(--vagra-spacing-3xl) 0;
+    background: var(--vagra-light-bg);
+}
+.vagra-about-values__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--vagra-spacing-lg);
+    margin-top: var(--vagra-spacing-xl);
+}
+.vagra-value-card {
+    background: var(--vagra-white);
+    border-radius: var(--vagra-radius);
+    padding: var(--vagra-spacing-xl);
+    box-shadow: var(--vagra-shadow-sm);
+    text-align: center;
+}
+.vagra-value-card h3 {
+    font-family: var(--vagra-font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: var(--vagra-spacing-md) 0 var(--vagra-spacing-sm);
+    color: var(--vagra-dark);
+}
+.vagra-value-card p {
+    color: var(--vagra-muted);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.vagra-about-team {
+    padding: var(--vagra-spacing-3xl) 0;
+}
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+.vagra-contact {
+    padding: var(--vagra-spacing-3xl) 0;
+}
+.vagra-contact__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--vagra-spacing-2xl);
+}
+.vagra-contact__form-area {
+    background: var(--vagra-white);
+    border-radius: var(--vagra-radius);
+    padding: var(--vagra-spacing-xl);
+    box-shadow: var(--vagra-shadow-md);
+}
+.vagra-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vagra-spacing-md);
+}
+.vagra-contact-form h3 {
+    font-family: var(--vagra-font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--vagra-dark);
+    margin-bottom: var(--vagra-spacing-sm);
+}
+.vagra-contact-form__field label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--vagra-dark);
+    margin-bottom: var(--vagra-spacing-xs);
+}
+.vagra-contact-form__field input,
+.vagra-contact-form__field select,
+.vagra-contact-form__field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--vagra-border);
+    border-radius: var(--vagra-radius-sm);
+    font-family: var(--vagra-font-body);
+    font-size: 0.9375rem;
+    transition: border-color 0.2s;
+}
+.vagra-contact-form__field input:focus,
+.vagra-contact-form__field select:focus,
+.vagra-contact-form__field textarea:focus {
+    border-color: var(--vagra-primary);
+    outline: none;
+}
+.vagra-contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vagra-spacing-lg);
+}
+.vagra-contact-info-card {
+    background: var(--vagra-light-bg);
+    border-radius: var(--vagra-radius);
+    padding: var(--vagra-spacing-lg);
+}
+.vagra-contact-info-card h3 {
+    font-family: var(--vagra-font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--vagra-dark);
+    margin-bottom: var(--vagra-spacing-sm);
+}
+.vagra-contact-info-card p,
+.vagra-contact-info-card a {
+    color: var(--vagra-muted);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+.vagra-contact-info-card a:hover {
+    color: var(--vagra-primary);
+}
+
+@media (max-width: 768px) {
+    .vagra-about-story__grid { grid-template-columns: 1fr; }
+    .vagra-about-values__grid { grid-template-columns: 1fr; }
+    .vagra-contact__grid { grid-template-columns: 1fr; }
 }

@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'VAGRA_VERSION', '1.0.0' );
+define( 'VAGRA_MSP_VERSION', '1.0.0' );
 define( 'VAGRA_DIR', get_template_directory() );
 define( 'VAGRA_URI', get_template_directory_uri() );
 
@@ -18,6 +19,8 @@ define( 'VAGRA_URI', get_template_directory_uri() );
  * Theme setup.
  */
 function vagra_setup() {
+    load_theme_textdomain( 'vagra-msp', get_template_directory() . '/languages' );
+
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
 
@@ -378,6 +381,28 @@ function vagra_get_related_posts( $post_id, $count = 3 ) {
 }
 
 /**
+ * Preconnect to Google Fonts for faster font loading.
+ *
+ * @param array  $urls          Existing resource hints.
+ * @param string $relation_type Hint type (dns-prefetch, preconnect, etc.).
+ * @return array
+ */
+function vagra_resource_hints( $urls, $relation_type ) {
+    if ( 'preconnect' === $relation_type ) {
+        $urls[] = array(
+            'href'        => 'https://fonts.googleapis.com',
+            'crossorigin' => '',
+        );
+        $urls[] = array(
+            'href'        => 'https://fonts.gstatic.com',
+            'crossorigin' => 'anonymous',
+        );
+    }
+    return $urls;
+}
+add_filter( 'wp_resource_hints', 'vagra_resource_hints', 10, 2 );
+
+/**
  * Fallback: Footer — Discover.
  */
 function vagra_footer_discover_fallback() {
@@ -397,3 +422,16 @@ function vagra_footer_discover_fallback() {
     }
     echo '</ul>';
 }
+
+// Admin settings page.
+require_once VAGRA_DIR . '/inc/class-vagra-admin.php';
+new Vagra_MSP_Admin();
+
+// Customizer settings.
+require_once VAGRA_DIR . '/inc/customizer.php';
+
+// TGM Plugin Activation — recommended plugins.
+require_once VAGRA_DIR . '/inc/tgm-init.php';
+
+// Polylang multilingual integration.
+require_once VAGRA_DIR . '/inc/polylang-integration.php';

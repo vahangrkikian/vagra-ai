@@ -1,0 +1,287 @@
+[
+    {
+        "id": "prop_hero_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "prop_hero_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "prop_hero_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_sub_hero",
+                        "settings": {
+                            "eyebrow": "Propagation Checker",
+                            "heading": "See how DNS changes spread <span class=\"cine-accent\">across the globe</span>.",
+                            "lede": "Query 30+ resolvers on 6 continents and watch your DNS records propagate in real time.",
+                            "breadcrumbs": [
+                                {
+                                    "label": "Home",
+                                    "url": "/"
+                                },
+                                {
+                                    "label": "Propagation",
+                                    "url": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prop_stats_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "prop_stats_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "prop_stats_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_stats_strip",
+                        "settings": {
+                            "stats": [
+                                {
+                                    "value": "5 min",
+                                    "label": "Best case"
+                                },
+                                {
+                                    "value": "48 h",
+                                    "label": "Worst case"
+                                },
+                                {
+                                    "value": "3600s",
+                                    "label": "Common TTL"
+                                },
+                                {
+                                    "value": "∞",
+                                    "label": "If misconfigured"
+                                }
+                            ],
+                            "background": "dark"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prop_faq_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "prop_faq_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "prop_faq_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_faq_accordion",
+                        "settings": {
+                            "heading": "Propagation FAQ",
+                            "faq_items": [
+                                {
+                                    "category": "",
+                                    "question": "How long does DNS propagation take?",
+                                    "answer": "Typically 5 minutes to 48 hours, depending on the TTL of the old record and how aggressively resolvers cache."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "Can I speed up propagation?",
+                                    "answer": "Lower the TTL before making changes. Set it to 300 seconds (5 minutes) 24-48 hours before the change, then update the record."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "Why do some resolvers show the old value?",
+                                    "answer": "They cached the previous record and won't re-query until the TTL expires. Different resolvers have different cache durations."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "What does 'propagation complete' mean?",
+                                    "answer": "All queried resolvers return the same, expected value for the record. This means the new record has fully replaced the old one globally."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prop_cta_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "prop_cta_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "prop_cta_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_final_cta",
+                        "settings": {
+                            "heading": "Check propagation now.",
+                            "subtitle": "30+ resolvers. 6 continents. Real-time results.",
+                            "primary_cta_text": "Open Propagation Checker",
+                            "primary_cta_url": {
+                                "url": "/propagation/"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -19,23 +19,35 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return array Import file configuration.
  */
 function vagra_nsl_ocdi_import_files() {
-	return array(
+	$demos = array(
 		array(
-			'import_file_name'           => __( 'nslookup.am Demo Content', 'vagra-nslookup' ),
-			'import_file_url'            => '',
-			'local_import_file'          => get_template_directory() . '/demo-content/demo-content.xml',
-			'local_import_widget_file'   => get_template_directory() . '/demo-content/widgets.json',
+			'import_file_name'             => __( 'Classic — PHP Templates', 'vagra-nslookup' ),
+			'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
+			'local_import_widget_file'     => get_template_directory() . '/demo-content/widgets.json',
 			'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
-			'import_notice'              => __( 'This will import demo pages, blog posts, menu items, and theme settings. Existing content will not be deleted.', 'vagra-nslookup' ),
+			'import_notice'                => __( 'Standard import using theme PHP templates. Works without any page builder. Recommended for most users.', 'vagra-nslookup' ),
 		),
 	);
+
+	// Add Elementor demo only when Elementor is active.
+	if ( did_action( 'elementor/loaded' ) ) {
+		$demos[] = array(
+			'import_file_name'             => __( 'Elementor — Visual Builder', 'vagra-nslookup' ),
+			'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
+			'local_import_widget_file'     => get_template_directory() . '/demo-content/widgets.json',
+			'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
+			'import_notice'                => __( 'Imports the same pages, then converts Home, NS Lookup, and Propagation to Elementor with custom NSLookup widgets. All sections become editable in the visual builder.', 'vagra-nslookup' ),
+		);
+	}
+
+	return $demos;
 }
 add_filter( 'ocdi/import_files', 'vagra_nsl_ocdi_import_files' );
 
 /**
  * After OCDI import: set up front page, menus, etc.
  */
-function vagra_nsl_ocdi_after_import_setup() {
+function vagra_nsl_ocdi_after_import_setup( $selected_import ) {
 	// Set front page.
 	$front_page = get_page_by_title( 'Home' );
 	if ( $front_page ) {
@@ -63,6 +75,40 @@ function vagra_nsl_ocdi_after_import_setup() {
 	}
 
 	set_theme_mod( 'nav_menu_locations', $locations );
+
+	// Handle Elementor import: inject Elementor data from JSON files.
+	$import_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+	if ( stripos( $import_name, 'Elementor' ) !== false && did_action( 'elementor/loaded' ) ) {
+		$elementor_dir = get_template_directory() . '/demo-content/elementor/';
+		$elementor_pages = array(
+			'Home'                     => 'home.json',
+			'NS Lookup'                => 'ns-lookup.json',
+			'DNS Propagation Checker'  => 'propagation.json',
+		);
+		$elementor_ver = defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : '3.0.0';
+		foreach ( $elementor_pages as $title => $json_file ) {
+			$page = get_page_by_title( $title );
+			$file = $elementor_dir . $json_file;
+			if ( $page && file_exists( $file ) ) {
+				$raw  = file_get_contents( $file );
+				$decoded = json_decode( $raw, true );
+				if ( is_array( $decoded ) ) {
+					$compact = wp_json_encode( $decoded );
+					update_post_meta( $page->ID, '_elementor_data', wp_slash( $compact ) );
+					update_post_meta( $page->ID, '_elementor_edit_mode', 'builder' );
+					update_post_meta( $page->ID, '_wp_page_template', 'elementor_header_footer' );
+					update_post_meta( $page->ID, '_elementor_version', $elementor_ver );
+					update_post_meta( $page->ID, '_elementor_css', '' );
+				}
+			}
+		}
+		// Clear Elementor CSS cache.
+		if ( class_exists( '\Elementor\Plugin' ) ) {
+			\Elementor\Plugin::$instance->files_manager->clear_cache();
+		}
+	}
+
+	flush_rewrite_rules();
 }
 add_action( 'ocdi/after_import', 'vagra_nsl_ocdi_after_import_setup' );
 

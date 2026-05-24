@@ -57,13 +57,24 @@ add_action( 'admin_notices', 'vagra_legal_demo_import_notice' );
  */
 function vagra_legal_ocdi_import_files( $demos ) {
     $demos[] = array(
-        'import_file_name'           => __( 'Morrison & Associates Demo', 'vagra-legal' ),
-        'import_file_url'            => '',
-        'local_import_file'          => get_template_directory() . '/demo-content/demo-content.xml',
+        'import_file_name'             => __( 'Classic — PHP Templates', 'vagra-legal' ),
+        'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
         'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
-        'local_import_widget_file'   => get_template_directory() . '/demo-content/widgets.json',
-        'import_notice'              => __( 'This will import pages, posts, and settings for the Morrison & Associates demo site.', 'vagra-legal' ),
+        'local_import_widget_file'     => get_template_directory() . '/demo-content/widgets.json',
+        'import_notice'                => __( 'Standard import using theme PHP templates. Works without any page builder.', 'vagra-legal' ),
     );
+
+    // Add Elementor demo only when Elementor is active.
+    if ( did_action( 'elementor/loaded' ) ) {
+        $demos[] = array(
+            'import_file_name'             => __( 'Elementor — Visual Builder', 'vagra-legal' ),
+            'local_import_file'            => get_template_directory() . '/demo-content/demo-content.xml',
+            'local_import_customizer_file' => get_template_directory() . '/demo-content/customizer.json',
+            'local_import_widget_file'     => get_template_directory() . '/demo-content/widgets.json',
+            'import_notice'                => __( 'Imports the same pages, then converts Home, About, and Contact to Elementor with custom Legal widgets. All sections become editable in the visual builder.', 'vagra-legal' ),
+        );
+    }
+
     return $demos;
 }
 add_filter( 'ocdi/import_files', 'vagra_legal_ocdi_import_files' );
@@ -71,23 +82,66 @@ add_filter( 'ocdi/import_files', 'vagra_legal_ocdi_import_files' );
 /**
  * After import: set front page and menus.
  */
-function vagra_legal_ocdi_after_import() {
+function vagra_legal_ocdi_after_import( $selected_import ) {
+    // Set front page.
     $front_page = get_page_by_path( 'home' );
     if ( $front_page ) {
         update_option( 'show_on_front', 'page' );
         update_option( 'page_on_front', $front_page->ID );
     }
 
+    // Set blog page.
     $blog_page = get_page_by_path( 'blog' );
     if ( $blog_page ) {
         update_option( 'page_for_posts', $blog_page->ID );
     }
 
+    // Assign menus.
     $primary_menu = wp_get_nav_menu_object( 'Primary' );
+    $footer_menu  = wp_get_nav_menu_object( 'Footer' );
+    $locations    = get_theme_mod( 'nav_menu_locations', array() );
     if ( $primary_menu ) {
-        $locations = get_theme_mod( 'nav_menu_locations', array() );
         $locations['primary'] = $primary_menu->term_id;
-        set_theme_mod( 'nav_menu_locations', $locations );
     }
+    if ( $footer_menu ) {
+        $locations['footer'] = $footer_menu->term_id;
+    }
+    set_theme_mod( 'nav_menu_locations', $locations );
+
+    // Handle Elementor import: inject Elementor data from JSON files.
+    $import_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+    if ( stripos( $import_name, 'Elementor' ) !== false && did_action( 'elementor/loaded' ) ) {
+        $elementor_dir   = get_template_directory() . '/demo-content/elementor/';
+        $elementor_pages = array(
+            'Home'       => 'home.json',
+            'About Morrison & Associates' => 'about.json',
+            'Contact Us' => 'contact.json',
+        );
+        $elementor_ver = defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : '3.0.0';
+
+        foreach ( $elementor_pages as $title => $json_file ) {
+            $page = get_page_by_title( $title );
+            $file = $elementor_dir . $json_file;
+            if ( $page && file_exists( $file ) ) {
+                $raw     = file_get_contents( $file );
+                $decoded = json_decode( $raw, true );
+                if ( is_array( $decoded ) ) {
+                    $compact = wp_json_encode( $decoded );
+                    update_post_meta( $page->ID, '_elementor_data', wp_slash( $compact ) );
+                    update_post_meta( $page->ID, '_elementor_edit_mode', 'builder' );
+                    update_post_meta( $page->ID, '_wp_page_template', 'elementor_header_footer' );
+                    update_post_meta( $page->ID, '_elementor_version', $elementor_ver );
+                    update_post_meta( $page->ID, '_elementor_css', '' );
+                }
+            }
+        }
+
+        // Clear Elementor CSS cache.
+        if ( class_exists( '\Elementor\Plugin' ) ) {
+            \Elementor\Plugin::$instance->files_manager->clear_cache();
+        }
+    }
+
+    flush_rewrite_rules();
 }
 add_action( 'ocdi/after_import', 'vagra_legal_ocdi_after_import' );

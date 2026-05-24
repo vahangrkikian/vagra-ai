@@ -37,7 +37,8 @@
 
             <!-- Other Tools Column -->
             <div class="site-footer__col">
-                <h4 class="site-footer__heading"><?php esc_html_e( 'Other Tools', 'vagra-msp' ); ?></h4>
+                <h4 class="site-footer__heading" id="footer-tools-heading"><?php esc_html_e( 'Other Tools', 'vagra-msp' ); ?></h4>
+                <nav aria-labelledby="footer-tools-heading">
                 <?php
                 wp_nav_menu(
                     array(
@@ -49,11 +50,13 @@
                     )
                 );
                 ?>
+                </nav>
             </div>
 
             <!-- Company Column -->
             <div class="site-footer__col">
-                <h4 class="site-footer__heading"><?php esc_html_e( 'Company', 'vagra-msp' ); ?></h4>
+                <h4 class="site-footer__heading" id="footer-company-heading"><?php esc_html_e( 'Company', 'vagra-msp' ); ?></h4>
+                <nav aria-labelledby="footer-company-heading">
                 <?php
                 wp_nav_menu(
                     array(
@@ -65,11 +68,13 @@
                     )
                 );
                 ?>
+                </nav>
             </div>
 
             <!-- Discover Column -->
             <div class="site-footer__col">
-                <h4 class="site-footer__heading"><?php esc_html_e( 'Discover', 'vagra-msp' ); ?></h4>
+                <h4 class="site-footer__heading" id="footer-discover-heading"><?php esc_html_e( 'Discover', 'vagra-msp' ); ?></h4>
+                <nav aria-labelledby="footer-discover-heading">
                 <?php
                 wp_nav_menu(
                     array(
@@ -81,6 +86,7 @@
                     )
                 );
                 ?>
+                </nav>
             </div>
 
         </div>

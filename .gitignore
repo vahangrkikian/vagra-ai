@@ -26,10 +26,33 @@ wp-config.php
 /wp-content/uploads/
 
 # ===========================================
-# Reference Projects (fully excluded)
+# Reference Projects / Source Prototypes
 # ===========================================
 /Carmaster/
 /nslookup/
+/DriveEase/
+/The-Meridian/
+/Tourism-Service/
+/House Service/
+/Hotel Service/
+/Hotel Service.zip
+/Vagra.ai/
+
+# ===========================================
+# Backups
+# ===========================================
+/backups/
+
+# ===========================================
+# Third-party plugins (install via composer/TGM)
+# ===========================================
+/wp-content/plugins/elementor/
+/wp-content/plugins/advanced-custom-fields-pro/
+/wp-content/plugins/polylang/
+/wp-content/plugins/loco-translate/
+/wp-content/plugins/one-click-demo-import/
+/wp-content/plugins/wordpress-importer/
+/wp-content/plugins/display-a-meta-field-as-block/
 
 # ===========================================
 # Node modules (in any theme/subfolder)

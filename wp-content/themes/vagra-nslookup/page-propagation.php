@@ -8,6 +8,17 @@
  * @package Vagra_NSLookup
  */
 
+// If this page is built with Elementor, let Elementor render it.
+if ( defined( 'ELEMENTOR_VERSION' ) && \Elementor\Plugin::$instance->db->is_built_with_elementor( get_the_ID() ) ) {
+	get_header();
+	while ( have_posts() ) :
+		the_post();
+		the_content();
+	endwhile;
+	get_footer();
+	return;
+}
+
 get_header();
 ?>
 
@@ -97,7 +108,6 @@ get_header();
 					<details class="faq-item"<?php echo $open; ?>>
 						<summary>
 							<span style="font-size:20px; font-weight:500; letter-spacing:-0.01em; color:var(--nsl-ink)"><?php echo esc_html( $item['q'] ); ?></span>
-							<span class="faq-toggle" style="font-size:24px; color:rgba(11,13,20,0.35)">+</span>
 						</summary>
 						<div class="faq-body">
 							<p style="font-size:16px; line-height:1.65; color:rgba(11,13,20,0.7); max-width:680px"><?php echo esc_html( $item['a'] ); ?></p>

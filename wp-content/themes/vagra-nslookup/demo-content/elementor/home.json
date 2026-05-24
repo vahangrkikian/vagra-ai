@@ -1,0 +1,508 @@
+[
+    {
+        "id": "nsl_hero_1",
+        "elType": "section",
+        "settings": {
+            "structure": "10",
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_hero_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_hero_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_cine_hero",
+                        "settings": {
+                            "eyebrow": "Free, open-source DNS toolkit",
+                            "heading": "Check any DNS record, anywhere, instantly.",
+                            "heading_accent": "instantly",
+                            "lede": "13 record types. 30+ global resolvers. Full propagation maps. No account needed, no rate limits, no cost.",
+                            "primary_cta_text": "Start lookup",
+                            "primary_cta_url": {
+                                "url": "/ns-lookup/"
+                            },
+                            "secondary_cta_text": "See propagation",
+                            "secondary_cta_url": {
+                                "url": "/propagation/"
+                            },
+                            "trust_items": [
+                                {
+                                    "text": "13 record types"
+                                },
+                                {
+                                    "text": "30+ resolvers"
+                                },
+                                {
+                                    "text": "100% free"
+                                },
+                                {
+                                    "text": "No signup"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_features_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_feat_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_feat_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_feature_grid",
+                        "settings": {
+                            "eyebrow": "How it works",
+                            "heading": "Four steps. Ten seconds.",
+                            "features": [
+                                {
+                                    "title": "Enter a domain",
+                                    "description": "Type any hostname — we handle the rest.",
+                                    "step_number": "01"
+                                },
+                                {
+                                    "title": "Pick a record type",
+                                    "description": "A, AAAA, MX, CNAME, TXT, or any of 13 types.",
+                                    "step_number": "02"
+                                },
+                                {
+                                    "title": "Query globally",
+                                    "description": "We check 30+ resolvers across 6 continents.",
+                                    "step_number": "03"
+                                },
+                                {
+                                    "title": "See propagation",
+                                    "description": "Live map of which resolvers see which values.",
+                                    "step_number": "04"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_stats_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_stats_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_stats_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_stats_strip",
+                        "settings": {
+                            "stats": [
+                                {
+                                    "value": "30+",
+                                    "label": "Global resolvers"
+                                },
+                                {
+                                    "value": "6",
+                                    "label": "Continents"
+                                },
+                                {
+                                    "value": "13",
+                                    "label": "Record types"
+                                },
+                                {
+                                    "value": "0",
+                                    "label": "Cost"
+                                }
+                            ],
+                            "animate_counters": "yes"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_types_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_types_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_types_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_record_types",
+                        "settings": {
+                            "eyebrow": "Supported types",
+                            "heading": "13 record types. One interface.",
+                            "lede": "Every record your domain might have — looked up against the resolver of your choice."
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_faq_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_faq_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_faq_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_faq_accordion",
+                        "settings": {
+                            "heading": "Common questions",
+                            "faq_items": [
+                                {
+                                    "category": "General",
+                                    "question": "Is this really free?",
+                                    "answer": "Yes. nslookup.am is free, open-source, and has no rate limits. No account needed."
+                                },
+                                {
+                                    "category": "General",
+                                    "question": "Do you log my queries?",
+                                    "answer": "No. We don't store queries, results, or IP addresses. The tool runs in your browser."
+                                },
+                                {
+                                    "category": "Technical",
+                                    "question": "Which resolvers do you check?",
+                                    "answer": "30+ public resolvers including Google, Cloudflare, Quad9, OpenDNS, and authoritative nameservers across 6 continents."
+                                },
+                                {
+                                    "category": "Technical",
+                                    "question": "Why don't my DNS changes show up?",
+                                    "answer": "DNS propagation depends on TTL values. Changes can take minutes to 48 hours depending on the record's TTL and resolver caching."
+                                },
+                                {
+                                    "category": "Technical",
+                                    "question": "What record types are supported?",
+                                    "answer": "A, AAAA, CNAME, MX, NS, TXT, SPF, DKIM, DMARC, SOA, PTR, CAA, and SRV — 13 types total."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_blog_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_blog_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_blog_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_blog_teaser",
+                        "settings": {
+                            "eyebrow": "Blog",
+                            "heading": "Latest from the team",
+                            "posts_count": 4
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nsl_cta_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "nsl_cta_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "nsl_cta_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_final_cta",
+                        "settings": {
+                            "heading": "Start a lookup. It takes ten seconds.",
+                            "subtitle": "No account. No rate limits. Just type a domain.",
+                            "primary_cta_text": "Open NS Lookup",
+                            "primary_cta_url": {
+                                "url": "/ns-lookup/"
+                            },
+                            "secondary_cta_text": "Check propagation",
+                            "secondary_cta_url": {
+                                "url": "/propagation/"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

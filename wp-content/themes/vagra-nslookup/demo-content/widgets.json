@@ -1,26 +1,12 @@
-[
-	{
-		"sidebar": "sidebar-1",
-		"widgets": [
-			{
-				"widget_type": "search",
-				"title": "Search"
-			},
-			{
-				"widget_type": "recent-posts",
-				"title": "Recent Posts",
-				"number": 5
-			}
-		]
-	},
-	{
-		"sidebar": "footer-1",
-		"widgets": [
-			{
-				"widget_type": "text",
-				"title": "About nslookup.am",
-				"text": "Free DNS lookup and propagation checking tool. Query 13 record types across 30+ global resolvers instantly."
-			}
-		]
-	}
-]
+{
+    "sidebar-1": {
+        "search-2": {
+            "title": "Search",
+            "encoded_serialized_instance": "YToxOntzOjU6InRpdGxlIjtzOjY6IlNlYXJjaCI7fQ=="
+        },
+        "recent-posts-2": {
+            "title": "Recent Posts",
+            "encoded_serialized_instance": "YToyOntzOjU6InRpdGxlIjtzOjEyOiJSZWNlbnQgUG9zdHMiO3M6NjoibnVtYmVyIjtpOjU7fQ=="
+        }
+    }
+}

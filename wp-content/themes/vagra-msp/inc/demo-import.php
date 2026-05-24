@@ -58,9 +58,9 @@ add_action( 'admin_notices', 'vagra_msp_demo_import_notice' );
  */
 function vagra_msp_ocdi_import_files( $demos ) {
     $demos[] = array(
-        'import_file_name' => __( 'ShieldNet MSP Demo', 'vagra-msp' ),
-        'import_file_url'  => '',
-        'import_notice'    => __( 'This will import pages, posts, and settings for the ShieldNet MSP demo site.', 'vagra-msp' ),
+        'import_file_name'   => __( 'ShieldNet MSP Demo', 'vagra-msp' ),
+        'local_import_file'  => get_template_directory() . '/demo-content/demo-content.xml',
+        'import_notice'      => __( 'This will import pages, posts, and settings for the ShieldNet MSP demo site.', 'vagra-msp' ),
     );
     return $demos;
 }

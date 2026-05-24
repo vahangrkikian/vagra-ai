@@ -15,6 +15,8 @@ define( 'VAGRA_LEGAL_VERSION', '1.0.0' );
  * Theme setup.
  */
 function vagra_legal_setup() {
+    load_theme_textdomain( 'vagra-legal', get_template_directory() . '/languages' );
+
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'custom-logo', array(
@@ -135,12 +137,6 @@ function vagra_legal_content_width() {
 add_action( 'after_setup_theme', 'vagra_legal_content_width', 0 );
 
 /**
- * Load AI Chat component.
- */
-require_once get_template_directory() . '/inc/class-vagra-chat.php';
-new Vagra_Legal_Chat();
-
-/**
  * Customizer settings.
  */
 require_once get_template_directory() . '/inc/customizer.php';
@@ -157,3 +153,9 @@ if ( is_admin() ) {
  * Demo import support.
  */
 require_once get_template_directory() . '/inc/demo-import.php';
+
+// TGM Plugin Activation — recommended plugins.
+require_once get_template_directory() . '/inc/tgm-init.php';
+
+// Polylang multilingual integration.
+require_once get_template_directory() . '/inc/polylang-integration.php';

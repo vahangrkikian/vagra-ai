@@ -26,10 +26,14 @@
                 <svg class="carvice-icon-xs" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
             <span class="carvice-utility-bar__label"><?php esc_html_e( 'Language:', 'carvice' ); ?></span>
+            <?php if ( function_exists( 'carvice_polylang_switcher' ) ) : ?>
+                <?php carvice_polylang_switcher( 'carvice-utility-bar__selector carvice-utility-bar__selector--bold' ); ?>
+            <?php else : ?>
             <button class="carvice-utility-bar__selector carvice-utility-bar__selector--bold">
                 Armenian
                 <svg class="carvice-icon-xs" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
+            <?php endif; ?>
         </div>
         <a href="#" class="carvice-utility-bar__link"><?php esc_html_e( 'Auto Forum', 'carvice' ); ?></a>
     </div>
@@ -81,3 +85,19 @@
         </div>
     </div>
 </header>
+
+<!-- Primary navigation -->
+<nav class="carvice-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'carvice' ); ?>">
+    <div class="carvice-container">
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'primary',
+            'container'      => false,
+            'menu_class'     => 'carvice-nav__list',
+            'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+            'fallback_cb'    => 'carvice_primary_menu_fallback',
+            'depth'          => 2,
+        ) );
+        ?>
+    </div>
+</nav>

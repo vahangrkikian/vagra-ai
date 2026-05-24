@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- WordPress eXtended RSS (WXR) file — Carvice Demo Content -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>Carvice Demo</title>
+	<link>http://localhost</link>
+	<description>Carvice car service marketplace demo content</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://localhost</wp:base_site_url>
+	<wp:base_blog_url>http://localhost</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Admin]]></wp:author_display_name>
+	</wp:author>
+
+	<!-- ============================================================
+	     TAXONOMY: carvice_service_cat
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>101</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[car-body]]></wp:term_slug>
+		<wp:term_name><![CDATA[Car Body]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>102</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[engine]]></wp:term_slug>
+		<wp:term_name><![CDATA[Engine]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>103</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[electrical]]></wp:term_slug>
+		<wp:term_name><![CDATA[Electrical]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>104</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[chassis]]></wp:term_slug>
+		<wp:term_name><![CDATA[Chassis]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>105</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[wheels-tires]]></wp:term_slug>
+		<wp:term_name><![CDATA[Wheels / Tires]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>106</wp:term_id>
+		<wp:term_taxonomy>carvice_service_cat</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[interior]]></wp:term_slug>
+		<wp:term_name><![CDATA[Interior]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: carvice_service_type
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>201</wp:term_id>
+		<wp:term_taxonomy>carvice_service_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[air-condition]]></wp:term_slug>
+		<wp:term_name><![CDATA[Air Condition]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>202</wp:term_id>
+		<wp:term_taxonomy>carvice_service_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[oil-change]]></wp:term_slug>
+		<wp:term_name><![CDATA[Oil Change]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>203</wp:term_id>
+		<wp:term_taxonomy>carvice_service_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[detailing]]></wp:term_slug>
+		<wp:term_name><![CDATA[Detailing]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>204</wp:term_id>
+		<wp:term_taxonomy>carvice_service_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[window-tint]]></wp:term_slug>
+		<wp:term_name><![CDATA[Window Tint]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: nav_menu
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>300</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[primary]]></wp:term_slug>
+		<wp:term_name><![CDATA[Primary]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>301</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[footer]]></wp:term_slug>
+		<wp:term_name><![CDATA[Footer]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     PAGES
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://localhost/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Welcome to Carvice — your trusted car service marketplace. Find the best service providers for your vehicle.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[front-page.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Search Providers</title>
+		<link>http://localhost/search/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Search for car service providers by category, service type, or location.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[search]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-search.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Carvice connects car owners with trusted service providers across Armenia, Russia, and Kazakhstan. Whether you need routine maintenance or specialized repairs, we make it easy to find the right professional.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Our platform features verified service centers, individual specialists, and official dealers — all rated and reviewed by real customers.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Have a question or need help finding a service provider? Get in touch with our team.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Email:</strong> support@example.com</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Phone:</strong> +374 (10) 123-456</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>FAQ</title>
+		<link>http://localhost/faq/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:heading -->
+<h2>How do I find a service provider?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Use our search page to filter by service category, type, car brand, or location. You can also browse providers on the homepage.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Are providers verified?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Yes. Providers with the verified badge have been vetted by our team. We check their credentials, business registration, and customer reviews before granting verification.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>How do reviews work?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>After visiting a service provider, you can leave a rating and written review. All reviews are from real customers and are moderated for authenticity.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3005</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:40:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[faq]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Primary (Home, Search, About, Contact)
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://localhost/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3001]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Search Providers</title>
+		<link>http://localhost/search/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:01:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[search-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3002]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:02:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[about-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3003]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:03:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3004]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Footer (About, FAQ, Contact)
+	     ============================================================ -->
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5101</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-about]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3003]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>FAQ</title>
+		<link>http://localhost/faq/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5102</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:11:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-faq]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3005]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5103</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:12:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-contact]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3004]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+</channel>
+</rss>

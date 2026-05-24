@@ -1,29 +1,36 @@
 /**
  * Vagra MSP Admin Styles
+ *
+ * @package Vagra_MSP
  */
 
+/* Layout */
 .vagra-admin-wrap {
-    max-width: 800px;
+    max-width: 900px;
 }
 
+/* Header */
 .vagra-admin-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0 10px;
+    padding: 20px 0 12px;
     border-bottom: 2px solid #3366FF;
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 .vagra-admin-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #2B3674;
     font-size: 24px;
     font-weight: 600;
+    margin: 0;
 }
 
 .vagra-admin-header h1 .dashicons {
     color: #3366FF;
-    margin-right: 8px;
     font-size: 28px;
     width: 28px;
     height: 28px;
@@ -35,26 +42,93 @@
     margin: 0;
 }
 
+/* Tabs */
+.vagra-admin-tabs {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #c3c4c7;
+    background: transparent;
+}
+
+.vagra-admin-tabs .nav-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: transparent;
+    color: #646970;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.vagra-admin-tabs .nav-tab:hover {
+    color: #2B3674;
+    background: #f6f7f7;
+}
+
+.vagra-admin-tabs .nav-tab-active {
+    border-color: #c3c4c7;
+    border-bottom-color: #f0f0f1;
+    background: #f0f0f1;
+    color: #2B3674;
+    font-weight: 600;
+}
+
+.vagra-admin-tabs .nav-tab .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Tab panels */
+.vagra-tab-panel {
+    display: none;
+    padding-top: 8px;
+}
+
+.vagra-tab-panel.vagra-tab-active {
+    display: block;
+}
+
+/* Form table */
 .vagra-admin-form .form-table th {
     color: #2B3674;
     font-weight: 500;
     padding: 16px 10px 16px 0;
+    width: 220px;
 }
 
 .vagra-admin-form .form-table td {
     padding: 12px 10px;
 }
 
-.vagra-admin-form h2 {
-    color: #2B3674;
-    font-size: 18px;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 10px;
-    margin-top: 32px;
+.vagra-admin-form .form-table td .description {
+    margin-top: 6px;
+    color: #646970;
+    font-style: normal;
+    font-size: 12px;
 }
 
+/* Section headers */
+.vagra-admin-form h2 {
+    color: #2B3674;
+    font-size: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-top: 24px;
+}
+
+/* Inputs */
 .vagra-admin-form .regular-text {
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid #cbd5e1;
     padding: 6px 12px;
 }
@@ -65,7 +139,7 @@
 }
 
 .vagra-admin-form .large-text {
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid #cbd5e1;
     padding: 8px 12px;
 }
@@ -75,10 +149,11 @@
     box-shadow: 0 0 0 1px #3366FF;
 }
 
+/* Submit button */
 .vagra-admin-form .button-primary {
     background: #3366FF;
     border-color: #3366FF;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 4px 20px;
     height: 36px;
     font-size: 14px;
@@ -90,19 +165,42 @@
     border-color: #2B3674;
 }
 
-/* Dashboard Widget */
-.vagra-dashboard-widget .widefat td {
-    padding: 8px 10px;
-}
-
+/* Status indicators */
 .vagra-status--ok {
     color: #16a34a;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .vagra-status--warn {
     color: #d97706;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.vagra-status--error {
+    color: #d63638;
+    font-weight: 600;
+}
+
+/* Info box */
+.vagra-info-box {
+    background: #f0f6fc;
+    border-left: 4px solid #3366ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 13px;
+    color: #2B3674;
+}
+
+.vagra-info-box code {
+    background: #e4ecf7;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* Dashboard Widget */
+.vagra-dashboard-widget .widefat td {
+    padding: 8px 10px;
 }
 
 .vagra-dashboard-widget__link {

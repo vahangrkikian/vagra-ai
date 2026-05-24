@@ -44,6 +44,19 @@
 				'menu_class'     => 'nsl-nav-links',
 				'depth'          => 1,
 			) ); ?>
+		<?php else : ?>
+			<nav class="nsl-nav-links" aria-label="<?php esc_attr_e( 'Primary navigation', 'vagra-nslookup' ); ?>">
+				<a href="<?php echo esc_url( home_url( '/ns-lookup/' ) ); ?>"><?php esc_html_e( 'NS Lookup', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/propagation/' ) ); ?>"><?php esc_html_e( 'Propagation', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/tools/' ) ); ?>"><?php esc_html_e( 'Tools', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>"><?php esc_html_e( 'Blog', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About', 'vagra-nslookup' ); ?></a>
+			</nav>
+		<?php endif; ?>
+
+		<!-- Language switcher -->
+		<?php if ( function_exists( 'vagra_nsl_polylang_switcher' ) ) : ?>
+			<?php vagra_nsl_polylang_switcher( 'nsl-nav-lang' ); ?>
 		<?php endif; ?>
 
 		<!-- CTA button -->
@@ -70,6 +83,14 @@
 				'items_wrap'     => '%3$s',
 				'depth'          => 1,
 			) ); ?>
+		<?php else : ?>
+			<nav class="nsl-nav-mobile-links" aria-label="<?php esc_attr_e( 'Mobile navigation', 'vagra-nslookup' ); ?>">
+				<a href="<?php echo esc_url( home_url( '/ns-lookup/' ) ); ?>"><?php esc_html_e( 'NS Lookup', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/propagation/' ) ); ?>"><?php esc_html_e( 'Propagation', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/tools/' ) ); ?>"><?php esc_html_e( 'Tools', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>"><?php esc_html_e( 'Blog', 'vagra-nslookup' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About', 'vagra-nslookup' ); ?></a>
+			</nav>
 		<?php endif; ?>
 		<a href="<?php echo esc_url( home_url( '/#tool' ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Check DNS', 'vagra-nslookup' ); ?></a>
 	</div>

@@ -71,7 +71,7 @@ get_header();
 						   style="transition-delay:<?php echo esc_attr( $delay ); ?>ms">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div class="vagra-blog-card__thumb">
-									<?php the_post_thumbnail( 'medium_large', array( 'class' => 'vagra-blog-card__img' ) ); ?>
+									<?php the_post_thumbnail( 'medium_large', array( 'class' => 'vagra-blog-card__img', 'loading' => 'lazy' ) ); ?>
 								</div>
 							<?php else : ?>
 								<div class="vagra-blog-card__thumb vagra-blog-card__thumb--gradient" style="background:<?php echo esc_attr( $bg ); ?>">

@@ -9,12 +9,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'VAGRA_NSL_VERSION', '1.0.0' );
+define( 'VAGRA_NSL_VERSION', '1.0.2' );
 
 /**
  * Theme setup.
  */
 function vagra_nsl_setup() {
+	load_theme_textdomain( 'vagra-nslookup', get_template_directory() . '/languages' );
+
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'custom-logo', array(
@@ -119,11 +121,6 @@ function vagra_nsl_content_width() {
 add_action( 'after_setup_theme', 'vagra_nsl_content_width', 0 );
 
 /**
- * Load DNS REST API.
- */
-require_once get_template_directory() . '/inc/class-vagra-nsl-dns.php';
-
-/**
  * Load Customizer settings.
  */
 require_once get_template_directory() . '/inc/customizer.php';
@@ -133,12 +130,6 @@ require_once get_template_directory() . '/inc/customizer.php';
  */
 require_once get_template_directory() . '/inc/class-vagra-nsl-admin.php';
 new Vagra_NSL_Admin();
-
-/**
- * Load AI Chat handler.
- */
-require_once get_template_directory() . '/inc/class-vagra-nsl-chat.php';
-new Vagra_NSL_Chat();
 
 /**
  * Load Demo Import handler.
@@ -190,3 +181,9 @@ function vagra_nsl_reading_time() {
 	/* translators: %d: number of minutes */
 	return sprintf( _n( '%d min read', '%d min read', $minutes, 'vagra-nslookup' ), $minutes );
 }
+
+// TGM Plugin Activation — recommended plugins.
+require_once get_template_directory() . '/inc/tgm-init.php';
+
+// Polylang multilingual integration.
+require_once get_template_directory() . '/inc/polylang-integration.php';

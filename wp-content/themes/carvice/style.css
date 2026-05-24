@@ -39,12 +39,13 @@ Tags: custom-menu, custom-logo, featured-images, one-column, two-columns, transl
     --carvice-cat-interior: linear-gradient(135deg, #eab308, #a16207);
 
     /* Spacing & Layout */
+    --carvice-radius: 12px;
     --carvice-radius-sm: 6px;
     --carvice-radius-md: 12px;
     --carvice-radius-lg: 20px;
     --carvice-radius-full: 9999px;
     --carvice-max-width: 1440px;
-    --carvice-side-padding: 200px;
+    --carvice-side-padding: 60px;
 
     /* Font */
     --carvice-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -269,6 +270,36 @@ img {
 .carvice-header__auth-btn:hover {
     border-color: var(--carvice-accent);
     color: var(--carvice-accent);
+}
+
+/* === Primary Navigation === */
+.carvice-nav {
+    background: var(--carvice-primary);
+}
+.carvice-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.carvice-nav__list li {
+    margin: 0;
+}
+.carvice-nav__list a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+}
+.carvice-nav__list a:hover,
+.carvice-nav__list .current-menu-item > a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* === Buttons === */
@@ -638,6 +669,20 @@ img {
     font-family: inherit;
     padding: 0;
 }
+.carvice-footer__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+.carvice-footer__menu a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--carvice-primary);
+    text-decoration: none;
+}
+.carvice-footer__menu a:hover { color: var(--carvice-accent); }
 .carvice-footer__cats { display: flex; gap: 24px; }
 .carvice-footer__cat-link {
     font-size: 14px;
@@ -1091,6 +1136,9 @@ img {
     .carvice-utility-bar { display: none; }
     .carvice-hero__title { font-size: 24px; }
     .carvice-form-row { grid-template-columns: 1fr; }
+    .carvice-nav__list { flex-wrap: wrap; }
+    .carvice-nav__list a { padding: 10px 16px; font-size: 13px; }
+    .carvice-footer__menu { flex-wrap: wrap; }
     .carvice-footer__cats,
     .carvice-footer__types { flex-wrap: wrap; }
     .carvice-provider-cta { flex-wrap: wrap; }
@@ -1525,4 +1573,46 @@ img {
 .carvice-related-card__review-count {
     font-size: 10px;
     color: var(--carvice-muted);
+}
+
+/* ---- Generic Page ---- */
+.carvice-page-hero {
+    background: var(--carvice-primary);
+    color: #fff;
+    padding: 3rem 0 2.5rem;
+}
+.carvice-page-hero__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.carvice-page-content {
+    padding: 3rem 0 4rem;
+}
+.carvice-page-content .entry-content {
+    max-width: 800px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+.carvice-page-content .entry-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 0.75rem;
+}
+.carvice-page-content .entry-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+}
+.carvice-page-content .entry-content p {
+    margin-bottom: 1rem;
+    color: #444;
+}
+.carvice-page-content .entry-content ul,
+.carvice-page-content .entry-content ol {
+    margin: 0 0 1rem 1.5rem;
+    color: #444;
+}
+.carvice-page-content .entry-content li {
+    margin-bottom: 0.5rem;
 }

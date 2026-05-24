@@ -354,9 +354,39 @@ p { margin: 0; color: var(--nsl-muted); }
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--nsl-border);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Front page: transparent header over dark cinematic hero */
+body.home .nsl-nav {
+  position: fixed; width: 100%;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom-color: transparent;
+}
+body.home .nsl-nav.is-scrolled {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom-color: var(--nsl-border);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* White text when header is transparent */
+body.home .nsl-nav:not(.is-scrolled) .nsl-logo-word { color: #fff; }
+body.home .nsl-nav:not(.is-scrolled) .nsl-logo-dot { color: var(--nsl-accent-300); }
+body.home .nsl-nav:not(.is-scrolled) .nsl-nav-links a,
+body.home .nsl-nav:not(.is-scrolled) .nsl-nav-link { color: rgba(255,255,255,0.8); }
+body.home .nsl-nav:not(.is-scrolled) .nsl-nav-links a:hover,
+body.home .nsl-nav:not(.is-scrolled) .nsl-nav-link:hover { color: #fff; background: rgba(255,255,255,0.1); }
+body.home .nsl-nav:not(.is-scrolled) .nsl-nav-burger { color: #fff; border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+body.home .nsl-nav:not(.is-scrolled) .btn-primary { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25); color: #fff; }
+body.home .nsl-nav:not(.is-scrolled) .btn-primary:hover { background: rgba(255,255,255,0.2); }
+body.home .nsl-nav:not(.is-scrolled) .nsl-logo svg rect { fill: rgba(255,255,255,0.15); }
 .nsl-nav-inner {
   display: flex; align-items: center; gap: 24px;
+  justify-content: space-between;
   height: 68px;
 }
 .nsl-nav-links {

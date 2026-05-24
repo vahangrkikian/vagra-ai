@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+    <title>ShieldNet MSP</title>
+    <link>http://msp.vagraai.local</link>
+    <description>Enterprise-Grade Cybersecurity for Growing Businesses</description>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>http://msp.vagraai.local</wp:base_site_url>
+    <wp:base_blog_url>http://msp.vagraai.local</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login>admin</wp:author_login>
+        <wp:author_email>admin@vagraai.local</wp:author_email>
+        <wp:author_display_name><![CDATA[ShieldNet Team]]></wp:author_display_name>
+    </wp:author>
+
+    <wp:category>
+        <wp:term_id>10</wp:term_id>
+        <wp:category_nicename>email-security</wp:category_nicename>
+        <wp:cat_name><![CDATA[Email Security]]></wp:cat_name>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>11</wp:term_id>
+        <wp:category_nicename>network-security</wp:category_nicename>
+        <wp:cat_name><![CDATA[Network Security]]></wp:cat_name>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>12</wp:term_id>
+        <wp:category_nicename>compliance</wp:category_nicename>
+        <wp:cat_name><![CDATA[Compliance]]></wp:cat_name>
+    </wp:category>
+    <wp:category>
+        <wp:term_id>13</wp:term_id>
+        <wp:category_nicename>threat-intelligence</wp:category_nicename>
+        <wp:cat_name><![CDATA[Threat Intelligence]]></wp:cat_name>
+    </wp:category>
+
+    <!-- Navigation Menu -->
+    <wp:term>
+        <wp:term_id>20</wp:term_id>
+        <wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+        <wp:term_slug>primary</wp:term_slug>
+        <wp:term_name><![CDATA[Primary]]></wp:term_name>
+    </wp:term>
+
+    <!-- Front Page -->
+    <item>
+        <title>Home</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<!-- Uses front-page.php template -->]]></content:encoded>
+        <wp:post_id>100</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>home</wp:post_name>
+    </item>
+
+    <!-- About Page -->
+    <item>
+        <title>About</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Your Trusted Cybersecurity Partner</h2>
+<p>ShieldNet MSP was founded with a single mission: to bring enterprise-grade cybersecurity to small and mid-sized businesses. We believe every organization deserves the same level of protection that Fortune 500 companies enjoy — without the Fortune 500 price tag.</p>
+
+<h3>Why Choose ShieldNet?</h3>
+<ul>
+<li>24/7 Security Operations Center (SOC) monitoring</li>
+<li>Certified team: CISSP, CEH, CompTIA Security+</li>
+<li>Average incident response time under 15 minutes</li>
+<li>99.97% uptime SLA guarantee</li>
+<li>Compliance-first approach (HIPAA, PCI-DSS, SOC 2)</li>
+</ul>
+
+<h3>Our Story</h3>
+<p>After a decade of building security programs for enterprises, our founders saw the gap: SMBs were being hit hardest by cyberattacks yet had the fewest resources to defend against them. ShieldNet was built to close that gap — delivering managed security that scales with your business.</p>]]></content:encoded>
+        <wp:post_id>101</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>about</wp:post_name>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value>page-about.php</wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- Services Page -->
+    <item>
+        <title>Services</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Comprehensive Managed Security Services</h2>
+
+<h3>Email Security &amp; DMARC</h3>
+<p>Protect your domain from phishing and spoofing with our full DMARC implementation service. We configure SPF, DKIM, and DMARC policies, monitor reports, and progressively enforce reject policies — stopping attackers from impersonating your brand.</p>
+
+<h3>Endpoint Detection &amp; Response (EDR)</h3>
+<p>Next-gen antivirus is not enough. Our EDR solution provides real-time behavioral analysis, automated threat containment, and forensic investigation capabilities across all your endpoints.</p>
+
+<h3>24/7 Security Monitoring</h3>
+<p>Our SOC team monitors your environment around the clock. We correlate logs from firewalls, endpoints, cloud services, and email to detect threats before they become breaches.</p>
+
+<h3>Vulnerability Management</h3>
+<p>Regular vulnerability scans, patch management, and remediation tracking. We prioritize by real-world exploitability, not just CVSS scores, so your team fixes what matters first.</p>
+
+<h3>Security Awareness Training</h3>
+<p>Your employees are your first line of defense. Our training program includes simulated phishing campaigns, interactive modules, and compliance tracking dashboards.</p>
+
+<h3>Incident Response</h3>
+<p>When a breach happens, every minute counts. Our IR team is on standby 24/7 with documented playbooks for ransomware, data exfiltration, BEC, and more.</p>]]></content:encoded>
+        <wp:post_id>102</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>services</wp:post_name>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value>services.php</wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- Contact Page -->
+    <item>
+        <title>Contact</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<h2>Get Your Free Security Assessment</h2>
+<p>Ready to find out where your business stands? Our team will perform a complimentary security assessment covering email authentication, endpoint protection, network exposure, and compliance gaps.</p>
+
+<h3>What to Expect</h3>
+<ol>
+<li>30-minute discovery call to understand your environment</li>
+<li>Non-invasive external vulnerability scan</li>
+<li>DMARC/SPF/DKIM configuration review</li>
+<li>Executive summary with prioritized recommendations</li>
+</ol>
+
+<p><strong>Phone:</strong> (555) 012-3456<br>
+<strong>Email:</strong> info@shieldnet-demo.com<br>
+<strong>Hours:</strong> SOC: 24/7 | Office: Mon–Fri, 8am–6pm EST</p>]]></content:encoded>
+        <wp:post_id>103</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>contact</wp:post_name>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value>page-contact.php</wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- Blog Page -->
+    <item>
+        <title>Blog</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <wp:post_id>104</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>blog</wp:post_name>
+    </item>
+
+    <!-- DNS Propagation Checker Page -->
+    <item>
+        <title>DNS Propagation Checker</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<!-- Uses page-propagation.php template -->]]></content:encoded>
+        <wp:post_id>105</wp:post_id>
+        <wp:post_type>page</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>propagation</wp:post_name>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value>page-propagation.php</wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- Blog Posts -->
+    <item>
+        <title>Why DMARC Is No Longer Optional for Your Business</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Email remains the number one attack vector for cybercriminals. Business Email Compromise (BEC) cost organizations $2.7 billion in 2023 alone. Yet most small businesses still haven't implemented DMARC — the protocol specifically designed to prevent email spoofing.</p>
+
+<h2>What Is DMARC?</h2>
+<p>DMARC (Domain-based Message Authentication, Reporting, and Conformance) builds on SPF and DKIM to give domain owners control over what happens when authentication fails. You can monitor, quarantine, or reject unauthenticated emails — and get detailed reports about who's sending mail on your behalf.</p>
+
+<h2>The Three-Phase Approach</h2>
+<p>We recommend a phased DMARC rollout:</p>
+<ol>
+<li><strong>Monitor (p=none):</strong> Collect data without affecting mail flow. Identify all legitimate sending sources.</li>
+<li><strong>Quarantine (p=quarantine):</strong> Route suspicious emails to spam. Verify no legitimate mail is affected.</li>
+<li><strong>Reject (p=reject):</strong> Block all unauthenticated emails. Full protection achieved.</li>
+</ol>
+
+<h2>The Business Case</h2>
+<p>Beyond security, DMARC improves email deliverability. Gmail and Microsoft now prioritize DMARC-authenticated domains, meaning your marketing emails are more likely to reach inboxes instead of spam folders.</p>]]></content:encoded>
+        <wp:post_id>200</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>why-dmarc-is-no-longer-optional</wp:post_name>
+        <category domain="category" nicename="email-security"><![CDATA[Email Security]]></category>
+    </item>
+
+    <item>
+        <title>The Anatomy of a Ransomware Attack: What SMBs Need to Know</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Ransomware attacks against small businesses increased 150% in the past year. The average ransom demand for SMBs now exceeds $170,000, and that doesn't include downtime costs, data recovery, and reputational damage.</p>
+
+<h2>How Ransomware Gets In</h2>
+<p>The most common entry points are:</p>
+<ul>
+<li><strong>Phishing emails</strong> with malicious attachments or links (67% of cases)</li>
+<li><strong>Exposed RDP</strong> (Remote Desktop Protocol) with weak credentials (20%)</li>
+<li><strong>Unpatched vulnerabilities</strong> in public-facing applications (10%)</li>
+</ul>
+
+<h2>The Kill Chain</h2>
+<p>Modern ransomware doesn't just encrypt files. Attackers now follow a methodical process: initial access, privilege escalation, lateral movement, data exfiltration, and finally encryption. The entire process can take weeks, giving defenders multiple opportunities to detect and stop the attack.</p>
+
+<h2>Defense in Depth</h2>
+<p>No single product stops ransomware. Effective defense requires layered security: email filtering, endpoint detection, network segmentation, offline backups, and trained employees who recognize phishing attempts.</p>]]></content:encoded>
+        <wp:post_id>201</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>anatomy-of-ransomware-attack</wp:post_name>
+        <category domain="category" nicename="threat-intelligence"><![CDATA[Threat Intelligence]]></category>
+    </item>
+
+    <item>
+        <title>Zero Trust Architecture: Beyond the Buzzword</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Zero Trust has become the most overused term in cybersecurity marketing. But beneath the hype lies a genuinely transformative security model — one that's increasingly essential as remote work dissolves traditional network perimeters.</p>
+
+<h2>The Core Principle</h2>
+<p>"Never trust, always verify." Every access request is treated as if it originates from an untrusted network, regardless of whether the user is inside or outside the corporate perimeter.</p>
+
+<h2>Practical Implementation for SMBs</h2>
+<ul>
+<li><strong>MFA everywhere:</strong> Multi-factor authentication on all accounts, no exceptions</li>
+<li><strong>Least privilege:</strong> Users get minimum access needed for their role</li>
+<li><strong>Microsegmentation:</strong> Network segments that limit lateral movement</li>
+<li><strong>Continuous verification:</strong> Device health checks and behavioral analytics</li>
+</ul>
+
+<h2>Start Small</h2>
+<p>You don't need to rebuild your entire infrastructure. Start with MFA, implement conditional access policies, and gradually segment your network. The goal is progress, not perfection.</p>]]></content:encoded>
+        <wp:post_id>202</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>zero-trust-architecture-beyond-buzzword</wp:post_name>
+        <category domain="category" nicename="network-security"><![CDATA[Network Security]]></category>
+    </item>
+
+    <item>
+        <title>HIPAA Compliance Checklist for Small Healthcare Practices</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>If your practice handles patient health information, HIPAA compliance isn't optional — it's the law. Yet many small practices struggle with the technical requirements, risking fines up to $1.5 million per violation category.</p>
+
+<h2>The Security Rule Essentials</h2>
+<ol>
+<li><strong>Risk Assessment:</strong> Document threats, vulnerabilities, and the likelihood of exploitation. This is the foundation of your entire compliance program.</li>
+<li><strong>Access Controls:</strong> Unique user IDs, automatic logoff, encryption of PHI at rest and in transit.</li>
+<li><strong>Audit Logs:</strong> Record who accessed what, when, and from where. Retain logs for at least 6 years.</li>
+<li><strong>Backup &amp; Recovery:</strong> Regular backups with tested restoration procedures. Ransomware can be a HIPAA breach if backups fail.</li>
+<li><strong>Training:</strong> Annual security awareness training for all workforce members who handle PHI.</li>
+</ol>
+
+<h2>Business Associate Agreements</h2>
+<p>Every vendor that touches your patient data needs a BAA. This includes your cloud provider, email service, billing software, and IT support company. No BAA means no compliance.</p>]]></content:encoded>
+        <wp:post_id>203</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>hipaa-compliance-checklist-small-practices</wp:post_name>
+        <category domain="category" nicename="compliance"><![CDATA[Compliance]]></category>
+    </item>
+
+    <item>
+        <title>SPF, DKIM, and DMARC: The Email Authentication Trinity Explained</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>Email authentication is a three-legged stool. SPF, DKIM, and DMARC each play a distinct role, and you need all three for comprehensive protection against email spoofing.</p>
+
+<h2>SPF (Sender Policy Framework)</h2>
+<p>SPF lets you declare which IP addresses are authorized to send email for your domain. It's a DNS TXT record listing your legitimate mail servers. When a receiving server gets an email, it checks the sender's IP against your SPF record.</p>
+
+<h2>DKIM (DomainKeys Identified Mail)</h2>
+<p>DKIM adds a cryptographic signature to outgoing emails. The receiving server verifies this signature against a public key published in your DNS. Unlike SPF, DKIM survives email forwarding.</p>
+
+<h2>DMARC: The Policy Layer</h2>
+<p>DMARC ties SPF and DKIM together with a policy: what should receivers do when authentication fails? It also provides reporting, so you can see exactly who's sending email using your domain — both legitimate services and attackers.</p>
+
+<h2>Implementation Order</h2>
+<p>Always implement in this order: SPF first, DKIM second, DMARC third. Each layer builds on the previous one. Rushing to DMARC p=reject without proper SPF and DKIM alignment will break your legitimate email.</p>]]></content:encoded>
+        <wp:post_id>204</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>spf-dkim-dmarc-email-authentication-explained</wp:post_name>
+        <category domain="category" nicename="email-security"><![CDATA[Email Security]]></category>
+    </item>
+
+    <item>
+        <title>5 Network Security Mistakes That Leave SMBs Vulnerable</title>
+        <dc:creator>admin</dc:creator>
+        <content:encoded><![CDATA[<p>After hundreds of security assessments, we see the same mistakes repeated across small businesses. These aren't exotic vulnerabilities — they're basic misconfigurations that attackers exploit daily.</p>
+
+<h2>1. Default Credentials</h2>
+<p>Routers, switches, printers, and IoT devices often ship with default admin passwords. Attackers scan for these automatically. Change every default credential on your network.</p>
+
+<h2>2. Flat Network Architecture</h2>
+<p>When every device is on the same network segment, a compromised workstation can reach your servers, printers, and IoT devices directly. Segment your network by function and sensitivity.</p>
+
+<h2>3. No DNS Filtering</h2>
+<p>DNS filtering blocks connections to known malicious domains before any data is exchanged. It's one of the cheapest, most effective security controls available.</p>
+
+<h2>4. Unmonitored Remote Access</h2>
+<p>RDP exposed to the internet is an invitation for brute-force attacks. Use a VPN with MFA, and monitor all remote sessions with logging and session recording.</p>
+
+<h2>5. No Patch Management</h2>
+<p>Known vulnerabilities with public exploits remain unpatched for an average of 60 days in SMB environments. Automate patching for operating systems and third-party applications.</p>]]></content:encoded>
+        <wp:post_id>205</wp:post_id>
+        <wp:post_type>post</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:post_name>network-security-mistakes-smbs</wp:post_name>
+        <category domain="category" nicename="network-security"><![CDATA[Network Security]]></category>
+    </item>
+
+    <!-- Navigation Menu Items -->
+    <item>
+        <title>Home</title>
+        <wp:post_id>300</wp:post_id>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_type</wp:meta_key>
+            <wp:meta_value>post_type</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object</wp:meta_key>
+            <wp:meta_value>page</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object_id</wp:meta_key>
+            <wp:meta_value>100</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+            <wp:meta_value>0</wp:meta_value>
+        </wp:postmeta>
+        <category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+    </item>
+
+    <item>
+        <title>Services</title>
+        <wp:post_id>301</wp:post_id>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_type</wp:meta_key>
+            <wp:meta_value>post_type</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object</wp:meta_key>
+            <wp:meta_value>page</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object_id</wp:meta_key>
+            <wp:meta_value>102</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+            <wp:meta_value>0</wp:meta_value>
+        </wp:postmeta>
+        <category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+    </item>
+
+    <item>
+        <title>About</title>
+        <wp:post_id>302</wp:post_id>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_type</wp:meta_key>
+            <wp:meta_value>post_type</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object</wp:meta_key>
+            <wp:meta_value>page</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object_id</wp:meta_key>
+            <wp:meta_value>101</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+            <wp:meta_value>0</wp:meta_value>
+        </wp:postmeta>
+        <category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+    </item>
+
+    <item>
+        <title>Blog</title>
+        <wp:post_id>303</wp:post_id>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_type</wp:meta_key>
+            <wp:meta_value>post_type</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object</wp:meta_key>
+            <wp:meta_value>page</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object_id</wp:meta_key>
+            <wp:meta_value>104</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+            <wp:meta_value>0</wp:meta_value>
+        </wp:postmeta>
+        <category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+    </item>
+
+    <item>
+        <title>Contact</title>
+        <wp:post_id>304</wp:post_id>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:status>publish</wp:status>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_type</wp:meta_key>
+            <wp:meta_value>post_type</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object</wp:meta_key>
+            <wp:meta_value>page</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_object_id</wp:meta_key>
+            <wp:meta_value>103</wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+            <wp:meta_value>0</wp:meta_value>
+        </wp:postmeta>
+        <category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+    </item>
+
+</channel>
+</rss>

@@ -59,6 +59,10 @@
                 ?>
             </nav>
 
+            <?php if ( function_exists( 'vagra_msp_polylang_switcher' ) ) : ?>
+                <?php vagra_msp_polylang_switcher( 'site-header__lang' ); ?>
+            <?php endif; ?>
+
             <a href="<?php echo esc_url( home_url( '/tools/dns-check/' ) ); ?>" class="vagra-button vagra-button--primary site-header__cta">
                 <?php esc_html_e( 'Check DNS', 'vagra-msp' ); ?>
             </a>

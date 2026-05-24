@@ -1,0 +1,355 @@
+[
+    {
+        "id": "ns_hero_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "ns_hero_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "ns_hero_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_sub_hero",
+                        "settings": {
+                            "eyebrow": "NS Lookup Tool",
+                            "heading": "Query nameservers for <span class=\"cine-accent\">any domain</span>.",
+                            "lede": "Resolve A, AAAA, CNAME, MX, NS, TXT, and 7 more record types against authoritative nameservers and public resolvers.",
+                            "breadcrumbs": [
+                                {
+                                    "label": "Home",
+                                    "url": "/"
+                                },
+                                {
+                                    "label": "NS Lookup",
+                                    "url": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ns_feat_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "ns_feat_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "ns_feat_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_feature_grid",
+                        "settings": {
+                            "eyebrow": "What you get",
+                            "heading": "NS Lookup details",
+                            "features": [
+                                {
+                                    "title": "Hostname",
+                                    "description": "The nameserver's fully qualified domain name.",
+                                    "step_number": "A"
+                                },
+                                {
+                                    "title": "Glue IP",
+                                    "description": "The IPv4 and IPv6 addresses returned as glue records.",
+                                    "step_number": "B"
+                                },
+                                {
+                                    "title": "TTL",
+                                    "description": "Time-to-live in seconds — how long resolvers may cache.",
+                                    "step_number": "C"
+                                },
+                                {
+                                    "title": "Delegation",
+                                    "description": "Whether the NS record is authoritative or a referral.",
+                                    "step_number": "D"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ns_faq_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "ns_faq_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "ns_faq_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_faq_accordion",
+                        "settings": {
+                            "heading": "NS Lookup FAQ",
+                            "faq_items": [
+                                {
+                                    "category": "",
+                                    "question": "What is an NS lookup?",
+                                    "answer": "An NS lookup queries the Domain Name System for the nameserver records of a domain — the servers responsible for answering DNS queries for that zone."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "What are glue records?",
+                                    "answer": "Glue records are A/AAAA records returned alongside NS records to prevent circular dependencies when the nameserver is within the same zone."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "How many nameservers should a domain have?",
+                                    "answer": "Best practice is at least two, ideally on different networks. Most registrars provide 2-4 nameservers."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "Can I check nameservers for any domain?",
+                                    "answer": "Yes. NS records are public DNS data. You can query nameservers for any registered domain."
+                                },
+                                {
+                                    "category": "",
+                                    "question": "What if no NS records are found?",
+                                    "answer": "The domain may not be registered, or its zone may not be properly delegated. Check with the registrar."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ns_sister_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "ns_sister_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "ns_sister_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_sister_tools",
+                        "settings": {
+                            "eyebrow": "More tools",
+                            "heading": "Related DNS checks"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ns_cta_1",
+        "elType": "section",
+        "settings": {
+            "stretch_section": "section-stretched",
+            "layout": "full_width",
+            "content_width": {
+                "unit": "%",
+                "size": 100
+            },
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+            },
+            "gap": "no"
+        },
+        "elements": [
+            {
+                "id": "ns_cta_col",
+                "elType": "column",
+                "settings": {
+                    "_column_size": 100,
+                    "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                    },
+                    "_inline_size": null
+                },
+                "elements": [
+                    {
+                        "id": "ns_cta_w",
+                        "elType": "widget",
+                        "widgetType": "vagra_nsl_final_cta",
+                        "settings": {
+                            "heading": "Check your nameservers now.",
+                            "subtitle": "Free, instant, no account needed.",
+                            "primary_cta_text": "Open NS Lookup",
+                            "primary_cta_url": {
+                                "url": "/ns-lookup/"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

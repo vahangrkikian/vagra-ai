@@ -25,7 +25,23 @@
         </div>
     </div>
 
-    <!-- Row 2: Service categories -->
+    <!-- Row 2: Footer menu -->
+    <div class="carvice-footer__row carvice-footer__row--menu">
+        <div class="carvice-container">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'footer',
+                'container'      => false,
+                'menu_class'     => 'carvice-footer__menu',
+                'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+                'fallback_cb'    => 'carvice_footer_menu_fallback',
+                'depth'          => 1,
+            ) );
+            ?>
+        </div>
+    </div>
+
+    <!-- Row 3: Service categories -->
     <div class="carvice-footer__row">
         <div class="carvice-container">
             <div class="carvice-footer__cats">

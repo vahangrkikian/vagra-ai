@@ -1,0 +1,61 @@
+[
+  {
+    "id": "vla-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vla-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vla-hero-w", "elType": "widget", "widgetType": "vagra_legal_hero", "settings": {
+        "title": "About Morrison & Associates",
+        "subtitle": "For over 25 years, we have been providing exceptional legal services to individuals and businesses. Our commitment to justice and client satisfaction drives everything we do.",
+        "cta_text": "Meet Our Team",
+        "cta_url": {"url": "#team"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vla-stats",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vla-stats-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vla-stats-w", "elType": "widget", "widgetType": "vagra_legal_stats", "settings": {
+        "stats": [
+          {"value": "1998", "label": "Founded"},
+          {"value": "12", "label": "Attorneys"},
+          {"value": "500+", "label": "Cases Won"},
+          {"value": "4.9", "label": "Client Rating"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vla-attorneys",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vla-att-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vla-att-w", "elType": "widget", "widgetType": "vagra_legal_attorneys", "settings": {
+        "heading": "Meet Our Attorneys",
+        "description": "Our team brings decades of combined experience across every major practice area.",
+        "attorneys": [
+          {"name": "Robert Morrison", "role": "Senior Partner", "initials": "RM", "specialty": "Personal Injury"},
+          {"name": "Sarah Chen", "role": "Partner", "initials": "SC", "specialty": "Family Law"},
+          {"name": "James Okafor", "role": "Senior Associate", "initials": "JO", "specialty": "Criminal Defense"},
+          {"name": "Elena Vasquez", "role": "Associate", "initials": "EV", "specialty": "Immigration"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vla-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vla-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vla-cta-w", "elType": "widget", "widgetType": "vagra_legal_cta", "settings": {
+        "heading": "Ready to Discuss Your Case?",
+        "description": "Contact us today for a free consultation.",
+        "phone": "(555) 123-4567",
+        "cta_text": "Get in Touch",
+        "cta_url": {"url": "/contact/"}
+      }}
+    ]}]
+  }
+]
