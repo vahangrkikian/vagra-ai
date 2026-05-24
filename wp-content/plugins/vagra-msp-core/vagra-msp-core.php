@@ -25,3 +25,11 @@ require_once VAGRA_MSP_CORE_DIR . 'inc/class-vagra-dns-propagation.php';
 
 // AI Chat REST endpoint.
 require_once VAGRA_MSP_CORE_DIR . 'inc/class-vagra-chat.php';
+
+// Elementor integration.
+add_action( 'plugins_loaded', function () {
+    if ( did_action( 'elementor/loaded' ) ) {
+        require_once VAGRA_MSP_CORE_DIR . 'inc/class-vagra-msp-elementor.php';
+        Vagra_MSP_Elementor::instance();
+    }
+} );

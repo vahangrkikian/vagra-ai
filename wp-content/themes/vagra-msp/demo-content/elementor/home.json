@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vm-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vm-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vm-hero-w", "elType": "widget", "widgetType": "vagra_msp_hero", "settings": {
+        "title": "Protect Your Business with Enterprise-Grade Cybersecurity",
+        "subtitle": "Managed security services built for growing businesses. From email protection to 24/7 monitoring, we keep your data safe so you can focus on what matters.",
+        "cta_text": "Get a Free Security Assessment",
+        "cta_url": {"url": "#contact"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vm-services",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vm-services-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vm-services-w", "elType": "widget", "widgetType": "vagra_msp_services", "settings": {
+        "heading": "Our Security Services",
+        "description": "Comprehensive managed security solutions to protect every layer of your business.",
+        "services": [
+          {"title": "DMARC / DKIM / SPF", "desc": "Stop email spoofing and phishing attacks with properly configured email authentication protocols.", "icon_name": "dmarc"},
+          {"title": "Email Security", "desc": "Advanced email filtering, encryption, and threat detection to safeguard your business communications.", "icon_name": "email"},
+          {"title": "Endpoint Protection", "desc": "Next-gen antivirus and EDR solutions protecting every device on your network from malware and ransomware.", "icon_name": "endpoint"},
+          {"title": "Network Monitoring", "desc": "24/7 network surveillance and real-time alerting to detect and respond to threats before they cause damage.", "icon_name": "network"},
+          {"title": "Incident Response", "desc": "Rapid response plans and expert remediation when security incidents occur. Minimize downtime and data loss.", "icon_name": "incident"},
+          {"title": "Security Awareness Training", "desc": "Empower your team to recognize and prevent cyber threats with engaging, up-to-date security training programs.", "icon_name": "training"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vm-stats",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vm-stats-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vm-stats-w", "elType": "widget", "widgetType": "vagra_msp_stats", "settings": {
+        "stats": [
+          {"value": "200+", "label": "Clients Protected"},
+          {"value": "99.9%", "label": "Uptime Guarantee"},
+          {"value": "24/7", "label": "Security Monitoring"},
+          {"value": "<15min", "label": "Avg. Response Time"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vm-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vm-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vm-cta-w", "elType": "widget", "widgetType": "vagra_msp_cta", "settings": {
+        "heading": "Ready to Secure Your Business?",
+        "description": "Get a free, no-obligation security assessment. Our experts will identify vulnerabilities and recommend a protection plan tailored to your business.",
+        "cta_text": "Schedule Your Free Assessment",
+        "cta_url": {"url": "/contact/"}
+      }}
+    ]}]
+  }
+]

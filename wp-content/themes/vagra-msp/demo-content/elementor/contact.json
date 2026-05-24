@@ -1,0 +1,28 @@
+[
+  {
+    "id": "vmc-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vmc-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vmc-hero-w", "elType": "widget", "widgetType": "vagra_msp_hero", "settings": {
+        "title": "Contact Us",
+        "subtitle": "Get your free security assessment or ask us anything about protecting your business.",
+        "cta_text": "Call Now: (555) 123-4567",
+        "cta_url": {"url": "tel:5551234567"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vmc-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vmc-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vmc-cta-w", "elType": "widget", "widgetType": "vagra_msp_cta", "settings": {
+        "heading": "Emergency Response",
+        "description": "Active security incident? Our SOC team is available 24/7. Call (555) 911-0000 for immediate assistance.",
+        "cta_text": "Schedule Assessment",
+        "cta_url": {"url": "#"}
+      }}
+    ]}]
+  }
+]

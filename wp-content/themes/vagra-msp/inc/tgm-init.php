@@ -31,6 +31,11 @@ function vagra_msp_register_required_plugins() {
             'slug'     => 'one-click-demo-import',
             'required' => false,
         ),
+        array(
+            'name'     => 'Elementor',
+            'slug'     => 'elementor',
+            'required' => false,
+        ),
     );
 
     $config = array(

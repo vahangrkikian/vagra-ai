@@ -1,0 +1,43 @@
+[
+  {
+    "id": "vma-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vma-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vma-hero-w", "elType": "widget", "widgetType": "vagra_msp_hero", "settings": {
+        "title": "About Us",
+        "subtitle": "Protecting businesses with enterprise-grade cybersecurity since day one. We make enterprise-grade security accessible to growing businesses.",
+        "cta_text": "Meet Our Team",
+        "cta_url": {"url": "#team"}
+      }}
+    ]}]
+  },
+  {
+    "id": "vma-stats",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vma-stats-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vma-stats-w", "elType": "widget", "widgetType": "vagra_msp_stats", "settings": {
+        "stats": [
+          {"value": "15+", "label": "Security Experts"},
+          {"value": "50+", "label": "Certifications"},
+          {"value": "10+", "label": "Years Experience"},
+          {"value": "200+", "label": "Clients Protected"}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "vma-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "vma-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "vma-cta-w", "elType": "widget", "widgetType": "vagra_msp_cta", "settings": {
+        "heading": "Want to Work With Us?",
+        "description": "Let us show you how we can protect your business.",
+        "cta_text": "Get in Touch",
+        "cta_url": {"url": "/contact/"}
+      }}
+    ]}]
+  }
+]
