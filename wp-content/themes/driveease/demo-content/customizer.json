@@ -1,0 +1,9 @@
+{
+	"show_on_front": "page",
+	"page_on_front": "{{home}}",
+	"page_for_posts": "{{blog}}",
+	"nav_menu_locations": {
+		"primary": "{{primary}}",
+		"footer": "{{footer}}"
+	}
+}

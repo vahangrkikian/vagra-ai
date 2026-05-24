@@ -1,0 +1,310 @@
+/* Single Branch — single-driveease_branch.php */
+
+/* Breadcrumb */
+.breadcrumb-bar{background:var(--light-bg, #f7f7f9);padding:80px 0 0;border-bottom:1px solid var(--border, #e5e7eb)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--gray, #6b7280);padding:16px 0}
+.breadcrumb a{color:var(--gray, #6b7280);transition:color .2s}.breadcrumb a:hover{color:var(--accent, #e85d26)}.breadcrumb i{font-size:.7rem}
+
+/* Hero image */
+.branch-hero {
+	padding: 0;
+	background: var(--light-bg, #f7f7f9);
+}
+
+.branch-hero__img-wrap {
+	position: relative;
+	max-height: 480px;
+	border-radius: var(--radius, 12px);
+	overflow: hidden;
+	margin-top: 20px;
+	box-shadow: var(--card-shadow, 0 4px 24px rgba(0, 0, 0, 0.08));
+}
+
+.branch-hero__img-wrap img {
+	width: 100%;
+	height: 100%;
+	max-height: 480px;
+	object-fit: cover;
+	display: block;
+}
+
+.branch-hero__img-wrap .branch-badge {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	font-size: 0.8rem;
+	padding: 6px 14px;
+	border-radius: 8px;
+}
+
+/* Detail section */
+.branch-detail {
+	padding: 50px 0 60px;
+}
+
+.branch-detail__layout {
+	display: grid;
+	grid-template-columns: 1fr 400px;
+	gap: 40px;
+	align-items: start;
+}
+
+.branch-detail__title {
+	font-size: clamp(1.6rem, 3vw, 2.2rem);
+	font-weight: 800;
+	color: var(--dark, #1a1a2e);
+	margin-bottom: 16px;
+	line-height: 1.2;
+}
+
+.branch-detail__desc {
+	font-size: 0.95rem;
+	color: var(--gray, #6b7280);
+	line-height: 1.7;
+	margin-bottom: 28px;
+}
+
+.branch-detail__desc p {
+	margin-bottom: 12px;
+}
+
+/* Info grid */
+.branch-info-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.branch-info-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 18px 20px;
+	background: var(--light-bg, #f7f7f9);
+	border-radius: var(--radius, 12px);
+	border: 1px solid var(--border, #e5e7eb);
+}
+
+.branch-info-icon {
+	width: 42px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	background: rgba(232, 93, 38, 0.1);
+	color: var(--accent, #e85d26);
+	font-size: 1rem;
+	flex-shrink: 0;
+}
+
+.branch-info-label {
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--gray, #6b7280);
+	margin-bottom: 4px;
+}
+
+.branch-info-value {
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: var(--dark, #1a1a2e);
+	line-height: 1.5;
+}
+
+.branch-info-value a {
+	color: var(--dark, #1a1a2e);
+	transition: color 0.2s;
+}
+
+.branch-info-value a:hover {
+	color: var(--accent, #e85d26);
+}
+
+.branch-hours-row {
+	margin-bottom: 4px;
+}
+
+.branch-hours-row:last-child {
+	margin-bottom: 0;
+}
+
+/* Map placeholder */
+.branch-detail__map {
+	position: sticky;
+	top: 90px;
+}
+
+.branch-map-placeholder {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	max-height: 400px;
+	background: var(--light-bg, #f7f7f9);
+	border: 2px dashed var(--border, #e5e7eb);
+	border-radius: var(--radius, 12px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.branch-map-inner {
+	text-align: center;
+	color: var(--gray, #6b7280);
+}
+
+.branch-map-inner i {
+	font-size: 2.5rem;
+	color: var(--accent, #e85d26);
+	margin-bottom: 12px;
+	display: block;
+}
+
+.branch-map-inner p {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.branch-map-address {
+	font-size: 0.82rem;
+	max-width: 260px;
+	display: block;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+/* Fleet section */
+.branch-fleet {
+	padding: 60px 0 70px;
+	background: var(--light-bg, #f7f7f9);
+}
+
+.branch-fleet__header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.branch-fleet__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+}
+
+/* CTA section */
+.branch-cta {
+	padding: 70px 0;
+}
+
+.branch-cta__box {
+	background: var(--dark, #1a1a2e);
+	border-radius: var(--radius, 12px);
+	padding: 50px 40px;
+	text-align: center;
+	color: #fff;
+}
+
+.branch-cta__box h2 {
+	font-size: clamp(1.4rem, 3vw, 2rem);
+	font-weight: 800;
+	margin-bottom: 12px;
+}
+
+.branch-cta__box p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1.05rem;
+	margin-bottom: 28px;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Nearby branches */
+.branch-nearby {
+	padding: 60px 0 80px;
+	background: var(--light-bg, #f7f7f9);
+}
+
+.branch-nearby__header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.branch-nearby__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+}
+
+/* Responsive — tablet */
+@media (max-width: 960px) {
+	.branch-detail__layout {
+		grid-template-columns: 1fr;
+	}
+
+	.branch-detail__map {
+		position: static;
+	}
+
+	.branch-map-placeholder {
+		max-height: 300px;
+	}
+
+	.branch-fleet__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 22px;
+	}
+
+	.branch-nearby__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 22px;
+	}
+}
+
+/* Responsive — mobile */
+@media (max-width: 600px) {
+	.branch-hero__img-wrap {
+		border-radius: 0;
+		margin-top: 0;
+		max-height: 300px;
+	}
+
+	.branch-hero__img-wrap img {
+		max-height: 300px;
+	}
+
+	.branch-detail {
+		padding: 30px 0 40px;
+	}
+
+	.branch-info-item {
+		padding: 14px 16px;
+	}
+
+	.branch-fleet__grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.branch-fleet {
+		padding: 40px 0 50px;
+	}
+
+	.branch-cta {
+		padding: 40px 0;
+	}
+
+	.branch-cta__box {
+		padding: 36px 24px;
+	}
+
+	.branch-nearby__grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.branch-nearby {
+		padding: 40px 0 60px;
+	}
+}

@@ -1,0 +1,2241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- WordPress eXtended RSS (WXR) file — DriveEase Demo Content -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>DriveEase Demo</title>
+	<link>http://localhost</link>
+	<description>DriveEase car rental demo content</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://localhost</wp:base_site_url>
+	<wp:base_blog_url>http://localhost</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@example.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Admin]]></wp:author_display_name>
+	</wp:author>
+
+	<!-- ============================================================
+	     TAXONOMY: car_category
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>101</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[economy]]></wp:term_slug>
+		<wp:term_name><![CDATA[Economy]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>102</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[sedan]]></wp:term_slug>
+		<wp:term_name><![CDATA[Sedan]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>103</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[suv]]></wp:term_slug>
+		<wp:term_name><![CDATA[SUV]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>104</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[luxury]]></wp:term_slug>
+		<wp:term_name><![CDATA[Luxury]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>105</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[compact]]></wp:term_slug>
+		<wp:term_name><![CDATA[Compact]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>106</wp:term_id>
+		<wp:term_taxonomy>car_category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[minivan]]></wp:term_slug>
+		<wp:term_name><![CDATA[Minivan]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: nav_menu
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>200</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[primary]]></wp:term_slug>
+		<wp:term_name><![CDATA[Primary]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>201</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[footer]]></wp:term_slug>
+		<wp:term_name><![CDATA[Footer]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: category (blog post categories)
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>301</wp:term_id>
+		<wp:term_taxonomy>category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[travel-tips]]></wp:term_slug>
+		<wp:term_name><![CDATA[Travel Tips]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>302</wp:term_id>
+		<wp:term_taxonomy>category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[road-trips]]></wp:term_slug>
+		<wp:term_name><![CDATA[Road Trips]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>303</wp:term_id>
+		<wp:term_taxonomy>category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[car-rental-tips]]></wp:term_slug>
+		<wp:term_name><![CDATA[Car Rental Tips]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     CARS — Economy (A1, A2)
+	     ============================================================ -->
+	<item>
+		<title>Toyota Yaris Hybrid</title>
+		<link>http://localhost/car/toyota-yaris-hybrid/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Toyota Yaris Hybrid is a nimble economy car perfect for city driving. Its hybrid powertrain delivers excellent fuel efficiency while the comfortable interior makes it the ideal choice for budget-conscious travelers.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Nimble Toyota hybrid hatchback perfect for city driving with outstanding fuel economy.]]></excerpt:encoded>
+		<wp:post_id>1001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[toyota-yaris-hybrid]]></wp:post_name>
+		<category domain="car_category" nicename="economy"><![CDATA[Economy]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[45]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[1.5L 3-cyl Hybrid]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[300L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2001]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2002;i:1;i:2003;i:2;i:2004;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Honda Civic Sport</title>
+		<link>http://localhost/car/honda-civic-sport/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Honda Civic Sport delivers refined handling and a modern infotainment system. With its VTEC turbocharged engine and sporty styling, it offers a great balance of performance and comfort for everyday driving.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Refined Honda compact with sporty handling and modern infotainment.]]></excerpt:encoded>
+		<wp:post_id>1002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[honda-civic-sport]]></wp:post_name>
+		<category domain="car_category" nicename="economy"><![CDATA[Economy]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[52]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Manual]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[1.5L VTEC Turbo 4-cyl]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[350L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2005]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2006;i:1;i:2007;i:2;i:2008;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     CARS — Sedan (B1, B2)
+	     ============================================================ -->
+	<item>
+		<title>Mercedes-Benz E-Class</title>
+		<link>http://localhost/car/mercedes-benz-e-class/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Mercedes-Benz E-Class is a spacious luxury sedan offering a smooth ride and generous legroom. Ideal for business trips or family outings with its refined cabin, MBUX infotainment, and ample trunk space.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Spacious Mercedes sedan with smooth ride, MBUX technology, and luxurious cabin.]]></excerpt:encoded>
+		<wp:post_id>1003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[mercedes-benz-e-class]]></wp:post_name>
+		<category domain="car_category" nicename="sedan"><![CDATA[Sedan]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[65]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[2.0L TwinPower Turbo 4-cyl]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[480L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2009]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2010;i:1;i:2011;i:2;i:2012;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW 4 Series Gran Coupe</title>
+		<link>http://localhost/car/bmw-4-series-gran-coupe/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The BMW 4 Series Gran Coupe is a premium sedan with a TwinPower Turbo engine and leather-trimmed interior. Its xDrive all-wheel drive and advanced safety features make every journey a pleasure.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Premium BMW gran coupe with turbo engine, leather interior, and xDrive AWD.]]></excerpt:encoded>
+		<wp:post_id>1004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[bmw-4-series-gran-coupe]]></wp:post_name>
+		<category domain="car_category" nicename="sedan"><![CDATA[Sedan]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[75]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2026]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Hybrid]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[2.0L TwinPower Turbo 4-cyl]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[520L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2013]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2014;i:1;i:2015;i:2;i:2016;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     CARS — SUV (C1, C2)
+	     ============================================================ -->
+	<item>
+		<title>Hyundai Kona</title>
+		<link>http://localhost/car/hyundai-kona/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Hyundai Kona is a versatile compact SUV built for adventure. With its modern design, SmartSense safety suite, and generous ground clearance, it handles both city streets and country roads with confidence.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Versatile Hyundai compact SUV with modern design and confident handling.]]></excerpt:encoded>
+		<wp:post_id>1005</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:40:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[hyundai-kona]]></wp:post_name>
+		<category domain="car_category" nicename="suv"><![CDATA[SUV]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[89]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Diesel]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[1.6L Turbo GDI 4-cyl]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[550L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2017]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2018;i:1;i:2019;i:2;i:2020;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW X3 xDrive</title>
+		<link>http://localhost/car/bmw-x3-xdrive/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The BMW X3 xDrive is a luxury mid-size SUV with a powerful TwinPower Turbo inline-six engine and xDrive all-wheel drive. Packed with iDrive technology, it delivers premium comfort and dynamic driving performance.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Premium BMW SUV with xDrive AWD, spacious cabin, and powerful inline-six engine.]]></excerpt:encoded>
+		<wp:post_id>1006</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 09:50:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[bmw-x3-xdrive]]></wp:post_name>
+		<category domain="car_category" nicename="suv"><![CDATA[SUV]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[99]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2026]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[7]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[3.0L TwinPower Turbo I6]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[680L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2021]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2022;i:1;i:2023;i:2;i:2024;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     CARS — Luxury (D1, D2)
+	     ============================================================ -->
+	<item>
+		<title>Mercedes-Benz E-Class Cabriolet</title>
+		<link>http://localhost/car/mercedes-benz-e-class-cabriolet/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Mercedes-Benz E-Class Cabriolet is the ultimate open-top luxury experience. With hand-stitched leather seats, AIRMATIC adaptive suspension, and a power-folding soft top, every drive feels like a special occasion.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Mercedes luxury convertible with leather seats, adaptive suspension, and open-top elegance.]]></excerpt:encoded>
+		<wp:post_id>1007</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[mercedes-benz-e-class-cabriolet]]></wp:post_name>
+		<category domain="car_category" nicename="luxury"><![CDATA[Luxury]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[149]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2026]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Hybrid]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[3.0L Turbo I6 with EQ Boost]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[500 km/day]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[450L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2026;i:1;i:2027;i:2;i:2028;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rolls-Royce Ghost</title>
+		<link>http://localhost/car/rolls-royce-ghost/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Rolls-Royce Ghost is the flagship of effortless luxury. Its twin-turbo V12, massaging seats, and night-vision assist create an unparalleled grand touring experience. The Starlight headliner completes the bespoke cabin.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Flagship Rolls-Royce grand tourer with V12 power, massaging seats, and Starlight headliner.]]></excerpt:encoded>
+		<wp:post_id>1008</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[rolls-royce-ghost]]></wp:post_name>
+		<category domain="car_category" nicename="luxury"><![CDATA[Luxury]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[179]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2026]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[6.75L Twin-Turbo V12]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[300 km/day]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[400L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2029]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2030;i:1;i:2031;i:2;i:2032;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     CARS — Compact (E1, E2)
+	     ============================================================ -->
+	<item>
+		<title>Ford Focus ST-Line</title>
+		<link>http://localhost/car/ford-focus-st-line/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Ford Focus ST-Line is a stylish compact hatchback with sporty suspension and sharp handling. Its EcoBoost engine delivers zippy acceleration while maintaining impressive fuel efficiency for daily commutes.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Sporty Ford compact hatchback with EcoBoost engine and sharp, agile handling.]]></excerpt:encoded>
+		<wp:post_id>1009</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[ford-focus-st-line]]></wp:post_name>
+		<category domain="car_category" nicename="compact"><![CDATA[Compact]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[38]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Electric]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[1.0L EcoBoost 3-cyl Turbo]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[250 km range]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[210L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2033]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2034;i:1;i:2035;i:2;i:2036;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tesla Model 3</title>
+		<link>http://localhost/car/tesla-model-3/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Tesla Model 3 is a fully electric sedan with instant torque, Autopilot capability, and a minimalist glass-roof interior. Its impressive range and zero emissions make it the smart choice for modern travelers.]]></content:encoded>
+		<excerpt:encoded><![CDATA[All-electric Tesla sedan with Autopilot, instant torque, and impressive range.]]></excerpt:encoded>
+		<wp:post_id>1010</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[tesla-model-3]]></wp:post_name>
+		<category domain="car_category" nicename="compact"><![CDATA[Compact]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[44]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Manual]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[Dual Motor Electric AWD]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[280L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2037]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2038;i:1;i:2039;i:2;i:2040;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     CARS — Minivan (F1, F2)
+	     ============================================================ -->
+	<item>
+		<title>Chrysler Pacifica</title>
+		<link>http://localhost/car/chrysler-pacifica/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Chrysler Pacifica is a spacious 7-seat minivan with power sliding doors and Stow 'n Go fold-flat rear seats. Its Uconnect infotainment system and advanced safety features make family travel effortless.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Spacious Chrysler 7-seat minivan with sliding doors and Stow 'n Go seating.]]></excerpt:encoded>
+		<wp:post_id>1011</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:40:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[chrysler-pacifica]]></wp:post_name>
+		<category domain="car_category" nicename="minivan"><![CDATA[Minivan]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[110]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2025]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[7]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Gasoline]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[3.6L Pentastar V6]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[900L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2041]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2042;i:1;i:2043;i:2;i:2044;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford C-Max Energi</title>
+		<link>http://localhost/car/ford-c-max-energi/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[The Ford C-Max Energi is a premium plug-in hybrid MPV with flexible seating and built-in SYNC entertainment. Its electric-first powertrain reduces fuel costs while captain chairs ensure everyone travels in comfort.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Premium Ford plug-in hybrid MPV with flexible seating and built-in SYNC entertainment.]]></excerpt:encoded>
+		<wp:post_id>1012</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 10:50:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_car]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[ford-c-max-energi]]></wp:post_name>
+		<category domain="car_category" nicename="minivan"><![CDATA[Minivan]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_price_per_day]]></wp:meta_key><wp:meta_value><![CDATA[125]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_year]]></wp:meta_key><wp:meta_value><![CDATA[2026]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_seats]]></wp:meta_key><wp:meta_value><![CDATA[8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_doors]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_transmission]]></wp:meta_key><wp:meta_value><![CDATA[Automatic]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_fuel_type]]></wp:meta_key><wp:meta_value><![CDATA[Hybrid]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_engine]]></wp:meta_key><wp:meta_value><![CDATA[2.0L Atkinson Hybrid 4-cyl]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_mileage_limit]]></wp:meta_key><wp:meta_value><![CDATA[Unlimited]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_trunk_capacity]]></wp:meta_key><wp:meta_value><![CDATA[1100L]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_availability_status]]></wp:meta_key><wp:meta_value><![CDATA[available]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_air_conditioning]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_bluetooth]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_usb_charging]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gps_included]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_cruise_control]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_backup_camera]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_featured]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[2045]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_car_gallery]]></wp:meta_key><wp:meta_value><![CDATA[a:3:{i:0;i:2046;i:1;i:2047;i:2;i:2048;}]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     BRANCHES (4)
+	     ============================================================ -->
+	<item>
+		<title>City Center</title>
+		<link>http://localhost/branch/city-center/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Our flagship City Center branch is conveniently located in the heart of downtown, just steps from the main transit hub. Open seven days a week with extended evening hours.]]></content:encoded>
+		<wp:post_id>2001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 11:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_branch]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[city-center]]></wp:post_name>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_address]]></wp:meta_key><wp:meta_value><![CDATA[123 Main Street, Downtown, 10001]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_phone]]></wp:meta_key><wp:meta_value><![CDATA[+1 (555) 100-0001]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_email]]></wp:meta_key><wp:meta_value><![CDATA[citycenter@example.com]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekday]]></wp:meta_key><wp:meta_value><![CDATA[07:00 – 21:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekend]]></wp:meta_key><wp:meta_value><![CDATA[08:00 – 20:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_latitude]]></wp:meta_key><wp:meta_value><![CDATA[40.7128]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_longitude]]></wp:meta_key><wp:meta_value><![CDATA[-74.0060]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_is_24h]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Airport Terminal 1</title>
+		<link>http://localhost/branch/airport-terminal-1/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Pick up and drop off your rental car right at the airport. Our Airport Terminal 1 branch operates 24/7, located inside the arrivals hall with a direct walkway to the parking garage.]]></content:encoded>
+		<wp:post_id>2002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 11:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_branch]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[airport-terminal-1]]></wp:post_name>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_address]]></wp:meta_key><wp:meta_value><![CDATA[International Airport, Terminal 1, Arrivals Hall]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_phone]]></wp:meta_key><wp:meta_value><![CDATA[+1 (555) 100-0002]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_email]]></wp:meta_key><wp:meta_value><![CDATA[airport@example.com]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekday]]></wp:meta_key><wp:meta_value><![CDATA[24 hours]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekend]]></wp:meta_key><wp:meta_value><![CDATA[24 hours]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_latitude]]></wp:meta_key><wp:meta_value><![CDATA[40.6413]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_longitude]]></wp:meta_key><wp:meta_value><![CDATA[-73.7781]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_is_24h]]></wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>North District</title>
+		<link>http://localhost/branch/north-district/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Serving the northern suburbs, our North District branch offers easy access from the highway and generous parking. Great for weekend getaway pick-ups heading upstate.]]></content:encoded>
+		<wp:post_id>2003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 11:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_branch]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[north-district]]></wp:post_name>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_address]]></wp:meta_key><wp:meta_value><![CDATA[456 Northway Boulevard, Suite 10, 10601]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_phone]]></wp:meta_key><wp:meta_value><![CDATA[+1 (555) 100-0003]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_email]]></wp:meta_key><wp:meta_value><![CDATA[north@example.com]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekday]]></wp:meta_key><wp:meta_value><![CDATA[08:00 – 19:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekend]]></wp:meta_key><wp:meta_value><![CDATA[09:00 – 17:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_latitude]]></wp:meta_key><wp:meta_value><![CDATA[40.9176]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_longitude]]></wp:meta_key><wp:meta_value><![CDATA[-73.8645]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_is_24h]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Harbor</title>
+		<link>http://localhost/branch/harbor/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[Located along the waterfront, the Harbor branch is the perfect starting point for coastal road trips. Enjoy scenic views while you pick up your ride and hit the open road.]]></content:encoded>
+		<wp:post_id>2004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 11:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[driveease_branch]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[harbor]]></wp:post_name>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_address]]></wp:meta_key><wp:meta_value><![CDATA[78 Seaside Drive, Harbor District, 11201]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_phone]]></wp:meta_key><wp:meta_value><![CDATA[+1 (555) 100-0004]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_email]]></wp:meta_key><wp:meta_value><![CDATA[harbor@example.com]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekday]]></wp:meta_key><wp:meta_value><![CDATA[07:00 – 20:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_hours_weekend]]></wp:meta_key><wp:meta_value><![CDATA[08:00 – 18:00]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_latitude]]></wp:meta_key><wp:meta_value><![CDATA[40.6892]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_longitude]]></wp:meta_key><wp:meta_value><![CDATA[-74.0445]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_branch_is_24h]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     PAGES
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://localhost/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Welcome to DriveEase — premium car rentals made simple. Browse our fleet, pick your dates, and hit the road in minutes.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[front-page.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Fleet</title>
+		<link>http://localhost/fleet/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Explore our diverse fleet of vehicles — from budget-friendly compacts to luxurious grand tourers. Filter by category, price, or features to find your perfect ride.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[fleet]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>DriveEase was founded with one simple idea: renting a car should be as easy as booking a ride. We combine a curated fleet with transparent pricing and 24/7 roadside assistance to take the stress out of travel.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>With four convenient branches across the metro area and a growing selection of hybrid and electric vehicles, we are committed to getting you where you need to go — sustainably and affordably.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-about.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Have a question or need help with a booking? Reach out to us anytime — our support team is available around the clock.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>General Inquiries:</strong> info@example.com</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Reservations:</strong> +1 (555) 100-0000</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-contact.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>FAQ</title>
+		<link>http://localhost/faq/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:heading -->
+<h2>How do I make a reservation?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You can book a vehicle directly from our website using the booking widget on any car page. Select your dates, fill in your details, and confirm — it takes under five minutes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>What documents do I need?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You will need a valid driver's license, a credit or debit card in your name, and a government-issued ID. International visitors should also carry an International Driving Permit (IDP).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Can I cancel or modify my booking?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Yes. Cancellations made at least 24 hours before pick-up are fully refundable. Modifications can be made anytime through your booking confirmation email or by contacting our support team.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Is roadside assistance included?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>All DriveEase rentals include complimentary 24/7 roadside assistance covering breakdowns, flat tires, and lockouts within the service area.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>3005</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:40:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[faq]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-faq.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     PAGES — Terms of Service
+	     ============================================================ -->
+	<item>
+		<title>Terms of Service</title>
+		<link>http://localhost/terms-of-service/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>3006</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 12:50:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[terms-of-service]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-terms.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     PAGES — Privacy Policy
+	     ============================================================ -->
+	<item>
+		<title>Privacy Policy</title>
+		<link>http://localhost/privacy-policy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>3007</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-privacy.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     PAGES — My Bookings
+	     ============================================================ -->
+	<item>
+		<title>My Bookings</title>
+		<link>http://localhost/my-bookings/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>3008</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:05:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[my-bookings]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-my-bookings.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     PAGES — Blog
+	     ============================================================ -->
+	<item>
+		<title>Blog</title>
+		<link>http://localhost/blog/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>3009</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:06:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[blog]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<!-- ============================================================
+	     BLOG POSTS (4 sample posts)
+	     ============================================================ -->
+	<item>
+		<title>10 Essential Tips for Your First Car Rental Experience</title>
+		<link>http://localhost/10-essential-tips-for-your-first-car-rental-experience/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[Renting a car for the first time? From choosing the right insurance to inspecting the vehicle before driving off, here are ten tips that will save you time, money, and stress.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Renting a car for the first time can feel overwhelming, but a little preparation goes a long way. Whether you are picking up at the airport or a city branch, these ten tips will help you drive away with confidence.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>1. Book Early for the Best Rates</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Prices tend to climb as pick-up dates approach. Booking at least two weeks in advance usually secures the best deal, especially during peak travel seasons.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>2. Understand Your Insurance Options</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Check whether your personal auto insurance or credit card already covers rental cars. This can save you from paying for duplicate coverage at the counter.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>3. Choose the Right Vehicle Class</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An economy car is perfect for city driving, but a road trip through mountainous terrain calls for an SUV. Match the car to the journey, not just the price tag.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>4. Inspect the Car Before Driving Off</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Walk around the vehicle and photograph any existing scratches or dents. Report them to the rental agent before you leave the lot so you are not held responsible later.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>5. Fill Up Before Returning</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most rental companies charge a premium for refueling. Top off the tank at a nearby station to avoid the markup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>6. Know the Fuel Policy</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Full-to-full is the most common policy: you pick up with a full tank and return it full. Some companies offer a prepaid fuel option that can be economical for long trips.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>7. Check for Mileage Limits</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Unlimited mileage is ideal for road trips. If your rental has a daily cap, plan your route accordingly to avoid overage charges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>8. Familiarize Yourself with the Car</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Before leaving the lot, adjust mirrors, test the lights, and locate the spare tire. A few minutes of orientation prevents headaches on the road.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>9. Keep All Documents Handy</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Your driver's license, reservation confirmation, and insurance documents should be easily accessible. Digital copies on your phone work as a backup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>10. Return on Time</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Late returns can trigger extra-day charges. Set a reminder and plan for traffic so you arrive at the drop-off location with time to spare.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>With these tips in your pocket, your first rental experience will be smooth, affordable, and stress-free. Happy driving!</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>6001</wp:post_id>
+		<wp:post_date><![CDATA[2026-03-15 09:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[10-essential-tips-for-your-first-car-rental-experience]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<category domain="category" nicename="car-rental-tips"><![CDATA[Car Rental Tips]]></category>
+	</item>
+
+	<item>
+		<title>The Ultimate Weekend Road Trip: Yerevan to Lake Sevan</title>
+		<link>http://localhost/the-ultimate-weekend-road-trip-yerevan-to-lake-sevan/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[Discover the breathtaking drive from Yerevan to Lake Sevan — one of the highest freshwater lakes in the world. We cover the best route, must-see stops, and which rental car to choose.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Just 60 kilometers northeast of Yerevan lies Lake Sevan, a stunning alpine lake perched at 1,900 meters above sea level. The drive is short but packed with scenery, history, and adventure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>The Route</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Take the M4 highway from Yerevan. The road climbs steadily through the Hrazdan gorge, offering dramatic canyon views before opening up to the vast blue expanse of the lake. Allow about 90 minutes for the drive, plus stops.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Must-See Stops Along the Way</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Garni Temple:</strong> A Hellenistic pagan temple perched on a cliff — the only standing Greco-Roman colonnade in the former Soviet Union. A quick 20-minute detour from the main highway.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Geghard Monastery:</strong> A UNESCO World Heritage Site carved into the mountainside. The acoustics inside are extraordinary, and monks sometimes perform choral music for visitors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Sevanavank Monastery:</strong> Sitting on a peninsula that was once an island, this 9th-century monastery offers panoramic views of the lake and the surrounding mountains.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Which Car Should You Rent?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The M4 is well-maintained asphalt, so any sedan or compact will handle the route comfortably. If you plan to explore unpaved side roads to Garni or nearby villages, an SUV gives extra peace of mind. Check out our fleet page for options.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Tips for the Trip</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pack layers — the lake sits at nearly 2,000 meters and temperatures drop quickly, even in summer. Bring a swimsuit if visiting between June and September; the beach areas on the eastern shore are perfect for a refreshing dip.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Whether you are a history buff, a nature lover, or simply looking for a scenic drive, the Yerevan-to-Sevan route delivers. Rent a car, pack a picnic, and hit the road.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>6002</wp:post_id>
+		<wp:post_date><![CDATA[2026-04-02 10:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[the-ultimate-weekend-road-trip-yerevan-to-lake-sevan]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<category domain="category" nicename="road-trips"><![CDATA[Road Trips]]></category>
+	</item>
+
+	<item>
+		<title>SUV vs. Sedan: Which Rental Car Is Right for Your Trip?</title>
+		<link>http://localhost/suv-vs-sedan-which-rental-car-is-right-for-your-trip/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[Choosing between an SUV and a sedan? We break down fuel efficiency, cargo space, comfort, and cost to help you pick the perfect rental for every type of journey.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>It is the classic rental car dilemma: the practicality of a sedan versus the versatility of an SUV. The right answer depends on where you are going, who is coming along, and what you plan to do when you get there.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>When a Sedan Makes Sense</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>City driving and business trips:</strong> Sedans are easier to park, sip less fuel, and generally cost less per day. If your itinerary is mostly highways and urban streets, a sedan is the smart pick.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Solo or couple travel:</strong> With a trunk that fits two medium suitcases comfortably, a sedan has more than enough space for one or two travelers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>When an SUV Wins</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Mountain roads and rough terrain:</strong> Higher ground clearance and available all-wheel drive make SUVs the safer choice for unpaved roads, snowy mountain passes, or gravel tracks to remote trailheads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Family vacations:</strong> Three rows of seats and a large cargo area mean everyone — and everything — fits. Car seats, strollers, and camping gear all have a place.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Cost Comparison</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sedans typically cost 20–35% less per day than comparable SUVs. However, the fuel savings of a sedan can narrow the gap on long trips. Consider the total cost of the rental plus fuel when making your decision.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>The Bottom Line</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Match the car to the trip. A weekend in the city? Go sedan. A week exploring mountain villages? Go SUV. And if you are still unsure, our team is always happy to recommend the perfect vehicle for your itinerary.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>6003</wp:post_id>
+		<wp:post_date><![CDATA[2026-04-18 08:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[suv-vs-sedan-which-rental-car-is-right-for-your-trip]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<category domain="category" nicename="car-rental-tips"><![CDATA[Car Rental Tips]]></category>
+	</item>
+
+	<item>
+		<title>5 Hidden Gem Destinations You Can Only Reach by Car</title>
+		<link>http://localhost/5-hidden-gem-destinations-you-can-only-reach-by-car/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[Some of the most beautiful places are off the beaten path — and off the bus route. Here are five stunning destinations that reward travelers who rent a car and go exploring.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Public transit is great for cities, but the most memorable travel experiences often happen where the bus does not go. Here are five destinations that are best reached with your own set of wheels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>1. Tatev Monastery via the Wings of Tatev</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>While the famous aerial tramway gets you to the monastery, driving the winding road through the Vorotan gorge is an experience in itself. Stop at the Devil's Bridge natural formation along the way — a geological wonder with hot springs hidden beneath the arch.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>2. Jermuk Waterfall and Spa Town</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This mountain spa town is surrounded by forests, mineral springs, and hiking trails. The 68-meter waterfall is the centerpiece, but the real magic is in the quiet back roads lined with wildflowers in spring.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>3. Dilijan National Park</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Known as "Armenia's Little Switzerland," Dilijan's forested mountains and hidden monasteries (Haghartsin, Goshavank) are best explored at your own pace. The park's network of forest roads opens up to panoramic viewpoints that tour buses simply cannot reach.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>4. The Selim Pass and Caravanserai</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>At 2,410 meters, the Selim Pass connects the Vayots Dzor and Gegharkunik provinces. Near the summit sits a beautifully preserved 14th-century caravanserai — a Silk Road inn carved from basalt. The views of the valley below are breathtaking.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>5. Lastiver Cave and Forest Camp</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Deep in the Ijevan forests, Lastiver is a hidden cave complex accessible only by a forest trail. Drive to the trailhead, then hike 30 minutes through ancient woodland to reach caves once used as medieval hideouts. Adventure zip-lines and rope bridges add to the fun.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Each of these destinations proves that the journey is just as rewarding as the arrival. Rent a car, set your own schedule, and discover the places that most travelers never see.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>6004</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 11:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[5-hidden-gem-destinations-you-can-only-reach-by-car]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<category domain="category" nicename="travel-tips"><![CDATA[Travel Tips]]></category>
+	</item>
+
+	<!-- ============================================================
+	     TESTIMONIALS (3 posts in 'testimonial' category)
+	     ============================================================ -->
+	<item>
+		<title>A seamless rental experience</title>
+		<link>http://localhost/a-seamless-rental-experience/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>"I booked a sedan for a week-long business trip and the whole process took under five minutes. The car was spotless, the GPS was pre-loaded, and returning it at the airport was effortless. DriveEase has earned a customer for life."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>— Sarah M., Corporate Traveler</strong></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>4001</wp:post_id>
+		<wp:post_date><![CDATA[2026-02-01 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[a-seamless-rental-experience]]></wp:post_name>
+		<category domain="category" nicename="testimonial"><![CDATA[Testimonial]]></category>
+	</item>
+
+	<item>
+		<title>Perfect family road trip</title>
+		<link>http://localhost/perfect-family-road-trip/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>"We rented the Voyage F1 minivan for a two-week coastal road trip with three kids. Plenty of space, the entertainment system kept everyone happy, and the price was very fair compared to competitors. Highly recommend!"</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>— James &amp; Linda K., Family Vacationers</strong></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>4002</wp:post_id>
+		<wp:post_date><![CDATA[2026-02-15 09:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[perfect-family-road-trip]]></wp:post_name>
+		<category domain="category" nicename="testimonial"><![CDATA[Testimonial]]></category>
+	</item>
+
+	<item>
+		<title>Luxury without the hassle</title>
+		<link>http://localhost/luxury-without-the-hassle/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>"I treated myself to the Sovereign D2 for my anniversary weekend. The car was immaculate, the pick-up process was lightning fast, and the staff even had a bottle of water waiting in the cup holder. Five stars all the way."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>— Marco T., Weekend Explorer</strong></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>4003</wp:post_id>
+		<wp:post_date><![CDATA[2026-03-01 10:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[luxury-without-the-hassle]]></wp:post_name>
+		<category domain="category" nicename="testimonial"><![CDATA[Testimonial]]></category>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Primary (Home, Fleet, About, Contact)
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://localhost/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3001]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Fleet</title>
+		<link>http://localhost/fleet/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:01:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[fleet-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3002]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Blog</title>
+		<link>http://localhost/blog/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5006</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:02:30]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[blog-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3009]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:02:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[about-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3003]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:03:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3004]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>My Bookings</title>
+		<link>http://localhost/my-bookings/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5005</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:04:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[my-bookings-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3008]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Footer (About, Fleet, FAQ, Contact)
+	     ============================================================ -->
+	<item>
+		<title>About</title>
+		<link>http://localhost/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5101</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-about]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3003]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Fleet</title>
+		<link>http://localhost/fleet/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5102</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:11:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-fleet]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3002]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Blog</title>
+		<link>http://localhost/blog/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5107</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:11:30]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-blog]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3009]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>FAQ</title>
+		<link>http://localhost/faq/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5103</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:12:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-faq]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3005]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://localhost/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5104</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:13:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-contact]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3004]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Footer (Terms of Service, Privacy Policy)
+	     ============================================================ -->
+	<item>
+		<title>Terms of Service</title>
+		<link>http://localhost/terms-of-service/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5105</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:14:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-terms]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3006]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Privacy Policy</title>
+		<link>http://localhost/privacy-policy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>5106</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 13:15:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-privacy]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[3007]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     ATTACHMENTS — Vehicle Images
+	     ============================================================ -->
+
+	<item>
+		<title>Toyota Yaris Hybrid</title>
+		<link>http://localhost/?attachment_id=2001</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2001</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-100]]></wp:post_name>
+		<wp:post_parent>1001</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-100.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-100.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Toyota Yaris Hybrid Interior</title>
+		<link>http://localhost/?attachment_id=2002</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2002</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-100-interior]]></wp:post_name>
+		<wp:post_parent>1001</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-100-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-100-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Toyota Yaris Hybrid Rear View</title>
+		<link>http://localhost/?attachment_id=2003</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2003</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-100-rear]]></wp:post_name>
+		<wp:post_parent>1001</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-100-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-100-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Toyota Yaris Hybrid Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2004</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2004</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-100-detail]]></wp:post_name>
+		<wp:post_parent>1001</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-100-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-100-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Honda Civic Sport</title>
+		<link>http://localhost/?attachment_id=2005</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2005</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-101]]></wp:post_name>
+		<wp:post_parent>1002</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-101.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-101.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Honda Civic Sport Interior</title>
+		<link>http://localhost/?attachment_id=2006</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2006</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-101-interior]]></wp:post_name>
+		<wp:post_parent>1002</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-101-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-101-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Honda Civic Sport Rear View</title>
+		<link>http://localhost/?attachment_id=2007</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2007</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-101-rear]]></wp:post_name>
+		<wp:post_parent>1002</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-101-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-101-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Honda Civic Sport Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2008</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2008</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-101-detail]]></wp:post_name>
+		<wp:post_parent>1002</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-101-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-101-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class</title>
+		<link>http://localhost/?attachment_id=2009</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2009</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-102]]></wp:post_name>
+		<wp:post_parent>1003</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-102.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-102.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Interior</title>
+		<link>http://localhost/?attachment_id=2010</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2010</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-102-interior]]></wp:post_name>
+		<wp:post_parent>1003</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-102-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-102-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Rear View</title>
+		<link>http://localhost/?attachment_id=2011</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2011</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-102-rear]]></wp:post_name>
+		<wp:post_parent>1003</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-102-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-102-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2012</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2012</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-102-detail]]></wp:post_name>
+		<wp:post_parent>1003</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-102-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-102-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW 4 Series Gran Coupe</title>
+		<link>http://localhost/?attachment_id=2013</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2013</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-103]]></wp:post_name>
+		<wp:post_parent>1004</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-103.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-103.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW 4 Series Gran Coupe Interior</title>
+		<link>http://localhost/?attachment_id=2014</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2014</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-103-interior]]></wp:post_name>
+		<wp:post_parent>1004</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-103-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-103-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW 4 Series Gran Coupe Rear View</title>
+		<link>http://localhost/?attachment_id=2015</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2015</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-103-rear]]></wp:post_name>
+		<wp:post_parent>1004</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-103-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-103-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW 4 Series Gran Coupe Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2016</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2016</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-103-detail]]></wp:post_name>
+		<wp:post_parent>1004</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-103-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-103-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Hyundai Kona</title>
+		<link>http://localhost/?attachment_id=2017</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2017</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-104]]></wp:post_name>
+		<wp:post_parent>1005</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-104.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-104.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Hyundai Kona Interior</title>
+		<link>http://localhost/?attachment_id=2018</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2018</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-104-interior]]></wp:post_name>
+		<wp:post_parent>1005</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-104-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-104-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Hyundai Kona Rear View</title>
+		<link>http://localhost/?attachment_id=2019</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2019</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-104-rear]]></wp:post_name>
+		<wp:post_parent>1005</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-104-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-104-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Hyundai Kona Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2020</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2020</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-104-detail]]></wp:post_name>
+		<wp:post_parent>1005</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-104-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-104-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW X3 xDrive</title>
+		<link>http://localhost/?attachment_id=2021</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2021</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-105]]></wp:post_name>
+		<wp:post_parent>1006</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-105.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-105.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW X3 xDrive Interior</title>
+		<link>http://localhost/?attachment_id=2022</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2022</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-105-interior]]></wp:post_name>
+		<wp:post_parent>1006</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-105-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-105-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW X3 xDrive Rear View</title>
+		<link>http://localhost/?attachment_id=2023</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2023</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-105-rear]]></wp:post_name>
+		<wp:post_parent>1006</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-105-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-105-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>BMW X3 xDrive Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2024</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2024</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-105-detail]]></wp:post_name>
+		<wp:post_parent>1006</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-105-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-105-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Cabriolet</title>
+		<link>http://localhost/?attachment_id=2025</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2025</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-106]]></wp:post_name>
+		<wp:post_parent>1007</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-106.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-106.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Cabriolet Interior</title>
+		<link>http://localhost/?attachment_id=2026</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2026</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-106-interior]]></wp:post_name>
+		<wp:post_parent>1007</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-106-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-106-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Cabriolet Rear View</title>
+		<link>http://localhost/?attachment_id=2027</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2027</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-106-rear]]></wp:post_name>
+		<wp:post_parent>1007</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-106-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-106-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Mercedes-Benz E-Class Cabriolet Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2028</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2028</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-106-detail]]></wp:post_name>
+		<wp:post_parent>1007</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-106-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-106-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rolls-Royce Ghost</title>
+		<link>http://localhost/?attachment_id=2029</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2029</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-107]]></wp:post_name>
+		<wp:post_parent>1008</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-107.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-107.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rolls-Royce Ghost Interior</title>
+		<link>http://localhost/?attachment_id=2030</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2030</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-107-interior]]></wp:post_name>
+		<wp:post_parent>1008</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-107-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-107-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rolls-Royce Ghost Rear View</title>
+		<link>http://localhost/?attachment_id=2031</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2031</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-107-rear]]></wp:post_name>
+		<wp:post_parent>1008</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-107-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-107-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Rolls-Royce Ghost Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2032</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2032</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-107-detail]]></wp:post_name>
+		<wp:post_parent>1008</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-107-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-107-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford Focus ST-Line</title>
+		<link>http://localhost/?attachment_id=2033</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2033</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-108]]></wp:post_name>
+		<wp:post_parent>1009</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-108.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-108.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford Focus ST-Line Interior</title>
+		<link>http://localhost/?attachment_id=2034</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2034</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-108-interior]]></wp:post_name>
+		<wp:post_parent>1009</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-108-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-108-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford Focus ST-Line Rear View</title>
+		<link>http://localhost/?attachment_id=2035</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2035</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-108-rear]]></wp:post_name>
+		<wp:post_parent>1009</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-108-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-108-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford Focus ST-Line Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2036</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2036</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-108-detail]]></wp:post_name>
+		<wp:post_parent>1009</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-108-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-108-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tesla Model 3</title>
+		<link>http://localhost/?attachment_id=2037</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2037</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-109]]></wp:post_name>
+		<wp:post_parent>1010</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-109.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-109.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tesla Model 3 Interior</title>
+		<link>http://localhost/?attachment_id=2038</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2038</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-109-interior]]></wp:post_name>
+		<wp:post_parent>1010</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-109-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-109-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tesla Model 3 Rear View</title>
+		<link>http://localhost/?attachment_id=2039</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2039</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-109-rear]]></wp:post_name>
+		<wp:post_parent>1010</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-109-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-109-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tesla Model 3 Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2040</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2040</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-109-detail]]></wp:post_name>
+		<wp:post_parent>1010</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-109-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-109-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Chrysler Pacifica</title>
+		<link>http://localhost/?attachment_id=2041</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2041</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-110]]></wp:post_name>
+		<wp:post_parent>1011</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-110.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-110.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Chrysler Pacifica Interior</title>
+		<link>http://localhost/?attachment_id=2042</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2042</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-110-interior]]></wp:post_name>
+		<wp:post_parent>1011</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-110-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-110-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Chrysler Pacifica Rear View</title>
+		<link>http://localhost/?attachment_id=2043</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2043</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-110-rear]]></wp:post_name>
+		<wp:post_parent>1011</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-110-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-110-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Chrysler Pacifica Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2044</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2044</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-110-detail]]></wp:post_name>
+		<wp:post_parent>1011</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-110-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-110-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford C-Max Energi</title>
+		<link>http://localhost/?attachment_id=2045</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2045</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-111]]></wp:post_name>
+		<wp:post_parent>1012</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-111.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-111.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford C-Max Energi Interior</title>
+		<link>http://localhost/?attachment_id=2046</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2046</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-111-interior]]></wp:post_name>
+		<wp:post_parent>1012</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-111-interior.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-111-interior.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford C-Max Energi Rear View</title>
+		<link>http://localhost/?attachment_id=2047</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2047</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-111-rear]]></wp:post_name>
+		<wp:post_parent>1012</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-111-rear.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-111-rear.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Ford C-Max Energi Wheel Detail</title>
+		<link>http://localhost/?attachment_id=2048</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>2048</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-10 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[car-111-detail]]></wp:post_name>
+		<wp:post_parent>1012</wp:post_parent>
+		<wp:attachment_url><![CDATA[http://localhost/wp-content/uploads/2026/01/car-111-detail.jpg]]></wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/01/car-111-detail.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     SAMPLE REVIEWS (comments with _review_rating meta)
+	     ============================================================ -->
+
+	<!-- Toyota Yaris Hybrid (post_id 1001) -->
+	<wp:comment>
+		<wp:comment_id>5001</wp:comment_id>
+		<wp:comment_author><![CDATA[Sarah Johnson]]></wp:comment_author>
+		<wp:comment_author_email><![CDATA[sarah.j@example.com]]></wp:comment_author_email>
+		<wp:comment_date><![CDATA[2026-02-15 10:30:00]]></wp:comment_date>
+		<wp:comment_content><![CDATA[Perfect little car for getting around the city. The hybrid engine is incredibly fuel-efficient and the A/C worked great. Would definitely rent again!]]></wp:comment_content>
+		<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+		<wp:comment_parent>0</wp:comment_parent>
+		<wp:comment_post_ID>1001</wp:comment_post_ID>
+		<wp:commentmeta><wp:meta_key><![CDATA[_review_rating]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:commentmeta>
+	</wp:comment>
+
+	<wp:comment>
+		<wp:comment_id>5002</wp:comment_id>
+		<wp:comment_author><![CDATA[Mike Chen]]></wp:comment_author>
+		<wp:comment_author_email><![CDATA[mike.chen@example.com]]></wp:comment_author_email>
+		<wp:comment_date><![CDATA[2026-03-02 14:15:00]]></wp:comment_date>
+		<wp:comment_content><![CDATA[Good value for the price. Compact and easy to park. The backup camera was a nice bonus. Only downside was the trunk is a bit small for larger luggage.]]></wp:comment_content>
+		<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+		<wp:comment_parent>0</wp:comment_parent>
+		<wp:comment_post_ID>1001</wp:comment_post_ID>
+		<wp:commentmeta><wp:meta_key><![CDATA[_review_rating]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:commentmeta>
+	</wp:comment>
+
+	<wp:comment>
+		<wp:comment_id>5003</wp:comment_id>
+		<wp:comment_author><![CDATA[Emma Williams]]></wp:comment_author>
+		<wp:comment_author_email><![CDATA[emma.w@example.com]]></wp:comment_author_email>
+		<wp:comment_date><![CDATA[2026-03-20 09:45:00]]></wp:comment_date>
+		<wp:comment_content><![CDATA[Great on fuel and super easy to drive. The Bluetooth connected instantly with my phone. Highly recommend for solo travelers or couples.]]></wp:comment_content>
+		<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+		<wp:comment_parent>0</wp:comment_parent>
+		<wp:comment_post_ID>1001</wp:comment_post_ID>
+		<wp:commentmeta><wp:meta_key><![CDATA[_review_rating]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:commentmeta>
+	</wp:comment>
+
+	<!-- Honda Civic Sport (post_id 1002) -->
+	<wp:comment>
+		<wp:comment_id>5004</wp:comment_id>
+		<wp:comment_author><![CDATA[David Park]]></wp:comment_author>
+		<wp:comment_author_email><![CDATA[david.park@example.com]]></wp:comment_author_email>
+		<wp:comment_date><![CDATA[2026-02-28 16:00:00]]></wp:comment_date>
+		<wp:comment_content><![CDATA[The VTEC engine is a blast to drive! Manual transmission was smooth and responsive. Great car for a weekend road trip. Interior was clean and well-maintained.]]></wp:comment_content>
+		<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+		<wp:comment_parent>0</wp:comment_parent>
+		<wp:comment_post_ID>1002</wp:comment_post_ID>
+		<wp:commentmeta><wp:meta_key><![CDATA[_review_rating]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:commentmeta>
+	</wp:comment>
+
+	<wp:comment>
+		<wp:comment_id>5005</wp:comment_id>
+		<wp:comment_author><![CDATA[Lisa Martinez]]></wp:comment_author>
+		<wp:comment_author_email><![CDATA[lisa.m@example.com]]></wp:comment_author_email>
+		<wp:comment_date><![CDATA[2026-03-10 11:20:00]]></wp:comment_date>
+		<wp:comment_content><![CDATA[Sporty and fun to drive. Good fuel economy for the power it has. The infotainment system was modern and easy to use. Would have preferred an automatic option though.]]></wp:comment_content>
+		<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+		<wp:comment_parent>0</wp:comment_parent>
+		<wp:comment_post_ID>1002</wp:comment_post_ID>
+		<wp:commentmeta><wp:meta_key><![CDATA[_review_rating]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:commentmeta>
+	</wp:comment>
+
+</channel>
+</rss>

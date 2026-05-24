@@ -1,0 +1,88 @@
+/**
+ * DriveEase — Single Car Detail Stylesheet
+ *
+ * Extracted from DriveEase/car-a1.html
+ *
+ * @package DriveEase
+ * @since 1.0.0
+ */
+
+/* BREADCRUMB */
+.breadcrumb-bar{background:var(--light-bg);padding:80px 0 0;border-bottom:1px solid var(--border)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--gray);padding:16px 0}
+.breadcrumb a{color:var(--gray);transition:color var(--tr)}.breadcrumb a:hover{color:var(--accent)}.breadcrumb i{font-size:.7rem}
+
+/* GALLERY */
+.gallery-section{background:var(--light-bg);padding:0 0 40px}
+.main-img-wrap{position:relative;border-radius:16px;overflow:hidden;height:460px;background:#e0e4ec;cursor:zoom-in}
+.main-img-wrap img{width:100%;height:100%;object-fit:cover;transition:opacity .3s ease}
+.car-badge-det{position:absolute;top:16px;left:16px;background:var(--accent);color:var(--white);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;border-radius:100px}
+.thumbs{display:flex;gap:12px;margin-top:14px}
+.thumb{flex:1;height:100px;border-radius:10px;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color var(--tr),transform var(--tr)}
+.thumb:hover{transform:translateY(-2px)}.thumb.active{border-color:var(--accent)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+
+/* DETAIL LAYOUT */
+.detail-section{padding:48px 0 80px}
+.detail-layout{display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:start}
+
+/* SPECS */
+.specs-box{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;margin-bottom:28px}
+.specs-box h3{font-size:1.1rem;font-weight:800;padding:20px 24px;border-bottom:1px solid var(--border)}
+.specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.spec-row{display:flex;flex-direction:column;padding:16px 24px;border-bottom:1px solid var(--border)}
+.spec-row:nth-child(odd){border-right:1px solid var(--border)}
+.spec-row:nth-last-child(-n+2){border-bottom:none}
+.spec-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);margin-bottom:4px}
+.spec-val{font-size:.95rem;font-weight:600;color:var(--dark)}
+
+/* FEATURES */
+.features-box{background:var(--white);border-radius:var(--radius);border:1px solid var(--border)}
+.features-box h3{font-size:1.1rem;font-weight:800;padding:20px 24px;border-bottom:1px solid var(--border)}
+.features-list{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.feature-item{display:flex;align-items:center;gap:12px;padding:14px 24px;border-bottom:1px solid var(--border)}
+.feature-item:nth-child(odd){border-right:1px solid var(--border)}
+.feature-item:nth-last-child(-n+2){border-bottom:none}
+.feature-icon{width:36px;height:36px;background:rgba(232,93,38,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:var(--accent);flex-shrink:0}
+.feature-item span{font-size:.88rem;font-weight:500}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:88px}
+.sidebar-card{background:var(--white);border-radius:16px;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,.08);padding:24px}
+.sidebar-price{font-size:2rem;font-weight:800;color:var(--dark);margin-bottom:4px}
+.sidebar-price span{font-size:1rem;font-weight:400;color:var(--gray)}
+.sidebar-sub{font-size:.82rem;color:var(--gray);margin-bottom:20px}
+.sidebar-divider{border:none;border-top:1px solid var(--border);margin:16px 0}
+.sb-field{margin-bottom:14px}
+.sb-field label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);margin-bottom:6px}
+.sb-field select,.sb-field input{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:.9rem;font-family:'Inter',sans-serif;color:var(--dark);background:var(--white);outline:none;transition:border-color var(--tr);appearance:none;-webkit-appearance:none}
+.sb-field select:focus,.sb-field input:focus{border-color:var(--accent)}
+.total-box{background:var(--light-bg);border-radius:10px;padding:14px 16px;margin:16px 0}
+.total-row{display:flex;justify-content:space-between;font-size:.85rem;color:var(--gray);padding:3px 0}
+.total-row.grand{font-size:1.05rem;font-weight:800;color:var(--dark);padding-top:10px;margin-top:6px;border-top:1.5px solid var(--border)}
+.sidebar-card .btn{width:100%;justify-content:center;margin-top:8px;font-size:1rem}
+.sidebar-note{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--gray);margin-top:14px}
+.sidebar-note i{color:var(--accent)}
+
+/* SIMILAR CARS */
+.similar-section{padding:0 0 80px}
+.similar-header{margin-bottom:32px}
+.similar-header h2{font-size:1.5rem;font-weight:800}
+.similar-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.car-badge-s{position:absolute;top:10px;left:10px;color:var(--white);font-size:.7rem;font-weight:700;text-transform:uppercase;padding:3px 10px;border-radius:100px}
+.car-class-s{font-size:.8rem;color:var(--gray);margin-bottom:12px}
+.car-specs-s{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.spec-s{display:flex;align-items:center;gap:5px;font-size:.8rem;color:var(--gray)}.spec-s i{color:var(--accent);font-size:.8rem}
+.car-footer-s{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--border)}
+.price-s{font-size:1.2rem;font-weight:800}.price-s span{font-size:.78rem;font-weight:400;color:var(--gray)}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .detail-layout{grid-template-columns:1fr}
+  .sidebar{position:static}
+}
+@media(max-width:600px){
+  .similar-grid{grid-template-columns:1fr}
+  .main-img-wrap{height:280px}
+  .thumbs{gap:8px}
+}

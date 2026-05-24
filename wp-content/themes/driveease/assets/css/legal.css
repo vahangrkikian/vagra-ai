@@ -1,0 +1,149 @@
+/**
+ * Legal Pages — Terms of Service & Privacy Policy
+ *
+ * @package DriveEase
+ * @since 1.0.0
+ */
+
+/* ── Hero ─────────────────────────────────────────────────────────── */
+.legal-hero {
+	background: var(--dark);
+	color: #fff;
+	padding: clamp(5rem, 10vw, 8rem) 0 clamp(2.5rem, 5vw, 4rem);
+	text-align: center;
+}
+
+.legal-hero h1 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 800;
+	margin: 0.5rem 0 0.75rem;
+}
+
+.legal-updated {
+	font-size: 0.95rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Content Area ─────────────────────────────────────────────────── */
+.legal-content {
+	padding: clamp(2.5rem, 5vw, 4rem) 0;
+}
+
+.legal-body {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* ── Sections ─────────────────────────────────────────────────────── */
+.legal-section {
+	margin-bottom: 2.5rem;
+	padding-bottom: 2.5rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.legal-section:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.legal-section h2 {
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--dark);
+	margin: 0 0 1rem;
+}
+
+/* ── Typography ───────────────────────────────────────────────────── */
+.legal-body p {
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: var(--gray);
+	margin: 0 0 1rem;
+}
+
+.legal-body p:last-child {
+	margin-bottom: 0;
+}
+
+/* ── Ordered Lists ────────────────────────────────────────────────── */
+.legal-body ol {
+	counter-reset: legal-counter;
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+}
+
+.legal-body ol li {
+	counter-increment: legal-counter;
+	position: relative;
+	padding-left: 2.25rem;
+	margin-bottom: 0.75rem;
+	font-size: 1.05rem;
+	line-height: 1.7;
+	color: var(--gray);
+}
+
+.legal-body ol li::before {
+	content: counter(legal-counter) ".";
+	position: absolute;
+	left: 0;
+	font-weight: 600;
+	color: var(--accent);
+	min-width: 1.75rem;
+}
+
+/* ── Entry Content (user-authored via WP editor) ──────────────────── */
+.legal-body .entry-content h2 {
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--dark);
+	margin: 2.5rem 0 1rem;
+	padding-top: 2.5rem;
+	border-top: 1px solid var(--border);
+}
+
+.legal-body .entry-content h2:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
+}
+
+.legal-body .entry-content h3 {
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: var(--dark);
+	margin: 1.5rem 0 0.75rem;
+}
+
+.legal-body .entry-content p {
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: var(--gray);
+	margin: 0 0 1rem;
+}
+
+.legal-body .entry-content ol,
+.legal-body .entry-content ul {
+	margin: 1rem 0;
+	padding-left: 2.25rem;
+}
+
+.legal-body .entry-content li {
+	font-size: 1.05rem;
+	line-height: 1.7;
+	color: var(--gray);
+	margin-bottom: 0.5rem;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+	.legal-body {
+		padding: 0 0.5rem;
+	}
+
+	.legal-section {
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+	}
+}

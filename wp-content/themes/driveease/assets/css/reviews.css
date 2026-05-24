@@ -1,0 +1,68 @@
+/**
+ * DriveEase — Reviews Stylesheet
+ *
+ * @package DriveEase
+ * @since 1.0.2
+ */
+
+/* STAR COLORS */
+.driveease-stars{display:inline-flex;gap:2px;color:#f5a623;font-size:.9rem}
+.driveease-stars .fa-regular{color:var(--border)}
+
+/* AVERAGE RATING (single car page) */
+.reviews-summary{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.reviews-summary-score{font-size:2.4rem;font-weight:800;color:var(--dark);line-height:1}
+.reviews-summary-detail{display:flex;flex-direction:column;gap:2px}
+.reviews-summary-detail .driveease-stars{font-size:1.1rem}
+.reviews-summary-count{font-size:.82rem;color:var(--gray)}
+
+/* REVIEWS LIST */
+.reviews-section{padding:0 0 60px}
+.reviews-box{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;margin-bottom:28px}
+.reviews-box h3{font-size:1.1rem;font-weight:800;padding:20px 24px;border-bottom:1px solid var(--border)}
+.reviews-list{padding:0}
+.review-item{padding:20px 24px;border-bottom:1px solid var(--border)}
+.review-item:last-child{border-bottom:none}
+.review-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.review-author{font-size:.9rem;font-weight:700;color:var(--dark)}
+.review-date{font-size:.78rem;color:var(--gray)}
+.review-rating{margin-bottom:8px}
+.review-content{font-size:.9rem;line-height:1.6;color:#444}
+.reviews-empty{padding:24px;text-align:center;color:var(--gray);font-size:.9rem}
+
+/* REVIEW FORM */
+.review-form-box{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden}
+.review-form-box h3{font-size:1.1rem;font-weight:800;padding:20px 24px;border-bottom:1px solid var(--border)}
+.review-form-inner{padding:24px}
+.review-form-message{padding:20px 24px;font-size:.9rem;color:var(--gray);line-height:1.5}
+.review-form-message a{color:var(--accent);font-weight:600}
+
+/* STAR PICKER */
+.star-picker{display:inline-flex;gap:4px;cursor:pointer;font-size:1.4rem;margin-bottom:16px}
+.star-picker .star-pick{color:var(--border);transition:color .15s ease;cursor:pointer;background:none;border:none;padding:0;font-size:inherit}
+.star-picker .star-pick.active,.star-picker .star-pick:hover{color:#f5a623}
+.star-picker:hover .star-pick{color:var(--border)}
+.star-picker:hover .star-pick:hover,.star-picker:hover .star-pick:hover ~ .star-pick-prev,.star-picker .star-pick.hovered{color:#f5a623}
+.star-picker-label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);margin-bottom:8px}
+
+/* FORM FIELDS */
+.review-form-inner .review-field{margin-bottom:16px}
+.review-form-inner textarea{width:100%;min-height:100px;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:.9rem;font-family:'Inter',sans-serif;color:var(--dark);resize:vertical;outline:none;transition:border-color var(--tr)}
+.review-form-inner textarea:focus{border-color:var(--accent)}
+.review-form-inner .btn{margin-top:4px}
+.review-form-notice{margin-top:12px;font-size:.82rem;padding:10px 14px;border-radius:8px}
+.review-form-notice.success{background:rgba(34,197,94,.1);color:#16a34a}
+.review-form-notice.error{background:rgba(239,68,68,.1);color:#dc2626}
+
+/* RATING ON CAR CARDS (archive) */
+.car-rating{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.car-rating .driveease-stars{font-size:.78rem}
+.car-rating-num{font-size:.82rem;font-weight:700;color:var(--dark)}
+.car-rating-count{font-size:.75rem;color:var(--gray)}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+	.reviews-summary{gap:12px}
+	.reviews-summary-score{font-size:1.8rem}
+	.star-picker{font-size:1.2rem}
+}
