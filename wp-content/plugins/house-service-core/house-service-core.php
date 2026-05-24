@@ -423,6 +423,13 @@ add_filter( 'manage_edit-hs_provider_sortable_columns', 'hs_provider_sortable_co
 
 require_once HS_CORE_PATH . 'inc/class-hs-rest.php';
 
+/* -----------------------------------------------------------------------
+ * Elementor Integration
+ * --------------------------------------------------------------------- */
+
+require_once HS_CORE_PATH . 'inc/class-hs-elementor.php';
+HS_Elementor::instance();
+
 /**
  * Register REST API routes.
  */

@@ -28,7 +28,7 @@ function hs_demo_import_files() {
 add_filter( 'ocdi/import_files', 'hs_demo_import_files' );
 
 /**
- * After import: set front page, menus, etc.
+ * After import: set front page, menus, import Elementor templates.
  */
 function hs_after_demo_import() {
     // Set front page.
@@ -44,6 +44,20 @@ function hs_after_demo_import() {
         $locations = get_theme_mod( 'nav_menu_locations', array() );
         $locations['primary'] = $primary_menu->term_id;
         set_theme_mod( 'nav_menu_locations', $locations );
+    }
+
+    // Import Elementor templates for the home page.
+    if ( $front_page && defined( 'ELEMENTOR_VERSION' ) ) {
+        $json_file = get_template_directory() . '/demo-content/elementor/home.json';
+        if ( file_exists( $json_file ) ) {
+            $data = json_decode( file_get_contents( $json_file ), true );
+            if ( $data ) {
+                update_post_meta( $front_page->ID, '_elementor_data', wp_slash( wp_json_encode( $data ) ) );
+                update_post_meta( $front_page->ID, '_elementor_edit_mode', 'builder' );
+                update_post_meta( $front_page->ID, '_elementor_template_type', 'wp-page' );
+                update_post_meta( $front_page->ID, '_elementor_version', ELEMENTOR_VERSION );
+            }
+        }
     }
 }
 add_action( 'ocdi/after_import', 'hs_after_demo_import' );

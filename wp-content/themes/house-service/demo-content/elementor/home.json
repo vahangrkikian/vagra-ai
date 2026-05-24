@@ -1,0 +1,78 @@
+[
+  {
+    "id": "hs-hero",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "hs-hero-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "hs-hero-w", "elType": "widget", "widgetType": "hs_hero", "settings": {
+        "eyebrow": "240+ verified providers",
+        "title": "Find reliable service companies near you.",
+        "subtitle": "Cleaners, movers, repair pros, assembly teams — background-checked, reviewed by real customers, and ready to book this week.",
+        "search_placeholder_service": "What do you need?",
+        "search_placeholder_location": "City or ZIP",
+        "bg_image": {"url": ""}
+      }}
+    ]}]
+  },
+  {
+    "id": "hs-categories",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "hs-cat-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "hs-cat-w", "elType": "widget", "widgetType": "hs_categories", "settings": {
+        "eyebrow": "Categories",
+        "heading": "What can we help with?",
+        "description": "Browse by service type to find the right team for the job.",
+        "categories": [
+          {"title": "Cleaning", "desc": "Deep cleans, move-out, office cleaning, and regular maintenance.", "icon_name": "cleaning", "count": 64},
+          {"title": "Moving", "desc": "Local moves, long-distance, packing services, and storage.", "icon_name": "moving", "count": 38},
+          {"title": "Repair", "desc": "Plumbing, electrical, HVAC, appliance repair, and handyman.", "icon_name": "repair", "count": 92},
+          {"title": "Assembly", "desc": "Furniture assembly, TV mounting, shelving, and installations.", "icon_name": "assembly", "count": 51}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "hs-providers",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "hs-prov-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "hs-prov-w", "elType": "widget", "widgetType": "hs_providers", "settings": {
+        "eyebrow": "Top rated",
+        "heading": "Featured providers",
+        "description": "Vetted companies with outstanding track records and verified reviews.",
+        "count": 3
+      }}
+    ]}]
+  },
+  {
+    "id": "hs-how-it-works",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "hs-hiw-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "hs-hiw-w", "elType": "widget", "widgetType": "hs_how_it_works", "settings": {
+        "eyebrow": "Simple process",
+        "heading": "How it works",
+        "description": "Get matched with the right pro in three easy steps.",
+        "steps": [
+          {"step_number": "1", "title": "Describe your project", "desc": "Tell us what you need — cleaning, moving, repair, or assembly — and your location."},
+          {"step_number": "2", "title": "Compare providers", "desc": "Browse verified pros, read real reviews, and compare quotes side by side."},
+          {"step_number": "3", "title": "Book & relax", "desc": "Pick the best match, confirm the schedule, and let the pros handle the rest."}
+        ]
+      }}
+    ]}]
+  },
+  {
+    "id": "hs-cta",
+    "elType": "section",
+    "settings": {"layout": "full_width", "gap": "no", "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}},
+    "elements": [{"id": "hs-cta-col", "elType": "column", "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true}}, "elements": [
+      {"id": "hs-cta-w", "elType": "widget", "widgetType": "hs_cta", "settings": {
+        "heading": "Ready to find your pro?",
+        "description": "Browse verified providers, compare quotes, and book the right team for your home project — all in one place.",
+        "cta_text": "Browse providers",
+        "cta_url": {"url": ""}
+      }}
+    ]}]
+  }
+]
