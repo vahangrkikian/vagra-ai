@@ -181,6 +181,28 @@ function carvice_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'carvice_enqueue_assets' );
 
+/**
+ * Inline mobile navigation toggle script.
+ */
+function carvice_mobile_nav_script() {
+    ?>
+    <script>
+    (function() {
+        var btn = document.querySelector('.carvice-hamburger');
+        var nav = document.querySelector('.carvice-nav');
+        if (!btn || !nav) return;
+        btn.addEventListener('click', function() {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            btn.classList.toggle('is-active');
+            nav.classList.toggle('is-open');
+        });
+    })();
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'carvice_mobile_nav_script' );
+
 // Demo import (OCDI).
 require_once get_template_directory() . '/inc/demo-import.php';
 

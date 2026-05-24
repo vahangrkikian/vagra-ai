@@ -83,6 +83,13 @@
                 </a>
             <?php endif; ?>
         </div>
+
+        <!-- Mobile hamburger -->
+        <button class="carvice-hamburger" aria-label="<?php esc_attr_e( 'Toggle menu', 'carvice' ); ?>" aria-expanded="false">
+            <span class="carvice-hamburger__line"></span>
+            <span class="carvice-hamburger__line"></span>
+            <span class="carvice-hamburger__line"></span>
+        </button>
     </div>
 </header>
 
