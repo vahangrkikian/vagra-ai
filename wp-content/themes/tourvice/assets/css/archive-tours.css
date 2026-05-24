@@ -1,0 +1,187 @@
+/**
+ * TourVice — Tour Archive Stylesheet
+ *
+ * Search, location filters, tour grid for the tours listing page.
+ *
+ * @package TourVice
+ * @since   1.0.0
+ */
+
+/* ================================================================
+   ARCHIVE HERO / SEARCH BAR
+   ================================================================ */
+
+.tourvice-archive-hero {
+  background: linear-gradient(to bottom, var(--earth-50), white);
+  padding: 3rem 0;
+}
+
+.tourvice-archive-hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 2rem;
+}
+
+.tourvice-archive-hero__search {
+  margin-bottom: 1.5rem;
+}
+
+.tourvice-search-bar {
+  position: relative;
+}
+
+.tourvice-search-bar__icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--earth-400);
+  width: 1.25rem;
+  height: 1.25rem;
+  pointer-events: none;
+}
+
+.tourvice-search-bar__input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 2px solid var(--earth-200);
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  color: var(--earth-900);
+  outline: none;
+  transition: border-color var(--transition-base);
+  background-color: white;
+}
+
+.tourvice-search-bar__input::placeholder {
+  color: var(--earth-400);
+}
+
+.tourvice-search-bar__input:focus {
+  border-color: var(--sage-600);
+}
+
+/* ================================================================
+   LOCATION FILTERS
+   ================================================================ */
+
+.tourvice-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tourvice-filters__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--earth-600);
+  font-weight: 500;
+}
+
+.tourvice-filters__label svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.tourvice-filters__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tourvice-filter-pill {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  transition: all var(--transition-base);
+  background-color: var(--earth-100);
+  color: var(--earth-600);
+  border: none;
+  cursor: pointer;
+}
+
+.tourvice-filter-pill:hover {
+  background-color: var(--earth-200);
+}
+
+.tourvice-filter-pill--active {
+  background-color: var(--sage-600);
+  color: white;
+}
+
+.tourvice-filter-pill--active:hover {
+  background-color: var(--sage-700);
+}
+
+/* ================================================================
+   TOUR COUNT
+   ================================================================ */
+
+.tourvice-tour-count {
+  color: var(--earth-600);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ================================================================
+   TOUR GRID
+   ================================================================ */
+
+.tourvice-tour-listing {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.tourvice-tour-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ================================================================
+   EMPTY STATE
+   ================================================================ */
+
+.tourvice-empty-state {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.tourvice-empty-state__icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  color: var(--earth-300);
+}
+
+.tourvice-empty-state__text {
+  font-size: 1.25rem;
+  color: var(--earth-600);
+  margin-bottom: 0.5rem;
+}
+
+.tourvice-empty-state__hint {
+  font-size: 0.875rem;
+  color: var(--earth-400);
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (min-width: 768px) {
+  .tourvice-tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tourvice-tour-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

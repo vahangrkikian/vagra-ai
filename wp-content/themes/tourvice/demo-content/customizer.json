@@ -1,0 +1,7 @@
+{
+    "show_on_front": "page",
+    "page_on_front": "{{home}}",
+    "page_for_posts": "{{blog}}",
+    "tourvice_chat_enabled": true,
+    "tourvice_chat_title": "Armenia Travel Assistant"
+}

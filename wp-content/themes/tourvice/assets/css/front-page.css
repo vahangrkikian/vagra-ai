@@ -1,0 +1,570 @@
+/**
+ * TourVice — Front Page Stylesheet
+ *
+ * Hero carousel, featured tours, group discounts, testimonials, newsletter.
+ *
+ * @package TourVice
+ * @since   1.0.0
+ */
+
+/* ================================================================
+   HERO SECTION (tourvice-hero)
+   ================================================================ */
+
+.tourvice-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tourvice-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.tourvice-hero__image--active {
+  opacity: 1;
+}
+
+.tourvice-hero__image--active.ken-burns {
+  animation: kenBurns 5.5s ease-out forwards;
+}
+
+.tourvice-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  z-index: 1;
+}
+
+.tourvice-hero__content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tourvice-hero__title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.6s ease-out both;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-heading);
+}
+
+.tourvice-hero__subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  animation: fadeIn 0.6s ease-out 0.2s both;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+.tourvice-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  animation: fadeIn 0.6s ease-out 0.4s both;
+}
+
+.tourvice-hero__stats {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.tourvice-hero__stat {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-2xl);
+  padding: 1.25rem 1rem;
+}
+
+.tourvice-hero__stat-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+}
+
+.tourvice-hero__stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+/* Dot indicators */
+.tourvice-hero__dots {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.tourvice-hero__dot {
+  height: 0.25rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  width: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0;
+}
+
+.tourvice-hero__dot--active {
+  width: 2rem;
+  background-color: white;
+}
+
+/* Scroll indicator */
+.tourvice-hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.7);
+  animation: bounce 1s infinite;
+}
+
+.tourvice-hero__scroll-indicator svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* ================================================================
+   FEATURED TOURS SECTION
+   ================================================================ */
+
+.tourvice-featured {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.tourvice-featured__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tourvice-featured__label {
+  color: var(--sage-600);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.tourvice-featured__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1rem;
+}
+
+.tourvice-featured__desc {
+  font-size: 1.125rem;
+  color: var(--earth-500);
+}
+
+.tourvice-featured__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .tourvice-featured__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tourvice-featured__footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.tourvice-featured__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero carousel wrapper */
+.tourvice-hero__carousel {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ================================================================
+   GROUP DISCOUNTS SECTION
+   ================================================================ */
+
+.tourvice-discounts {
+  padding: 6rem 0;
+  background-color: var(--earth-50);
+}
+
+.tourvice-discounts__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tourvice-testimonials__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tourvice-discounts__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tourvice-discounts__label {
+  color: var(--sage-600);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.tourvice-discounts__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1rem;
+}
+
+.tourvice-discounts__desc {
+  font-size: 1.125rem;
+  color: var(--earth-500);
+}
+
+.tourvice-discounts__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.tourvice-discount-tier {
+  padding: 2rem;
+  border-radius: var(--radius-2xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-base);
+}
+
+.tourvice-discount-tier:hover {
+  transform: translateY(-4px);
+}
+
+.tourvice-discount-tier--earth {
+  background: linear-gradient(to bottom right, var(--earth-100), var(--earth-200));
+}
+
+.tourvice-discount-tier--sage-light {
+  background: linear-gradient(to bottom right, var(--sage-100), var(--sage-200));
+}
+
+.tourvice-discount-tier--sage-mid {
+  background: linear-gradient(to bottom right, var(--sage-200), var(--sage-300));
+}
+
+.tourvice-discount-tier--dark {
+  background: linear-gradient(to bottom right, var(--earth-800), var(--earth-900));
+}
+
+.tourvice-discount-tier__badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: var(--sage-500);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+.tourvice-discount-tier__value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--earth-900);
+}
+
+.tourvice-discount-tier--dark .tourvice-discount-tier__value {
+  color: white;
+}
+
+.tourvice-discount-tier__size {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--earth-500);
+}
+
+.tourvice-discount-tier--dark .tourvice-discount-tier__size {
+  color: var(--earth-200);
+}
+
+/* ================================================================
+   TESTIMONIALS SECTION
+   ================================================================ */
+
+.tourvice-testimonials {
+  padding: 7rem 0;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.tourvice-testimonials__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(82, 63, 46, 0.72);
+}
+
+.tourvice-testimonials__inner {
+  position: relative;
+  z-index: 10;
+}
+
+.tourvice-testimonials__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tourvice-testimonials__label {
+  color: var(--sage-300);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.tourvice-testimonials__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.tourvice-testimonials__desc {
+  font-size: 1.125rem;
+  color: var(--earth-200);
+}
+
+.tourvice-testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .tourvice-testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tourvice-testimonial-card {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-2xl);
+  padding: 2rem;
+}
+
+.tourvice-testimonial-card__stars {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.tourvice-testimonial-card__stars svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: #facc15;
+  color: #facc15;
+}
+
+.tourvice-testimonial-card__text {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  line-height: 1.7;
+  font-size: 0.875rem;
+}
+
+.tourvice-testimonial-card__name {
+  font-weight: 600;
+  color: white;
+}
+
+.tourvice-testimonial-card__role {
+  font-size: 0.875rem;
+  color: var(--sage-300);
+  margin-top: 0.125rem;
+}
+
+/* ================================================================
+   NEWSLETTER SECTION
+   ================================================================ */
+
+.tourvice-newsletter {
+  padding: 6rem 0;
+  background-color: var(--sage-600);
+}
+
+.tourvice-newsletter__inner {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.tourvice-newsletter__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.tourvice-newsletter__desc {
+  color: var(--sage-100);
+  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+}
+
+.tourvice-newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tourvice-newsletter__input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-xl);
+  border: none;
+  color: var(--earth-900);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.tourvice-newsletter__input::placeholder {
+  color: var(--earth-400);
+}
+
+.tourvice-newsletter__input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.tourvice-newsletter__btn {
+  background-color: var(--earth-900);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-xl);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  transition: background-color var(--transition-base);
+}
+
+.tourvice-newsletter__btn:hover {
+  background-color: var(--earth-800);
+}
+
+.tourvice-newsletter__btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.tourvice-newsletter__success {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: white;
+  border-radius: var(--radius-xl);
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (min-width: 640px) {
+  .tourvice-hero__actions {
+    flex-direction: row;
+  }
+
+  .tourvice-newsletter__form {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .tourvice-hero__title {
+    font-size: 4.5rem;
+  }
+
+  .tourvice-hero__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .tourvice-featured__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tourvice-discounts__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tourvice-testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .tourvice-hero__title {
+    font-size: 4.5rem;
+  }
+}

@@ -1,0 +1,109 @@
+/*
+Theme Name: TourVice
+Theme URI: https://vagra.ai/tourvice
+Author: vagra.ai
+Author URI: https://vagra.ai
+Description: Luxury Armenian tourism theme — all home page content powered by ACF Gutenberg blocks.
+Version: 0.2.0
+Requires at least: 6.7
+Tested up to: 6.9
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tourvice
+Tags: tourism, travel, booking, one-column, custom-menu, featured-images, translation-ready
+*/
+
+:root {
+    /* ── Earth palette ── */
+    --color-primary: #523f2e;
+    --color-secondary: #3a4d3a;
+    --color-accent: #a98652;
+    --color-background: #ffffff;
+    --color-surface: #faf5f0;
+    --color-text: #3d3226;
+    --color-text-light: #8b7355;
+    --color-border: #e8dcd2;
+
+    --earth-50:  #faf5f0;
+    --earth-100: #f5ede5;
+    --earth-200: #e8dcd2;
+    --earth-300: #d4bfaa;
+    --earth-400: #c9a878;
+    --earth-500: #a98652;
+    --earth-600: #94744b;
+    --earth-700: #7a5d3f;
+    --earth-800: #644d36;
+    --earth-900: #523f2e;
+
+    --sage-50:  #f6f9f6;
+    --sage-100: #ecf3ec;
+    --sage-200: #dae5da;
+    --sage-300: #c0d5c0;
+    --sage-400: #9cbf9c;
+    --sage-500: #7aaa7a;
+    --sage-600: #669466;
+    --sage-700: #557855;
+    --sage-800: #466046;
+    --sage-900: #3a4d3a;
+
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-scale: 1.25;
+
+    --spacing-section: 6rem;
+    --spacing-container: 1200px;
+    --spacing-gap: 2rem;
+
+    --radius: 0.5rem;
+    --radius-button: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--color-text); background-color: var(--color-background); line-height: 1.6; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); color: var(--color-primary); line-height: 1.2; margin-bottom: 0.5em; }
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.3rem, 2vw, 1.8rem); }
+
+.container { max-width: var(--spacing-container); margin: 0 auto; padding: 0 1.5rem; }
+.section { padding: var(--spacing-section) 0; }
+.btn-primary {
+    display: inline-block;
+    padding: 0.875rem 2.25rem;
+    background: linear-gradient(135deg, var(--color-accent), var(--earth-600));
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-button);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-transform: uppercase;
+}
+.btn-primary:hover { opacity: 0.9; text-decoration: none; color: #ffffff; transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+.card {
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+.card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }

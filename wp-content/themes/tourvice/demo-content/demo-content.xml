@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- WordPress eXtended RSS (WXR) file — TourVice Demo Content -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>TourVice Demo</title>
+	<link>http://tourvice.vagraai.local</link>
+	<description>TourVice luxury Armenia tours demo content</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://tourvice.vagraai.local</wp:base_site_url>
+	<wp:base_blog_url>http://tourvice.vagraai.local</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[admin@vagraai.local]]></wp:author_email>
+		<wp:author_display_name><![CDATA[TourVice Team]]></wp:author_display_name>
+	</wp:author>
+
+	<!-- ============================================================
+	     TAXONOMY: tour_location
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>10</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[tsaghkadzor]]></wp:term_slug>
+		<wp:term_name><![CDATA[Tsaghkadzor]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>11</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[dilijan]]></wp:term_slug>
+		<wp:term_name><![CDATA[Dilijan]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>12</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[tatev]]></wp:term_slug>
+		<wp:term_name><![CDATA[Tatev]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>13</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[mount-aragats]]></wp:term_slug>
+		<wp:term_name><![CDATA[Mount Aragats]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>14</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[garni]]></wp:term_slug>
+		<wp:term_name><![CDATA[Garni]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>15</wp:term_id>
+		<wp:term_taxonomy>tour_location</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[multiple-regions]]></wp:term_slug>
+		<wp:term_name><![CDATA[Multiple Regions]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: tour_type
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>20</wp:term_id>
+		<wp:term_taxonomy>tour_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[nature]]></wp:term_slug>
+		<wp:term_name><![CDATA[Nature]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>21</wp:term_id>
+		<wp:term_taxonomy>tour_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[cultural]]></wp:term_slug>
+		<wp:term_name><![CDATA[Cultural]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>22</wp:term_id>
+		<wp:term_taxonomy>tour_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[adventure]]></wp:term_slug>
+		<wp:term_name><![CDATA[Adventure]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>23</wp:term_id>
+		<wp:term_taxonomy>tour_type</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[heritage]]></wp:term_slug>
+		<wp:term_name><![CDATA[Heritage]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: category (for blog posts)
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>40</wp:term_id>
+		<wp:term_taxonomy>category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[travel-tips]]></wp:term_slug>
+		<wp:term_name><![CDATA[Travel Tips]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>41</wp:term_id>
+		<wp:term_taxonomy>category</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[culture]]></wp:term_slug>
+		<wp:term_name><![CDATA[Culture]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     TAXONOMY: nav_menu
+	     ============================================================ -->
+	<wp:term>
+		<wp:term_id>30</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[primary]]></wp:term_slug>
+		<wp:term_name><![CDATA[Primary]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>31</wp:term_id>
+		<wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+		<wp:term_slug><![CDATA[footer]]></wp:term_slug>
+		<wp:term_name><![CDATA[Footer]]></wp:term_name>
+	</wp:term>
+
+	<!-- ============================================================
+	     PAGES
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://tourvice.vagraai.local/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Uses front-page.php template</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 10:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[front-page.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Blog</title>
+		<link>http://tourvice.vagraai.local/blog/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 10:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[blog]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://tourvice.vagraai.local/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We would love to hear from you. Whether you are planning your first trip to Armenia or looking to craft a bespoke luxury itinerary, our travel specialists are here to help.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Email:</strong> info@tourvice.vagraai.local</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Phone:</strong> +374 (10) 555-789</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Office:</strong> 12 Abovyan Street, Yerevan, Armenia</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 10:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-contact.php]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     TOURS (vagra_tour CPT)
+	     ============================================================ -->
+
+	<!-- Tour 1: Nature & Landscapes -->
+	<item>
+		<title>Nature &amp; Landscapes</title>
+		<link>http://tourvice.vagraai.local/tour/nature-landscapes/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Immerse yourself in the breathtaking natural beauty of Armenia on this extraordinary seven-day journey through some of the country's most stunning landscapes. From the serene shores of Lake Sevan, the largest alpine lake in the Caucasus, to the dramatic basalt columns of Garni Gorge, every day reveals a new masterpiece sculpted by millennia of geological wonder. Our expert naturalist guides lead you through pristine valleys carpeted with wildflowers, across highland meadows where eagles soar, and along ancient trails that wind through forests untouched by time.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This carefully curated itinerary balances invigorating hikes with moments of tranquil contemplation. You will photograph golden sunsets over volcanic peaks, explore vibrant local markets brimming with handmade crafts and seasonal produce, and spend evenings in traditional village homestays where Armenian hospitality comes alive. Each meal is a celebration of farm-to-table cuisine, featuring freshly baked lavash, aromatic herbs gathered from the mountainside, and wines from family-owned vineyards that have been producing for generations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Whether you are a seasoned trekker or a leisure traveler seeking a deeper connection with nature, this tour offers an intimate encounter with Armenia's wild heart. Small group sizes ensure personalized attention, while our luxury accommodations provide the perfect retreat after each day of discovery. This is not merely a tour — it is an awakening to the raw, unspoiled grandeur of the Armenian highlands.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>200</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[nature-landscapes]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="multiple-regions"><![CDATA[Multiple Regions]]></category>
+		<category domain="tour_type" nicename="nature"><![CDATA[Nature]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[2499]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.9]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[7 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[12]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[15]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Nature hikes
+Sunset views
+Local markets
+Traditional villages]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival & Orientation
+Day 2: Mountain exploration & Photography
+Day 3: Local culture immersion
+Day 4: Lake Sevan visit
+Day 5: Garni canyon hike
+Day 6: Village homestay
+Day 7: Farewell dinner]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 2: Ancient Temples -->
+	<item>
+		<title>Ancient Temples</title>
+		<link>http://tourvice.vagraai.local/tour/ancient-temples/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Step back in time on this magnificent ten-day cultural odyssey through Armenia's most sacred and architecturally significant temple sites. Centered around the iconic Garni Temple — the only standing Greco-Roman colonnade temple in the former Soviet Union — this tour unveils layer upon layer of history spanning nearly three thousand years. Accompanied by expert archaeologists and cultural historians, you will walk the same stone paths that kings, priests, and pilgrims have traversed since antiquity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Your journey extends far beyond Garni to encompass a constellation of UNESCO-worthy monasteries and sacred sites. Explore the hauntingly beautiful Geghard Monastery, partially carved into the living rock of a mountainside, where medieval chanting still echoes through candlelit chambers. Visit the spiritual heart of Armenian Christianity at Echmiadzin, the world's oldest cathedral, and stand in awe before the celestial frescoes of Akhtala Fortress. Each site is presented with rich context — not as a ruin, but as a living chapter in one of civilization's oldest continuous narratives.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Between site visits, indulge in the finest that Armenian hospitality has to offer. Dine in restored medieval caravanserais, attend private performances of traditional sacred music, and retire each evening to boutique accommodations that blend historical character with modern luxury. This is cultural travel at its most profound — a journey that does not merely show you ancient stones, but helps you feel the pulse of a civilization that has endured for millennia.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>201</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[ancient-temples]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="garni"><![CDATA[Garni]]></category>
+		<category domain="tour_type" nicename="cultural"><![CDATA[Cultural]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[3299]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[10 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[10]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[10]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Garni Temple
+Monastery visits
+Sacred sites
+Expert guides]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival in Yerevan & welcome dinner
+Day 2: Garni Temple & Garni Gorge
+Day 3: Geghard Monastery & lavash baking
+Day 4: Echmiadzin Cathedral & Treasury
+Day 5: Khor Virap with Ararat views
+Day 6: Noravank Monastery & Areni wine region
+Day 7: Tatev Monastery via Wings of Tatev
+Day 8: Sevanavank on Lake Sevan
+Day 9: Haghpat & Sanahin Monasteries
+Day 10: Farewell ceremony & departure]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 3: Mountain Peak Quest -->
+	<item>
+		<title>Mountain Peak Quest</title>
+		<link>http://tourvice.vagraai.local/tour/mountain-peak-quest/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Conquer the rooftop of Armenia on this exhilarating five-day adventure to the summit of Mount Aragats, the country's highest peak at 4,090 meters. Designed for active travelers who crave altitude and adrenaline, this expedition combines serious mountain trekking with the comforts and culinary excellence that define the TourVice experience. From your base camp at the Aragats cosmic ray research station, you will ascend through four distinct climate zones, witnessing the landscape transform from alpine meadows to stark volcanic terrain dusted with eternal snow.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Our certified mountain guides ensure your safety while sharing the rich geological and cultural history of this ancient volcano. Photograph rare alpine flora found nowhere else on earth, spot golden eagles riding thermals above the crater lake, and savor panoramic views that stretch from the Ararat plain to the peaks of Georgia. Evenings are spent around campfires at premium glamping sites, where our private chef prepares gourmet meals featuring local mountain herbs, fresh trout, and Armenian brandy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is more than a hike — it is a transformative encounter with one of the Caucasus region's most majestic summits. Whether you aim for the southern peak or push to the true summit, you will return home with photographs, memories, and a sense of achievement that only the mountains can bestow.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>202</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:20:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[mountain-peak-quest]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="mount-aragats"><![CDATA[Mount Aragats]]></category>
+		<category domain="tour_type" nicename="adventure"><![CDATA[Adventure]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[1899]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.7]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Mt. Aragats hike
+Mountain views
+Local cuisine
+Photography]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival & acclimatization at base camp
+Day 2: Southern peak ascent & photography
+Day 3: Crater lake exploration & geology walk
+Day 4: Summit push & celebration dinner
+Day 5: Descent & departure]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 4: Alpine Retreat -->
+	<item>
+		<title>Alpine Retreat</title>
+		<link>http://tourvice.vagraai.local/tour/alpine-retreat/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Escape to the pristine alpine wonderland of Tsaghkadzor, Armenia's premier mountain resort, on this rejuvenating six-day retreat designed for those who seek both adventure and serenity. Nestled at 1,841 meters in the lush Marmarik River valley, Tsaghkadzor — meaning "Valley of Flowers" — lives up to its name with meadows ablaze in seasonal wildflowers, dense pine forests, and crisp mountain air that invigorates the soul from the first breath.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Your days unfold at a luxurious pace. Morning hikes along scenic alpine trails lead to panoramic viewpoints where the snow-capped Caucasus range stretches to the horizon. Afternoons are yours to explore — ride the aerial tramway to the summit for breathtaking vistas, visit the 11th-century Kecharis Monastery complex nestled among the pines, or simply unwind at the resort spa with traditional Armenian wellness treatments. As the sun sets behind the mountains, gather for exquisite multi-course dinners featuring regional specialties — herb-crusted lamb, vine-leaf dolma, and award-winning Armenian wines.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This retreat is ideal for couples, families, and small groups seeking a refined mountain getaway without sacrificing comfort. Every detail has been considered, from the selection of premium resort accommodations to the curated excursions that reveal the hidden treasures of Tsaghkadzor's enchanting landscape. Return home refreshed, restored, and forever enchanted by the alpine beauty of Armenia.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>203</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:30:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[alpine-retreat]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="tsaghkadzor"><![CDATA[Tsaghkadzor]]></category>
+		<category domain="tour_type" nicename="nature"><![CDATA[Nature]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[2199]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.9]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[6 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[15]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Alpine trails
+Resort stays
+Local dining
+Mountain sunsets]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival at Tsaghkadzor resort & welcome reception
+Day 2: Alpine trail hike & Kecharis Monastery
+Day 3: Aerial tramway & panoramic photography
+Day 4: Spa day & cooking class
+Day 5: Marmarik valley exploration & sunset dinner
+Day 6: Farewell brunch & departure]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 5: Cultural Heritage -->
+	<item>
+		<title>Cultural Heritage</title>
+		<link>http://tourvice.vagraai.local/tour/cultural-heritage/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Discover the living cultural treasures of Dilijan, often called the "Armenian Switzerland," on this immersive eight-day heritage experience. This enchanting town, cradled in the forested mountains of Tavush province, has been a haven for artists, writers, and craftspeople for centuries. Our tour peels back the layers of this creative sanctuary, inviting you to not merely observe Armenian heritage but to actively participate in its continuation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Wander through the lovingly restored Sharambeyan Street, where traditional workshops have been revived by a new generation of artisans. Try your hand at pottery on a medieval-style wheel, learn the ancient art of carpet weaving from master craftswomen, and join local families for hands-on cooking classes where centuries-old recipes are shared like cherished heirlooms. Visit the medieval monasteries of Haghartsin and Goshavank, where intricate khachkars — carved stone crosses — represent the pinnacle of Armenian decorative art.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Each evening brings new cultural encounters: private concerts of duduk music in candlelit monastery halls, storytelling sessions with village elders, and feasts prepared using ingredients foraged from the surrounding forests. Accommodations range from charming heritage guesthouses to boutique hotels that celebrate Dilijan's artistic spirit. This tour is a love letter to Armenian culture — intimate, authentic, and profoundly moving.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>204</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:40:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[cultural-heritage]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="dilijan"><![CDATA[Dilijan]]></category>
+		<category domain="tour_type" nicename="heritage"><![CDATA[Heritage]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[1699]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[8 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[12]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[20]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Market tours
+Craft workshops
+Monastery visits
+Cooking classes]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival in Dilijan & town orientation
+Day 2: Sharambeyan Street artisan workshops
+Day 3: Haghartsin Monastery & forest walk
+Day 4: Pottery & carpet weaving masterclass
+Day 5: Goshavank Monastery & khachkar study
+Day 6: Farm-to-table cooking class
+Day 7: Village immersion & duduk concert
+Day 8: Farewell market visit & departure]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 6: Adventure Trails -->
+	<item>
+		<title>Adventure Trails</title>
+		<link>http://tourvice.vagraai.local/tour/adventure-trails/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Embark on the ultimate Armenian adventure with this nine-day expedition through the dramatic landscapes surrounding Tatev, home to one of the world's most spectacular monastery complexes and the record-breaking Wings of Tatev aerial tramway. This tour is crafted for intrepid spirits who seek thrilling outdoor challenges set against a backdrop of jaw-dropping natural beauty and centuries of monastic history.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Your adventure begins with the exhilarating 5.7-kilometer ride on the Wings of Tatev, soaring above the Vorotan River gorge to reach the 9th-century Tatev Monastery perched on a cliff edge. From there, the trails beckon — multi-day hikes through the Syunik highlands, rock climbing on volcanic basalt formations, mountain biking along shepherds' paths, and river crossings that test your mettle while rewarding you with pristine swimming holes and hidden waterfalls. Our professional adventure guides hold international certifications and carry state-of-the-art safety equipment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>But adventure does not mean roughing it. Each evening, return to carefully selected accommodations — from luxury eco-lodges perched above the gorge to restored stone village houses where roaring fireplaces and home-cooked feasts await. This is adventure travel elevated to an art form, where every adrenaline rush is balanced with the warmth and generosity that define Armenian hospitality.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>205</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 09:50:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[adventure-trails]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="tatev"><![CDATA[Tatev]]></category>
+		<category domain="tour_type" nicename="adventure"><![CDATA[Adventure]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[2899]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.9]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[9 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[10]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[10]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Tatev Monastery
+Hiking
+Adventure activities
+Professional guides]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival & gear briefing
+Day 2: Wings of Tatev & monastery exploration
+Day 3: Vorotan gorge hike & river crossing
+Day 4: Rock climbing & basalt formations
+Day 5: Mountain biking the highland trails
+Day 6: Waterfall trek & wild swimming
+Day 7: Syunik highlands multi-day trail
+Day 8: Village homestay & feast
+Day 9: Summit sunrise & departure]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 7: Artisan Experience -->
+	<item>
+		<title>Artisan Experience</title>
+		<link>http://tourvice.vagraai.local/tour/artisan-experience/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Unlock the creative soul of Armenia on this exquisite seven-day artisan journey through Dilijan and its surrounding villages. This tour is a masterclass in living tradition, designed for culturally curious travelers who wish to go beyond sightseeing and engage directly with the artists, craftspeople, and makers who are preserving Armenia's extraordinary artistic heritage while pushing it boldly into the future.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Each day brings a new creative encounter. Spend a morning in the studio of a master woodcarver whose family has been shaping walnut wood for five generations. Afternoon workshops introduce you to the ancient arts of Armenian miniature painting, traditional jewelry making with semi-precious stones from the Armenian highlands, and the meditative craft of illuminated manuscript reproduction. Visit contemporary galleries where young Armenian artists blend ancient motifs with modern media, and explore open-air sculpture parks set among Dilijan's legendary forests.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The experience extends to the culinary arts as well. Join master bakers in underground tonir ovens, learn the secrets of Armenian preserves from village grandmothers, and attend private wine tastings at boutique vineyards pioneering the revival of Armenia's 6,000-year winemaking tradition. Accommodations at design-forward boutique hotels and artisan guesthouses ensure that creativity surrounds you from dawn to dusk. You will leave with handcrafted souvenirs made by your own hands and a profound appreciation for the artistry woven into every aspect of Armenian life.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>206</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 10:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[artisan-experience]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="dilijan"><![CDATA[Dilijan]]></category>
+		<category domain="tour_type" nicename="heritage"><![CDATA[Heritage]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[2299]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.7]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[7 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[8]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[14]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[15]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Artisan visits
+Craft workshops
+Traditional arts
+Gallery tours]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Arrival in Dilijan & artisan welcome reception
+Day 2: Woodcarving & miniature painting studios
+Day 3: Jewelry making workshop & gallery tour
+Day 4: Manuscript illumination & calligraphy
+Day 5: Tonir baking & village cooking class
+Day 6: Sculpture park & wine tasting
+Day 7: Craft market & farewell dinner]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- Tour 8: Grand Tour -->
+	<item>
+		<title>Grand Tour</title>
+		<link>http://tourvice.vagraai.local/tour/grand-tour/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Experience the very best of Armenia in a single, unforgettable seven-day journey that spans the nation's most iconic regions. The Grand Tour is our signature offering — a meticulously orchestrated itinerary that weaves together ancient history, breathtaking landscapes, vibrant culture, and world-class gastronomy into one seamless, luxurious adventure. From the cosmopolitan energy of Yerevan to the remote monasteries of Syunik, every day delivers moments of wonder.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Travel in comfort aboard our premium fleet as you traverse a land of extraordinary contrasts. Stand at Khor Virap with the legendary Mount Ararat filling the horizon. Descend into the Areni-1 cave, where the world's oldest known winery was discovered. Soar above the Vorotan gorge on the Wings of Tatev. Float on the turquoise waters of Lake Sevan. Wander the jazz-filled streets of Yerevan as the city glows pink in the sunset. Each destination is complemented by exclusive access — private museum viewings, behind-the-scenes winery tours, and meetings with local luminaries who bring Armenia's story to life.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Accommodations are hand-selected from Armenia's finest boutique hotels, and every meal is a culinary event — from Michelin-worthy Yerevan restaurants to village feasts where twenty dishes appear on a single table. The Grand Tour is not just our most popular offering; it is the definitive Armenia experience, designed for discerning travelers who refuse to compromise. If you have one week to give to this extraordinary country, this is how to spend it.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>207</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-02 10:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[vagra_tour]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[grand-tour]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="tour_location" nicename="multiple-regions"><![CDATA[Multiple Regions]]></category>
+		<category domain="tour_type" nicename="cultural"><![CDATA[Cultural]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_price]]></wp:meta_key><wp:meta_value><![CDATA[2599]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_rating]]></wp:meta_key><wp:meta_value><![CDATA[4.9]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_duration]]></wp:meta_key><wp:meta_value><![CDATA[7 days]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_min]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_group_max]]></wp:meta_key><wp:meta_value><![CDATA[12]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_discount]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_highlights]]></wp:meta_key><wp:meta_value><![CDATA[Multiple regions
+Diverse activities
+Local experiences
+Expert guides]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_tour_itinerary]]></wp:meta_key><wp:meta_value><![CDATA[Day 1: Yerevan city tour & welcome gala
+Day 2: Khor Virap, Areni winery & Noravank
+Day 3: Tatev via Wings of Tatev & gorge hike
+Day 4: Lake Sevan & Sevanavank Monastery
+Day 5: Dilijan National Park & artisan village
+Day 6: Garni Temple, Geghard & lavash experience
+Day 7: Cascade Complex, Vernissage market & farewell]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     BLOG POSTS
+	     ============================================================ -->
+
+	<item>
+		<title>Top 10 Hidden Gems in Armenia</title>
+		<link>http://tourvice.vagraai.local/top-10-hidden-gems-in-armenia/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Armenia is a country that rewards the curious traveler. While most visitors flock to the well-known sites — Garni Temple, Lake Sevan, Tatev Monastery — the true magic of this ancient land lies in the places that rarely appear in guidebooks. After years of leading luxury tours across every corner of Armenia, our team has compiled this definitive list of hidden gems that will transform your journey from memorable to extraordinary.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>First on our list is the Symphony of Stones at Garni Gorge — a natural wonder of towering basalt columns that resembles a giant pipe organ carved by the hand of nature itself. While many tourists visit Garni Temple above, few descend into the gorge to witness this geological masterpiece up close. Next, venture to the abandoned medieval city of Ani, visible from the Armenian side of the Turkish border, where the haunting silhouette of a once-great capital stirs the imagination. The underground cave city of Khndzoresk, accessible via a dramatic swaying bridge, offers an otherworldly experience that rivals Cappadocia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Further afield, discover the pristine alpine meadows of Aragats's southern slopes, where wild horses roam and shepherds still live as they have for centuries. The hot springs of Jermuk, Armenia's spa capital, provide natural thermal pools with healing mineral waters. And do not miss the village of Areni, where archaeologists discovered the world's oldest known winery — dating back over 6,000 years — and where a new generation of winemakers is reviving ancient grape varieties. Each of these hidden gems offers an authentic encounter with Armenia's soul, far from the crowds and deep in the heart of a land that never ceases to surprise.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>300</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-05 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[top-10-hidden-gems-in-armenia]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="category" nicename="travel-tips"><![CDATA[Travel Tips]]></category>
+	</item>
+
+	<item>
+		<title>Best Time to Visit Armenia: A Seasonal Guide</title>
+		<link>http://tourvice.vagraai.local/best-time-to-visit-armenia/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>One of the most common questions we receive from prospective travelers is: "When is the best time to visit Armenia?" The answer, like the country itself, is beautifully nuanced. Armenia's dramatic topography — from the Ararat plain at 800 meters to the peak of Aragats at over 4,000 — creates a tapestry of microclimates that ensure every season offers something exceptional. The real question is not when to visit, but what kind of experience you are seeking.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Spring (April to June) is arguably the most magical season. The valleys burst into color as millions of wildflowers carpet the hillsides, apricot orchards bloom in fragrant clouds of pink and white, and the mountains shed their snow to reveal cascading waterfalls fed by glacial melt. Temperatures are ideal for hiking — warm but not oppressive — and the tourist crowds have yet to arrive. Summer (July to September) brings long, sun-drenched days perfect for high-altitude trekking, lake swimming at Sevan, and open-air festivals celebrating everything from jazz to wine. Evenings in Yerevan are electric, with rooftop restaurants and sidewalk cafes buzzing until the early hours.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Autumn (October to November) paints the forests of Dilijan and Lori in spectacular shades of gold, amber, and crimson — a photographer's paradise. The harvest season brings wine festivals, freshly pressed pomegranate juice, and tables groaning with seasonal delicacies. Winter (December to March) transforms Tsaghkadzor into a charming ski destination, while Yerevan's cozy wine bars and jazz clubs provide the perfect antidote to the cold. No matter when you choose to visit, Armenia has something extraordinary waiting for you.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>301</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-06 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[best-time-to-visit-armenia]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="category" nicename="travel-tips"><![CDATA[Travel Tips]]></category>
+	</item>
+
+	<item>
+		<title>Armenian Cuisine: A Food Lover's Journey</title>
+		<link>http://tourvice.vagraai.local/armenian-cuisine-food-lovers-journey/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Armenian cuisine is one of the oldest continuously evolving food traditions on earth, a living archive of flavors that stretches back thousands of years to the very dawn of agriculture. Long before farm-to-table became a fashionable concept in Western restaurants, Armenian grandmothers were foraging herbs from mountain meadows, baking bread in underground clay ovens, and preserving the harvest using techniques passed down through a hundred generations. To eat in Armenia is not merely to dine — it is to participate in an unbroken chain of culinary wisdom.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>At the heart of Armenian cuisine is lavash — the paper-thin, impossibly delicate flatbread baked against the searing walls of a tonir, a tandoor-like clay oven sunken into the earth. Designated a UNESCO Intangible Cultural Heritage, lavash is more than sustenance; it is ritual, community, and art. Wrapped around fresh herbs, salty cheese, and slices of basturma (air-cured spiced beef), it becomes the perfect meal. Equally iconic is khorovats — Armenian barbecue — where skewered lamb, pork, and vegetables are grilled over grapevine embers, infusing each bite with a subtle, smoky sweetness found nowhere else in the world.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>But the true revelation for food lovers is the sheer diversity that unfolds as you travel from region to region. In Ararat province, taste sun-ripened apricots that bear no resemblance to their supermarket counterparts. In Areni, sip wines made from indigenous grape varieties in caves that served as wineries six millennia ago. In Dilijan, forage for wild garlic, mushrooms, and berries with local guides who know every forest path. And everywhere you go, expect the legendary Armenian table — where hospitality demands that no plate is ever empty, no glass ever dry, and no guest ever leaves without promising to return.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>302</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-07 08:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[armenian-cuisine-food-lovers-journey]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<category domain="category" nicename="culture"><![CDATA[Culture]]></category>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Primary (Home, Tours, About, Blog, Contact)
+	     ============================================================ -->
+	<item>
+		<title>Home</title>
+		<link>http://tourvice.vagraai.local/home/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>500</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:00:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[home-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[100]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Tours</title>
+		<link>http://tourvice.vagraai.local/tours/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>501</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:01:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[tours-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type_archive]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[vagra_tour]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>http://tourvice.vagraai.local/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>502</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:02:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[about-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[502]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[http://tourvice.vagraai.local/about/]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Blog</title>
+		<link>http://tourvice.vagraai.local/blog/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>503</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:03:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[blog-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[101]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Contact</title>
+		<link>http://tourvice.vagraai.local/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>504</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:04:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[contact-menu]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<category domain="nav_menu" nicename="primary"><![CDATA[Primary]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[102]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<!-- ============================================================
+	     NAV MENU ITEMS — Footer (About, Privacy Policy, Terms of Service)
+	     ============================================================ -->
+	<item>
+		<title>About</title>
+		<link>http://tourvice.vagraai.local/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>510</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:10:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-about]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[510]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[http://tourvice.vagraai.local/about/]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Privacy Policy</title>
+		<link>http://tourvice.vagraai.local/privacy-policy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>511</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:11:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-privacy]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[511]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[http://tourvice.vagraai.local/privacy-policy/]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Terms of Service</title>
+		<link>http://tourvice.vagraai.local/terms-of-service/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>512</wp:post_id>
+		<wp:post_date><![CDATA[2026-05-01 12:12:00]]></wp:post_date>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[footer-terms]]></wp:post_name>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[512]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[http://tourvice.vagraai.local/terms-of-service/]]></wp:meta_value></wp:postmeta>
+	</item>
+
+</channel>
+</rss>

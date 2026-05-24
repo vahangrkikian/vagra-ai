@@ -1,0 +1,679 @@
+/**
+ * TourVice — Single Tour Stylesheet
+ *
+ * Tour detail page: hero, overview, highlights, itinerary,
+ * booking sidebar, booking modal, success screen.
+ *
+ * @package TourVice
+ * @since   1.0.0
+ */
+
+/* ================================================================
+   TOUR HERO
+   ================================================================ */
+
+.tourvice-tour-hero {
+  position: relative;
+  height: 24rem;
+  overflow: hidden;
+  background-color: var(--earth-200);
+}
+
+.tourvice-tour-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourvice-tour-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.tourvice-tour-hero__content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  z-index: 5;
+}
+
+.tourvice-tour-hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.tourvice-tour-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.tourvice-tour-hero__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tourvice-tour-hero__meta-item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.tourvice-tour-hero__meta-item .star-icon {
+  fill: #facc15;
+  color: #facc15;
+}
+
+.tourvice-tour-hero__back {
+  position: fixed;
+  top: 6rem;
+  left: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--earth-600);
+  font-weight: 500;
+  transition: color var(--transition-base);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.tourvice-tour-hero__back:hover {
+  color: var(--sage-600);
+}
+
+.tourvice-tour-hero__back svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* ================================================================
+   TWO-COLUMN LAYOUT
+   ================================================================ */
+
+.tourvice-tour-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+
+.tourvice-tour-content {
+  min-width: 0;
+}
+
+/* ================================================================
+   STAT GRID
+   ================================================================ */
+
+.tourvice-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tourvice-stat-item {
+  background-color: var(--earth-50);
+  padding: 1rem;
+  border-radius: var(--radius-xl);
+}
+
+.tourvice-stat-item__label {
+  font-size: 0.875rem;
+  color: var(--earth-500);
+}
+
+.tourvice-stat-item__value {
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-top: 0.125rem;
+}
+
+/* ================================================================
+   OVERVIEW
+   ================================================================ */
+
+.tourvice-tour-overview {
+  margin-bottom: 3rem;
+}
+
+.tourvice-tour-overview__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1rem;
+}
+
+.tourvice-tour-overview__text {
+  color: var(--earth-700);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+/* ================================================================
+   HIGHLIGHTS
+   ================================================================ */
+
+.tourvice-highlights {
+  margin-bottom: 3rem;
+}
+
+.tourvice-highlights__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1rem;
+}
+
+.tourvice-highlights__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.tourvice-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tourvice-highlight-item__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--sage-500);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.tourvice-highlight-item__text {
+  color: var(--earth-700);
+}
+
+/* ================================================================
+   ITINERARY TIMELINE
+   ================================================================ */
+
+.tourvice-itinerary {
+  margin-bottom: 3rem;
+}
+
+.tourvice-itinerary__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1rem;
+}
+
+.tourvice-itinerary__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tourvice-itinerary-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.tourvice-itinerary-item__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tourvice-itinerary-item__badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--sage-600);
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+}
+
+.tourvice-itinerary-item__connector {
+  width: 2px;
+  height: 3rem;
+  background-color: var(--sage-200);
+  margin-top: 0.5rem;
+}
+
+.tourvice-itinerary-item:last-child .tourvice-itinerary-item__connector {
+  display: none;
+}
+
+.tourvice-itinerary-item__content {
+  padding-top: 0.5rem;
+}
+
+.tourvice-itinerary-item__text {
+  font-weight: 700;
+  color: var(--earth-900);
+}
+
+/* ================================================================
+   BOOKING SIDEBAR
+   ================================================================ */
+
+.tourvice-booking-sidebar {
+  position: sticky;
+  top: 6rem;
+}
+
+.tourvice-booking-card {
+  background-color: var(--earth-50);
+  border-radius: var(--radius-2xl);
+  padding: 1.5rem;
+}
+
+.tourvice-booking-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 1.5rem;
+}
+
+/* Group size dropdown */
+.tourvice-booking-card__group-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--earth-600);
+  margin-bottom: 0.5rem;
+}
+
+.tourvice-booking-card__group-label svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.tourvice-booking-card__select {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--earth-200);
+  border-radius: var(--radius-xl);
+  font-size: 0.875rem;
+  color: var(--earth-900);
+  background-color: white;
+  outline: none;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.tourvice-booking-card__select:focus {
+  border-color: var(--sage-500);
+  box-shadow: 0 0 0 3px rgba(156, 191, 156, 0.2);
+}
+
+/* Discount alert */
+.tourvice-discount-alert {
+  background-color: var(--sage-100);
+  border: 1px solid var(--sage-300);
+  border-radius: var(--radius-xl);
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tourvice-discount-alert svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--sage-600);
+  flex-shrink: 0;
+}
+
+.tourvice-discount-alert__text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--sage-700);
+}
+
+/* Price breakdown */
+.tourvice-price-breakdown {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tourvice-price-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--earth-600);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.tourvice-price-row:last-child {
+  margin-bottom: 0;
+}
+
+.tourvice-price-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--earth-100);
+}
+
+.tourvice-price-total__value {
+  color: var(--sage-600);
+}
+
+/* Book button */
+.tourvice-booking-card__btn {
+  width: 100%;
+  background-color: var(--sage-600);
+  color: white;
+  padding: 0.75rem;
+  border-radius: var(--radius-xl);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  border: none;
+  cursor: pointer;
+}
+
+.tourvice-booking-card__btn:hover {
+  background-color: var(--sage-700);
+}
+
+/* ================================================================
+   BOOKING MODAL
+   ================================================================ */
+
+.tourvice-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+
+.tourvice-modal-overlay.is-open {
+  display: flex;
+}
+
+.tourvice-modal {
+  background: white;
+  border-radius: var(--radius-2xl);
+  width: 100%;
+  max-width: 32rem;
+  box-shadow: var(--shadow-2xl);
+  overflow: hidden;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Modal header with bg image */
+.tourvice-modal__header {
+  position: relative;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.tourvice-modal__header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(82, 63, 46, 0.65);
+}
+
+.tourvice-modal__header-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.tourvice-modal__header-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tourvice-modal__header-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.tourvice-modal__close {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tourvice-modal__close:hover {
+  color: white;
+}
+
+.tourvice-modal__close svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* Summary strip */
+.tourvice-modal__summary {
+  background-color: var(--earth-50);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--earth-600);
+  border-bottom: 1px solid var(--earth-100);
+}
+
+.tourvice-modal__summary-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.tourvice-modal__summary-item svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.tourvice-modal__summary-price {
+  font-weight: 600;
+  color: var(--sage-600);
+}
+
+/* Modal form */
+.tourvice-modal__form {
+  padding: 1.5rem;
+}
+
+.tourvice-modal__form-group {
+  margin-bottom: 1rem;
+}
+
+.tourvice-modal__form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tourvice-modal__form-label {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--earth-600);
+  margin-bottom: 0.375rem;
+}
+
+.tourvice-modal__form-label svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.tourvice-modal__form-input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--earth-200);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.tourvice-modal__form-input:focus {
+  border-color: var(--sage-400);
+  box-shadow: 0 0 0 3px rgba(156, 191, 156, 0.3);
+}
+
+.tourvice-modal__form-input--error {
+  border-color: #f87171;
+}
+
+.tourvice-modal__form-textarea {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--earth-200);
+  font-size: 0.875rem;
+  outline: none;
+  resize: none;
+  min-height: 4.5rem;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.tourvice-modal__form-textarea:focus {
+  border-color: var(--sage-400);
+  box-shadow: 0 0 0 3px rgba(156, 191, 156, 0.3);
+}
+
+.tourvice-modal__form-error {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.tourvice-modal__form-submit {
+  width: 100%;
+  background-color: var(--sage-600);
+  color: white;
+  padding: 0.75rem;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  transition: background-color var(--transition-base);
+  border: none;
+  cursor: pointer;
+}
+
+.tourvice-modal__form-submit:hover {
+  background-color: var(--sage-700);
+}
+
+/* Success screen */
+.tourvice-modal__success {
+  padding: 2rem;
+  text-align: center;
+}
+
+.tourvice-modal__success-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--sage-100);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.tourvice-modal__success-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--sage-600);
+}
+
+.tourvice-modal__success-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--earth-900);
+  margin-bottom: 0.5rem;
+}
+
+.tourvice-modal__success-text {
+  color: var(--earth-500);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.tourvice-modal__success-email {
+  font-weight: 500;
+  color: var(--earth-800);
+}
+
+.tourvice-modal__success-btn {
+  background-color: var(--sage-600);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-xl);
+  font-weight: 500;
+  transition: background-color var(--transition-base);
+  border: none;
+  cursor: pointer;
+}
+
+.tourvice-modal__success-btn:hover {
+  background-color: var(--sage-700);
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (min-width: 768px) {
+  .tourvice-stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tourvice-highlights__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tourvice-tour-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
